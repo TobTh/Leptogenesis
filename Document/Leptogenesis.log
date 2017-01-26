@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.23)  26 JAN 2017 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.23)  26 JAN 2017 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1200,40 +1200,47 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./Leptogenesis.toc)
+) [1
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Lept
+ogenesis.toc)
 \tf@toc=\write4
 \openout4 = `Leptogenesis.toc'.
 
+[2] (./Chapter/Introduction.tex) (./Chapter/Outline_of_baryogenesis.tex
+[3]) (./Chapter/Outline_of_leptogenesis.tex)
+(./Chapter/Non-relativistic_leptogenesis.tex) (./Chapter/Summary.tex)
+(./Chapter/Appendix.tex) (./Leptogenesis.bbl
 
-No file Leptogenesis.bbl.
-[1
+LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
+               before end of `thebibliography' environment on input line 3.
 
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Chapter/Introduction.tex) (./Chapter/Outline_of_baryogenesis.tex)
-(./Chapter/Outline_of_leptogenesis.tex)
-(./Chapter/Non-relativistic_leptogenesis.tex) [2] (./Leptogenesis.aux) ) 
+) [4] (./Leptogenesis.aux) ) 
 Here is how much of TeX's memory you used:
- 16685 strings out of 493014
- 314922 string characters out of 6133350
- 437604 words of memory out of 5000000
- 19872 multiletter control sequences out of 15000+600000
- 16289 words of font info for 50 fonts, out of 8000000 for 9000
+ 16706 strings out of 493014
+ 315313 string characters out of 6133350
+ 440662 words of memory out of 5000000
+ 19883 multiletter control sequences out of 15000+600000
+ 17819 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,7n,60p,8518b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/l
-ocal/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on Leptogenesis.pdf (2 pages, 101393 bytes).
+ 64i,15n,60p,8518b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips
+/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super
+/sfsx1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+fsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfs
+x1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx2
+074.pfb>
+Output written on Leptogenesis.pdf (4 pages, 147525 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
