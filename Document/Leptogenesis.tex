@@ -17,15 +17,25 @@
 \usepackage{slashed}
 \usepackage{bbm}
 \usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
 \title{Leptogenesis: A non-relativistic study}
 \author{Tobias Theil}
 \numberwithin{equation}{section}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\leftmark}
+\lhead{Leptogenesis: A non-relativistic study}
+\rfoot{Page \thepage}
 \begin{document}
 	
-	\maketitle
-	\newpage
-	\tableofcontents
 
+	\begin{titlepage}
+	\centering
+	\maketitle
+	%\includegraphics[scale=.5]{Images/leptogenesis.png}
+	\end{titlepage}
+	\tableofcontents
 	\newpage
 	\input{Chapter/Introduction.tex}
 	\input{Chapter/Outline_of_baryogenesis.tex}
