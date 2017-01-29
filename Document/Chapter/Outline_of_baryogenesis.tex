@@ -10,7 +10,7 @@ As mentioned above there are three crucial properties of nature, the Sakharov co
 For an general insight of these three conditions the first one will be skipped, since it is quite obvious, that in an totally symmetric universe there has to be at least one B-violating process in order to cause an inbalance in matter and antimatter. \newline
 The general importance of the other two will be discussed in the following.
 \subsubsection{C and CP-violation}
-Charge conjugation (C), parity (P) and der combination (CP) are two or more specifically three basic symmetries of the universe. C symmetry states, that physical processes are the same, even after exchanging particles for their respective anti-particles, while P-symmetry guarantees invariance under the transformation $\vec{r}\rightarrow-\vec{r}$. CP symmetry then simply is an sequence of a C followed by a P transformation. \newline
+Charge conjugation (C), parity (P) and their combination (CP) are two or more specifically three basic symmetries of the universe. C symmetry states, that physical processes are the same, even after exchanging particles for their respective anti-particles, while P-symmetry guarantees invariance under the transformation $\vec{r}\rightarrow-\vec{r}$. CP symmetry then simply is an sequence of a C followed by a P transformation. \newline
 To explain why C has to be violated for baryogenesis beeing possible, consider the B-violating reaction
 \begin{equation*}
 	X\rightarrow Y+B
@@ -71,9 +71,52 @@ Now suppose X and its anti-particle $\bar{\text{X}}$  with B$_X=-$B$_{\bar{X}}\n
 	\label{thermalequ}
 \end{equation}
 Looking at eq \ref{thermalequ} it is quite obvious that even with B, C and CP violating any produced excess baryon number B will be washed out in equilibrium by other processes happening in equilibrium. \newline
-This illustrates the final Sakharov Condition, that next to B, C and CP violation a departure from equilibrium is needed for a dynamic production of excess baryons.
+This illustrates the final Sakharov Condition, that next to B, C and CP violation a departure from equilibrium is needed for a dynamic production of excess baryons. \newline
+Interresting to note is, that there is quite an easy way of approximatelly determining if reactions take place in thermal equilibrium is by comparing the reaction rate with the expansion of universe, discribed by the Hubble constant H, which isn't actually a constant but changes with time. So if the relation 
+\begin{equation}
+	\Gamma\gtrsim H
+	\label{rate_g_hubble}
+\end{equation}
+holds, the reactions take place fast enough for them to be in equilibrium. This can be made understandable, it is useful to look at this from the rest fram of the particles taking part in the reactions. Then the particles don't notice any expansion of the universe since they move and react to fast with each other, therefore the expansion doesn't really affect the equilibrium state. \newline
+Otherwise if the reactions occur slower than the universe expands, so if 
+\begin{equation}
+	\Gamma<H
+\end{equation}
+is valid, than the expansions happens fast enough that particles get separated to far from each other, so they can't react anymore and the reactions fall out of equilibrium.
 \subsection{Baryogenesis in the Standard Modell}
+Although nowadays there are no records or experimental proofs of baryon number violating processes, that doesn't mean there is a need for physics outside the Standard Modell (SM) of particle physics, at least on a qualitative level.
 \subsubsection{Electroweak baryogenesis}
+As it turns out the electroweak part of the SM with its SU(2)$_L\times$U(1)$_Y$ symmetry groups suits best for describing baryogenesis. \newline
+\paragraph{C and CP violation}
+It is already proven theoretically und experimentally by numerous well-known experiments, like for example the Wu experiment in 1956, that C symmetry is maximally violated by the weak interaction in the leptonic as well as in the hadronic sector. As shown by Kobayashi and Maskawa through expanding the Cabibbo hypothesis and experimentally confirmed, weak interactions in the hadronic sector also violate CP invariance, which manifests as an complex phase in the CKM quark mixing matrix. In the leptonic sector however the CP violation through a complex phase only got postulated in the PMNS neutrino mixing matrix to try to descripe neutrino oscillations, but this phase still needs to be measured.\newline
+Nevertheless the elektroweak part of the SM, more precise the weak interactions, since electromagnetism doesn't violate C or even P, satisfies at least one of the three Sakharov conditions. The question now is, how modern particle physics fulfills the other conditions as well. \newline
+\paragraph{B violation}
+Although the first Sakharov condition, the necessity of baryon number violating processes, seems to be the most obvious, the way these are realised in the SM is a bit more difficult than it seems. \newline
+Since at the first look the baryonic and, since it is going to play an important role during the following discussion, the leptonic current are  conserved
+\begin{align}
+	\partial^\mu J_\mu^B=0
+	\label{Bcurrent}
+	\\
+	\partial^\mu J_\mu^L=0
+	\label{Lcurrent}
+\end{align}
+one would assume there is no way the SM could produce an baryon asymmetry. However, by considering quantum fluctuation meaning orders higher than just tree level one finds, that the currents for the left- and right-handed parts f$_L$ and f$_R$ respectively, where stands for quarks and leptons equally, aren't conserved and not the same ["'CP violation and baryogenesis`']
+\begin{align}
+	\partial^\mu\bar{f}_L\gamma_\mu f_L&=-c_L\frac{g^2}{32\pi^2}F^a_{\mu\nu}\tilde{F}^{a\mu\nu}
+	\label{l_chiralty_current}
+	\\
+	\partial^\mu\bar{f}_R\gamma_\mu f_R&=+c_R\frac{g^2}{32\pi^2}F^a_{\mu\nu}\tilde{F}^{a\mu\nu}
+	\label{r_chiralty_current}
+\end{align}
+where g denotes the gauge coupling, F$^{a\mu\nu}$ the field tensor, $\tilde{F}^{a\mu\nu}$ the dual field tensor and c$_L$ and c$_R$ depend on the representation of f$_L$ and f$_R$.This behaviour of the currents at quantum levels is known as Adler-Bell-Jackiw or chiralty anomaly. 
+Since SU(2)$_L$ gauge boson only couples with left-handed particles c$_R^W$=0, while the U(1)$_Y$ gauge boson couples to both hadednesses, but with different strength, therefore c$_R^Y\neq$c$_L^Y$. Although this section only focuses on electroweak baryogenesis, it is mentionable that with the SU(3)$_c$ gauge bosons of the strong interactions don't produce any chiralty anomaly because they couple with left as well as right-handed particles with the same strenght, so c$_R^c=$c$_L^c$ and both currents in \eqref{l_chiralty_current} and \eqref{r_chiralty_current} cancel each other out in the case of strong interactions. \newline
+Putting this and eqautions \ref{Bcurrent} - \ref{r_chiralty_current} together, gives a pretty interesting result
+\begin{equation}
+\partial^\mu J_\mu^B=\partial^\mu J_\mu^L=\frac{n_F}{32\pi^2}\left(-g_w^2W^a_{\mu\nu}\tilde{W}^{a\mu\nu}g'^2G^a_{\mu\nu}\tilde{G}^{a\mu\nu}\right)
+\label{B-L}
+\end{equation}
+with W$^{a\mu\nu}$ and B$^{a\mu\nu}$ the field strenght tensors of the SU(2)$_L$ and U(1)$_Y$ gauge groups and n$_F$=3 the number of particle families. \newline
+Analyzing eq. \ref{B-L} one easily figures out, that although baryon and lepton number are not conserved separatedly the difference B-L of these numbers is very well conserved.
 \subsubsection{Failures of the SM}
 
 %%% mode: latex
