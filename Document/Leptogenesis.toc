@@ -11,6 +11,6 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Failures of the SM}{9}{subsubsection.2.2.2}
 \contentsline {section}{\numberline {3}Outline of leptogenesis}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Expandig the SM}{11}{subsection.3.1}
-\contentsline {section}{\numberline {4}Non-relativistic leptogenesis}{11}{section.4}
+\contentsline {section}{\numberline {4}Analytic approximations and calculations}{11}{section.4}
 \contentsline {section}{\numberline {5}Summary}{11}{section.5}
 \contentsline {section}{\numberline {A}Appendix}{11}{appendix.A}

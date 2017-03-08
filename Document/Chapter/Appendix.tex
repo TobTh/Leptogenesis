@@ -1,5 +1,40 @@
 \appendix
 \section{Appendix}
+\begin{equation*}
+(\frac{d}{dt}+3H)n_N=-\Gamma_N(n_N-n_N^{eq})+\underbrace{\Gamma_{N,B-L}n_{B-L}}_\text{negligible}
+\end{equation*}
+phase space integral
+\begin{align*}
+\int (\frac{d}{dt}+3H)f_Nd^3p=-\int\Gamma_N(f_N-f_N^{eq})d^3p\\
+\int (\frac{d}{dt}+3H)f_Np^2dp=-\int\Gamma_N(f_N-f_N^{eq})^2dp
+\end{align*}
+Using
+\begin{equation*}
+\int p^3\frac{\partial f_N}{\partial p}dp=\left[p^3f_N\right]_0^\infty-3\int p^2f_Ndp=-3\int p^2f_Ndp
+\end{equation*}
+\begin{equation*}
+3H\int f_Np^2dp=-H\int p^3\frac{\partial f_N}{\partial p}dp
+\end{equation*}
+it follows
+\begin{align*}
+\int (\partial_t-Hp\partial_p)f_Np^2dp&=-\int\Gamma_N(f_N-f_N^{eq})p^2dp\\
+\Rightarrow (\partial_t-Hp\partial_p)f_N&=\Gamma_N(f_N^{eq}-f_N)
+\end{align*}
+\newpage
+\begin{equation*}
+	\Gamma_{B-L}n_{B-L}=\int\prod_{a=N,l,\phi}\frac{d^3p_a}{2E_a(2\pi)^3}(2\pi^4)\delta(p_l+p_\phi-p_N)(	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}})\sum|M_0|^2
+\end{equation*}
+\newline
+\begin{equation*}
+f_l^{eq}f_\phi^{eq}=e^{-\frac{E_l-\mu_l}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}\overset{E_l+E_\phi=E_N}{=}e^{-\frac{E_N-\mu_l-\mu_\phi}{T}}=e^{-\frac{E_N}{T}}e^{\frac{\mu_l+\mu_\phi}{T}}
+\end{equation*}
+\begin{equation*}
+	f_lf_\phi\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}\right)
+\end{equation*}
+\begin{equation*}
+	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}-1-\frac{\mu_{\bar{l}}+\mu_{\bar{\phi}}}{T}\right)\overset{\mu_X=-\mu_{\bar{X}}}{=}2e^{-\frac{E_N}{T}}\frac{\mu_l+\mu_\phi}{T}
+\end{equation*}
+\newpage
 %%% mode: latex
 %%% TeX-master: "../Leptogenesis"
 %%% End:
