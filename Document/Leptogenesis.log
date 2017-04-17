@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.23)  7 MAR 2017 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.23)  16 APR 2017 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,41 +1337,65 @@ ogenesis.toc)
 
 [2] (./Chapter/Introduction.tex) (./Chapter/Outline_of_baryogenesis.tex
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\times' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-[7] [8] <Images/Higgs1.pdf, id=183, 260.17201pt x 153.4784pt>
+[8] [9] <Images/Higgs1.pdf, id=203, 260.17201pt x 153.4784pt>
 File: Images/Higgs1.pdf Graphic file (type pdf)
 
 <use Images/Higgs1.pdf>
-Package pdftex.def Info: Images/Higgs1.pdf used on input line 189.
+Package pdftex.def Info: Images/Higgs1.pdf used on input line 211.
 (pdftex.def)             Requested size: 223.07211pt x 131.60007pt.
- <Images/Higgs2.pdf, id=184, 260.17201pt x 153.4784pt>
+ <Images/Higgs2.pdf, id=204, 260.17201pt x 153.4784pt>
 File: Images/Higgs2.pdf Graphic file (type pdf)
 
 <use Images/Higgs2.pdf>
-Package pdftex.def Info: Images/Higgs2.pdf used on input line 194.
+Package pdftex.def Info: Images/Higgs2.pdf used on input line 216.
 (pdftex.def)             Requested size: 223.07211pt x 131.60007pt.
- [9 <./Images/Higgs1.pdf> <./Images/Higgs2.pdf>])
-(./Chapter/Outline_of_leptogenesis.tex)
+ [10 <./Images/Higgs1.pdf> <./Images/Higgs2.pdf>])
+(./Chapter/Outline_of_leptogenesis.tex [11] [12])
 (./Chapter/Analytic_approximations_and_calculations.tex) (./Chapter/Summary.tex
-) (./Chapter/Appendix.tex [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+) (./Chapter/Appendix.tex [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[12]) (./Chapter/References.tex
+[15]) (./Chapter/References.tex
 Underfull \hbox (badness 1603) in paragraph at lines 26--33
 []\T1/cmr/m/n/10.95 Z. Fodor, \T1/cmr/m/it/10.95 Elec-troweak phase tran-si-tio
 ns\T1/cmr/m/n/10.95 , Nucl. Phys. Proc. Suppl. \T1/cmr/bx/n/10.95 83 \T1/cmr/m/
@@ -1396,24 +1420,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 pdf[] archived at
  []
 
-) [13]
+
+Underfull \hbox (badness 5147) in paragraph at lines 48--52
+[]\T1/cmr/m/n/10.95 P. Di Bari, \T1/cmr/m/it/10.95 Be-yond the Stan-dard Model 
+with lep-to-ge-n-e-sis and neu-trino data\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+[]\T1/cmr/m/n/10.95 Taanila, O., Helsinki Uni-ver-sity De-part-ment of Phys-i-c
+al Sci-ences. (2008,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+\T1/cmr/m/n/10.95 Jan-uary). \T1/cmr/m/it/10.95 Neu-tri-nos and ther-mal lep-to
+-ge-n-e-sis\T1/cmr/m/n/10.95 , Re-trieved 15.04.2017 from
+ []
+
+) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./Leptogenesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: D7249B89FD2652FA952E6DA5FB050DDA;874.
+(rerunfilecheck)             Checksum: A663061A79A02CE74DA9AEF7E2CE0ACD;1133.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 21227 strings out of 493014
- 388324 string characters out of 6133350
- 542912 words of memory out of 5000000
- 24306 multiletter control sequences out of 15000+600000
+ 21248 strings out of 493014
+ 388638 string characters out of 6133350
+ 543193 words of memory out of 5000000
+ 24315 multiletter control sequences out of 15000+600000
  20054 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,60p,8518b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,16n,60p,8518b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1437,10 +1479,10 @@ f-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Leptogenesis.pdf (13 pages, 425323 bytes).
+Output written on Leptogenesis.pdf (16 pages, 448830 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

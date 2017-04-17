@@ -21,12 +21,35 @@ it follows
 \Rightarrow (\partial_t-Hp\partial_p)f_N&=\Gamma_N(f_N^{eq}-f_N)
 \end{align*}
 \newpage
+\begin{align*}
+	n_l-n_{\bar{l}}&=\int\frac{d^3p}{(2\pi)^3}f_l-f_{\bar{l}}=\\
+	&=\frac{1}{(2\pi)^3}\int (f_l-f_{\bar{l}})p^2\:dp\:dcos\theta \:d\phi=\\
+	&=\frac{1}{2\pi^2}\int\left(f_l(\mu_l=0)+\frac{e^{E/T}}{(e^{E/T}+1)^2T}\mu_l-f_{\bar{l}}(\mu_{\bar{l}}=0)-\frac{e^{E/T}}{(e^{E/T}+1)^2T}\mu_{\bar{l}}\right)p^2\:dp=\\
+	&=\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{(e^{E/T}+1)^2T}\mu_l\:p^2\:dp=\\
+	&=\frac{\mu_l}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{(e^{E/T}+1)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
+	&=\frac{\mu_lT^2}{6}
+\end{align*}
+Analogous calculation for the Higgs yields:
+\begin{align*}
+	n_\phi-n_{\bar{\phi}}=\frac{\mu_lT^2}{3}
+\end{align*}
+Solving
+\begin{align*}
+	n_l-n_{\bar{l}}=-c_ln_{B-L}\\
+	n_\phi-n_{\bar{\phi}}=-c_\phi n_{B-L}
+\end{align*}
+for the chemical potentials yields
+\begin{align*}
+	\mu_l=-\frac{6c_l}{T^2}n_{B-L}\neq\frac{3c_l}{T^2}n_{B-L}\\
+	\mu_\phi=-\frac{3c_\phi}{T^2}n_{B-L}\neq\frac{3c_l}{2T^2}n_{B-L}
+\end{align*}
+\newpage
 \begin{equation*}
 	\Gamma_{B-L}n_{B-L}=\int\prod_{a=N,l,\phi}\frac{d^3p_a}{2E_a(2\pi)^3}(2\pi^4)\delta(p_l+p_\phi-p_N)(	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}})\sum|M_0|^2
 \end{equation*}
 \newline
 \begin{equation*}
-f_l^{eq}f_\phi^{eq}=e^{-\frac{E_l-\mu_l}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}\overset{E_l+E_\phi=E_N}{=}e^{-\frac{E_N-\mu_l-\mu_\phi}{T}}=e^{-\frac{E_N}{T}}e^{\frac{\mu_l+\mu_\phi}{T}}
+	f_l^{eq}f_\phi^{eq}=e^{-\frac{E_l-\mu_l}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}\overset{E_l+E_\phi=E_N}{=}e^{-\frac{E_N-\mu_l-\mu_\phi}{T}}=e^{-\frac{E_N}{T}}e^{\frac{\mu_l+\mu_\phi}{T}}
 \end{equation*}
 \begin{equation*}
 	f_lf_\phi\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}\right)
@@ -34,7 +57,5 @@ f_l^{eq}f_\phi^{eq}=e^{-\frac{E_l-\mu_l}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}\overs
 \begin{equation*}
 	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}-1-\frac{\mu_{\bar{l}}+\mu_{\bar{\phi}}}{T}\right)\overset{\mu_X=-\mu_{\bar{X}}}{=}2e^{-\frac{E_N}{T}}\frac{\mu_l+\mu_\phi}{T}
 \end{equation*}
+
 \newpage
-%%% mode: latex
-%%% TeX-master: "../Leptogenesis"
-%%% End:
