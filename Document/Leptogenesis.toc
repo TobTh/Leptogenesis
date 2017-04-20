@@ -1,19 +1,24 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {section}{\numberline {2}Outline of baryogenesis}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Sakharov Conditions}{3}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}C and CP-violation}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Departure from thermal equilibrium}{4}{subsubsection.2.1.2}
-\contentsline {subsection}{\numberline {2.2}Baryogenesis in the Standard Modell}{5}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}The SU(2)$_L\times $U(1)$_Y$ symmetry of the SM}{6}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Electroweak baryogenesis}{6}{subsubsection.2.2.2}
-\contentsline {paragraph}{\nonumberline C and CP violation}{6}{section*.2}
-\contentsline {paragraph}{\nonumberline B violation}{7}{section*.3}
-\contentsline {paragraph}{\nonumberline Departure from thermal equilibrium and elecroweak phase transistion}{8}{section*.4}
-\contentsline {subsubsection}{\numberline {2.2.3}Failures of the SM}{9}{subsubsection.2.2.3}
-\contentsline {section}{\numberline {3}Outline of leptogenesis}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Expandig the SM}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}The See-Saw Mechanism}{13}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Leptogenesis and the Shakarov Conditions}{13}{subsection.3.3}
-\contentsline {section}{\numberline {4}Analytic approximations and calculations}{13}{section.4}
-\contentsline {section}{\numberline {5}Summary}{13}{section.5}
-\contentsline {section}{\numberline {A}Appendix}{13}{appendix.A}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Outline of baryogenesis}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sakharov Conditions}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}C and CP-violation}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Departure from thermal equilibrium}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Baryogenesis in the Standard Modell}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}The SU(2)\textsubscript {L}xU(1)\textsubscript {Y} symmetry of the SM}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Electroweak baryogenesis}{6}{subsection.2.2.2}
+\contentsline {subsubsection}{C and CP violation}{6}{section*.2}
+\contentsline {subsubsection}{B violation}{7}{section*.3}
+\contentsline {subsubsection}{Departure from thermal equilibrium and elecroweak phase transistion}{8}{section*.4}
+\contentsline {subsection}{\numberline {2.2.3}Failures of the SM}{10}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Outline of leptogenesis}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Expandig the SM}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}The seesaw Mechanism}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Leptogenesis and the Shakarov conditions}{14}{section.3.3}
+\contentsline {subsubsection}{B violation}{15}{section*.7}
+\contentsline {subsubsection}{C and CP violation}{15}{section*.8}
+\contentsline {chapter}{\numberline {4}Analytic approximations and calculations}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5}Summary}{17}{chapter.5}
+\contentsline {chapter}{\numberline {A}}{18}{appendix.A}
+\contentsline {section}{\numberline {A.1}The Yukawa interaction term for right-handed neutrinos}{18}{section.A.1}
+\contentsline {chapter}{\numberline {B}}{19}{appendix.B}
+\contentsline {section}{\numberline {B.1}Calculations}{19}{section.B.1}

@@ -1,8 +1,8 @@
-\section{Outline of leptogenesis}
+\chapter{Outline of leptogenesis}
 As stated in the section before the SM alone isn't quite enough to describe the observed baryon abundance, so the SM has to be expanded to that effect that it can describe such phenomena. \newline
 Although are efforts made to explain direct baryogenesis using GUT theories, there is an much more favored alternative, namely the so called barygenesis via leptogenesis, what this and the following section will be about. 
-\subsection{Expandig the SM}
-There are experimental reasons why the SM doesn't tell the whole story about our universe, namely the results of neutrino oscillation experiments. Before the discovery of these neutrino oscillations it was accepted that neutrinos are massless and therefore their left-handedness is well defined. But being able to oscillate between different flavours implies that neutrinos aren't massless and therefore are not purely left-handed and even more so that right-handed neutrinos exist. The easisest way to implement right-handed neutrinos into the SM would be to show, that neutrinos are so-called Majorana particles, which, in contrast to Dirac particles, are their own anti-particles. This would mean that the right-handed neutrinos are right-handed antineutrinos at the same time, but it was already shown that latter exist. Theoretically the way to describe Majorana masses would be to exchange the usual mass term including the Higgs field for a Majorana mass terms, that can be written in the following way \cite[pp. 18]{Taanila:2008}, to the SM Lagrangian.
+\section{Expandig the SM}
+There are experimental reasons why the SM doesn't tell the whole story about our universe, namely the results of neutrino oscillation experiments. Before the discovery of these neutrino oscillations it was accepted that neutrinos are massless and therefore their left-handedness is well defined. But being able to oscillate between different flavours implies that neutrinos aren't massless and therefore are not purely left-handed and even more so that right-handed neutrinos exist. The easisest way to implement right-handed neutrinos into the SM would be to show, that neutrinos are so-called Majorana particles, which, in contrast to Dirac particles, are their own anti-particles. This would mean that the right-handed neutrinos are right-handed antineutrinos at the same time, but it was already shown that latter exist. Theoretically the way to describe Majorana masses would be to exchange the usual mass term including the Higgs field for a Majorana mass terms, that can be written in the following way \cite[p. 18]{Taanila:2008}, to the SM Lagrangian.
 \begin{equation*}
 	\mathcal{L}_M=-\frac{1}{2}\overline{\Psi^C}M^M\Psi
 	\label{eq:majorana}
@@ -18,7 +18,7 @@ Using the representation of the U(1)$_Y$ symmetry group given in the previous se
 \end{equation*}
 The relation above shows, that by using Majorana masses of particles with hypercharge Y$\neq$0, like the left-handed neutrinos, one cannot preserve the SM Lagrangians SU(2)$_L\times$U(1)$_Y$ symmetry. 
 \newline
-That being said right-handed Dirac mass terms for neutrinos have to be added to the Lagrangian in order for it to still preserve its SU(2)$_L\times$U(1)$_Y$ symmetry. Since, like all other right-handed particles in the SM, the right-handed neutrinos form a SU(2)$_Y$ singlet, which we will cal N. Also using the isospin conjugate of the Higgs doublet 
+That being said right-handed Dirac mass terms for neutrinos have to be added to the Lagrangian in order for it to still preserve its SU(2)$_L\times$U(1)$_Y$ symmetry. Since, like all other right-handed particles in the SM, the right-handed neutrinos form a SU(2)$_Y$ singlet, which we will call N. Also using the isospin conjugate of the Higgs doublet 
 \begin{equation*}
 	\tilde{\phi}\equiv i\sigma^2\phi^*
 \end{equation*}
@@ -27,17 +27,72 @@ the Yukawa term can be written as
 	\mathcal{L}_{\text{N,Yuk}}=h_{ij}\overline{N_i}\tilde{\phi}^\dagger l_j +h_{ij}^* \overline{l_i}\tilde{\phi} N_j
 	\label{eq:Yukterm}
 \end{equation}
-This interaction term will be of interest in the following section. \newline
+This interaction term will be of analyzed in more detail in Appendix A.1. \newline
 The h$_{ij}$ describe the Yukawa couplings and the l$_i$ the left-handed lepton SU(2) doublets of the Standard modell. It can be shown, that this additional term doesn't violate the symmetries of the SM Lagrangian. \newline
 However, as explained above adding left-handed Majorana neutrino mass terms to the SM Lagrangian breaks its symmetry, but since right-handed neutrinos have to be added anyways one can also try to add a right-handed Majorana mass term, too.
 \begin{equation}
 \mathcal{L}_{N,M}=-\frac{1}{2}\overline{N^C}M^MN
 \label{eq:neutrino_majorana}
 \end{equation}
-The mass term in equation \ref{eq:neutrino_majorana} however doesn't violate the Lagrangian's SU(2)$_L\times$U(1)$_Y$ symmetry, because for right-handed neutrinos T=T$^3$=Y=0 and therefore the transformations given in the previous section become the trivial identity transfomation. Anyways, the Dirac Lagrangian, so the SM Langrangian without any Majorana mass terms, is obviously invariant under any U(1) transformation, not only under U(1)$_Y$ transformations. The Majorana mass terms on the other hand are only invariant under the exactly this U(1)$_Y$, especially only for particles with T=T$^3$=Y=0 like the right-handed neutrinos while violating other U(1) symmetries. And according to the Noether theorem, every symmetry of a theory results in a conserved current or quantum number, so breaking the U(1) symmetry not assigned to the hypercharge by using Majorana mass terms one certain quantum number, in this case the lepton number is not preserved. This seems rather obvious because if Majorana particles are particles and anti-particles at the same time one cannot assing them a distinct lepton number and therefore it is not conserved. \newline
-Finally, after putting the Dirac and Majorana mass terms together one ends up with \cite[pp. 21]{Taanila:2008}
+The mass term in equation \ref{eq:neutrino_majorana} however doesn't violate the Lagrangian's SU(2)$_L\times$U(1)$_Y$ symmetry, because for right-handed neutrinos T=T$^3$=Y=0 and therefore the transformations given in the previous section become the trivial identity transfomation. Anyways, the Dirac Lagrangian, so the SM Langrangian without any Majorana mass terms, is obviously invariant under any U(1) transformation, not only under U(1)$_Y$ transformations. The Majorana mass terms on the other hand are only invariant under the exactly this U(1)$_Y$, especially only for particles with T=T$^3$=Y=0 like the right-handed neutrinos while violating other U(1) symmetries. And according to the Noether theorem, every symmetry of a theory results in a conserved current or quantum number, so breaking the U(1) symmetry not assigned to the hypercharge by using Majorana mass terms one certain quantum number, in this case breaking the following U(1)$_l$ symmetry results in a non-conservation of the lepton number.
+\begin{equation}
+	\Psi\overset{U(1)_L}{\longrightarrow}e^{i\ell\alpha(x)}\Psi
+\end{equation}
+with the lepton number $\ell$ of the field $\Psi$.
+This seems rather obvious because if Majorana particles are particles and anti-particles at the same time one cannot assing them a distinct lepton number and therefore it is not conserved. \newline
+Finally, after putting the Dirac and Majorana mass terms together one ends up with \cite[p. 21]{Taanila:2008}
 \begin{equation}
 	\mathcal{L}_{M+D}=\left(\overline{\nu^C_L},\overline{N}\right)	\left(\begin{array}{cc}M^M_L&m^D\\m^D&M^M_R\end{array}\right)	\left(\begin{array}{c}\nu_L\\N^C\end{array}\right)+h.c.
+	\label{eq_majorana_dirac}
 \end{equation}
-\subsection{The See-Saw Mechanism}
-\subsection{Leptogenesis and the Shakarov Conditions}
+The matrix m$^D$ contains the masses of the Dirac neutrinos, so the neutrinos found in nature up until now, while M$^M_L$ and M$^M_R$ describe the masses of the left as well as the right-handed Majorana neutrinos. All of these matrices are of the dimension n$_F\times$n$_F$ with n$_F$ the number of neutrino flavours. Also, as explained above, since it isn't possible to introduce left-handed Majorana neutrinos to the SM without violating its fundemental symmetry M$^M_L$ has to be equal to zero.
+\section{The seesaw Mechanism}
+Although the addition of neutrino masses can be described using the mass term \ref{eq_majorana_dirac} or rather
+\begin{equation}
+\mathcal{L}_{M+D}=\left(\overline{\nu^C_L},\overline{N}\right)	\left(\begin{array}{cc}0&m^D\\m^D&M^M_R\end{array}\right)	\left(\begin{array}{c}\nu_L\\N^C\end{array}\right)+h.c.
+\label{eq_majorana_dirac_zero}
+\end{equation}
+there is still a problem, namely why the neutrino masses are many orders of magnitude smaller than those of the other SM particles. This however can be described using the so called seesaw mechanism. In this discussion only the so called type I seesaw mechanism will be presented. By doing so the following two assumtions have to be made:
+\begin{enumerate}
+	\item The Dirac masses arise directly from the Higgs mechanism that gives mass to all SM particles, introducing the electroweak mass scale of order $\sim10^2-10^3$ GeV.
+	\item The Majorana masses are much bigger than the Dirac masses, m$^D\ll$ M$^M$. This mass scale arises from GUT's and is of order $\sim10^{10}-10^{16}$ GeV.
+\end{enumerate}
+The subscript R will be dropped from now on since there is no non-zero left-handed Majorana mass and therefore no further distinction is needed.\newline
+Now, after diagonalising the mass matrix in \ref{eq_majorana_dirac_zero} \cite[pp. 2-3]{Lindner:2001hr}, one gets two mass eigenvalues, in particular
+\begin{align*}
+	M_1&\backsimeq-m^D{\left(M^M\right)}^{-1}{\left(m^D\right)}^{T}\\
+	M_2&\backsimeq M^M
+\end{align*}
+or for just one neutrino family
+\begin{align}
+	M_1&\backsimeq -\frac{m_D^2}{M^M}
+	\label{eq:light_neutrino}
+	\\
+	M_2&\backsimeq M^M
+	\label{eq:heavy_neutrino}
+\end{align}
+The negative sign for M$_1$ comes from the fact that these are just the eigenvalues of the mass matrix given in \ref{eq_majorana_dirac_zero}, the physical masses are the absolute values of these eigenvalues. \newline
+Finding the corresponding eigenstates for each eigenvalue one gets that the eigenstate associated with M$_1$ is $\nu$, the observable, left-handed light neutrino. One can now easily see that the smallness of the neutrino masses compared to those of all the other SM particles comes from the assumption m$^D\ll$ M$^M$. On the other hand however the eigenstate appendant to $M_2$ is N, the newly added, right-handed heavy neutrino, that will play a crucial role in leptogenesis. \newline
+Interesting to note as well is how these two masses behave under finetuning. It is quite obvious from equation \ref{eq:light_neutrino} that by raising the large mass scale and as a consequence thereof raising the mass of the heavy neutrino the mass of the light neutrinos gets even lower and vice versa, hence the name seesaw mechanism. 
+\section{Leptogenesis and the Shakarov conditions}
+After the necessary expansion of the SM was performed in the previous section, this section will focus on how the right-handed, heavy neutrinos are able to produce a net, non-zero baryon number, that is how the Shakarov conditions can be fullfilled using this exapanded SM. \newline
+The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, right-handed neutrinos introduced above, that is described by the Yukawa interaction in \ref{eq:Yukterm}.The Feynman diagrams for both decay channels are depicted in figure \ref{fig:N-decay}. It can be seen that these decays produce either leptons or anti leptons and depending on the decay rates this can produce a net lepton number.
+\begin{figure}[H]
+	\begin{equation*}
+	\feynmandiagram [baseline=(d.base), horizontal=d to b] {
+		b -- [scalar] a[label=$\overline{\phi}$],
+		b-- [fermion] c[label=$\ell$],
+		d  [label=N] -- [fermion] b  }; 
+	\qquad \text{or} \qquad
+	\feynmandiagram [baseline=(d.base), horizontal=d to b] {
+		b -- [scalar] a[label=$\phi$],
+		b-- [anti fermion] c[label=$\overline{\ell}$],
+		d  [label=N] -- [fermion] b  }; 
+	\end{equation*}
+	\caption{Feynman diagrams for the N-decay}
+	\label{fig:N-decay}
+\end{figure}
+\subsubsection{B violation}
+The B violation in the frame of leptogenesis is achieved in the same way as in direct electorweak baryogenesis via the B+L violating sphaleron processes. Because of the eventually by N decays produced net lepton number this means that the lepton abundance is converted into a baryon abundance by these processes.
+\subsubsection{C and CP violation}
+As in direct baryogenesis C violation is already maximally violated in the SM, so this is also the case in this slightly extended modell.  
