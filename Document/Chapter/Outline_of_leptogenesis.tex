@@ -72,22 +72,22 @@ or for just one neutrino family
 	\label{eq:heavy_neutrino}
 \end{align}
 The negative sign for M$_1$ comes from the fact that these are just the eigenvalues of the mass matrix given in \ref{eq_majorana_dirac_zero}, the physical masses are the absolute values of these eigenvalues. \newline
-Finding the corresponding eigenstates for each eigenvalue one gets that the eigenstate associated with M$_1$ is $\nu$, the observable, left-handed light neutrino. One can now easily see that the smallness of the neutrino masses compared to those of all the other SM particles comes from the assumption m$^D\ll$ M$^M$. On the other hand however the eigenstate appendant to $M_2$ is N, the newly added, right-handed heavy neutrino, that will play a crucial role in leptogenesis. \newline
+Finding the corresponding eigenstates for each eigenvalue one gets that the eigenstate associated with M$_1$ is $\nu$, the observable, left-handed light neutrino. One can now easily see that the smallness of the neutrino masses compared to those of all the other SM particles comes from the assumption m$^D\ll$ M$^M$. On the other hand however the eigenstate appendant to $M_2$ is N, the newly added, right-handed heavy neutrino, that will play a crucial role in leptogenesis. The heavy neutrino mass being mostly governed by the Majorana mass implies that the right-handed neutrinos are Majorana particles, which means they are their own anti particles.\newline
 Interesting to note as well is how these two masses behave under finetuning. It is quite obvious from equation \ref{eq:light_neutrino} that by raising the large mass scale and as a consequence thereof raising the mass of the heavy neutrino the mass of the light neutrinos gets even lower and vice versa, hence the name seesaw mechanism. 
-\section{Leptogenesis and the Shakarov conditions}
-After the necessary expansion of the SM was performed in the previous section, this section will focus on how the right-handed, heavy neutrinos are able to produce a net, non-zero baryon number, that is how the Shakarov conditions can be fullfilled using this exapanded SM. \newline
-The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, right-handed neutrinos introduced above, that is described by the Yukawa interaction in \ref{eq:Yukterm}.The Feynman diagrams for both decay channels are depicted in figure \ref{fig:N-decay}. It can be seen that these decays produce either leptons or anti leptons and depending on the decay rates this can produce a net lepton number.
+\section{Leptogenesis and the Sakharov conditions}
+After the necessary expansion of the SM was performed in the previous section, this section will focus on how the right-handed, heavy neutrinos are able to produce a net, non-zero baryon number, that is how the Sakharov conditions can be fullfilled using this exapanded SM. \newline
+The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, right-handed neutrinos introduced above, that is described by the Yukawa interaction in \ref{eq:Yukterm}.The Feynman diagrams for both decay channels are depicted in figure \ref{fig:N-decay}. The right-handed neutrinos being Majorana particles as a result of the seesaw mechanism they don't preserve lepton number and because of this they can decay into leptons as well as anti leptons, as it can be seen in figure \ref{fig:N-decay}.
 \begin{figure}[H]
 	\begin{equation*}
 	\feynmandiagram [baseline=(d.base), horizontal=d to b] {
-		b -- [scalar] a[label=$\overline{\phi}$],
-		b-- [fermion] c[label=$\ell$],
-		d  [label=N] -- [fermion] b  }; 
+		b -- [scalar, edge label=\(\overline{\phi}\)] a,
+		b-- [fermion, edge label =\(\ell\)] c,
+		d   -- [edge label=N] b}; 
 	\qquad \text{or} \qquad
 	\feynmandiagram [baseline=(d.base), horizontal=d to b] {
-		b -- [scalar] a[label=$\phi$],
-		b-- [anti fermion] c[label=$\overline{\ell}$],
-		d  [label=N] -- [fermion] b  }; 
+		b -- [scalar, edge label = \(\phi\)] a,
+		b-- [anti fermion, edge label=\(\overline{\ell}\)] c,
+		d  --[edge label=N] b  }; 
 	\end{equation*}
 	\caption{Feynman diagrams for the N-decay}
 	\label{fig:N-decay}
@@ -95,4 +95,50 @@ The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, 
 \subsubsection{B violation}
 The B violation in the frame of leptogenesis is achieved in the same way as in direct electorweak baryogenesis via the B+L violating sphaleron processes. Because of the eventually by N decays produced net lepton number this means that the lepton abundance is converted into a baryon abundance by these processes.
 \subsubsection{C and CP violation}
-As in direct baryogenesis C violation is already maximally violated in the SM, so this is also the case in this slightly extended modell.  
+As in direct baryogenesis C violation is already maximally violated SM electroweak interaction, so this is also the case in this slightly extended model.
+The CP violation for the N$_1$ decay however is a bit more complicated, since for it to be calculated one has to take the one-loop Feynman diagrams additional to the tree level decay into account. The interference between these diagramms gives than rise to the CP violation needed for successfull baryogenesis. These one-loop diagrams are depicted in figure \ref{fig:N_loop}.
+\begin{figure}[H]
+	\begin{equation*}
+	\feynmandiagram [baseline=(d.base), horizontal=a to t1] 
+	{
+		
+		a  -- [edge label=\(N_i\)] t1 --[anti fermion,edge label=\(\ell\)] t2 --[edge label=\(N_j\)] t3 -- [scalar,edge label=\(\phi\)]t1, t2 -- [scalar, edge label=\(\phi\)] p2,
+		t3 -- [fermion, edge label=\(\ell\)] p1 ,
+		
+	};
+	\qquad +\qquad
+	\feynmandiagram [baseline=(d.base), horizontal=b to c] 
+	{ 
+		a --[edge label =\(N_i\)]b
+			-- [half left, looseness=1.5, edge label = \(\ell\text{,}\overline{\ell}\)] c
+			-- [scalar, half left, looseness=1.5,edge label = \(\phi\)] b, 
+		c -- [edge label = \(N_j\)]d --[scalar, edge label =\(\phi\)] e,
+		d--[fermion, edge label =\(\ell\)]f
+	
+	};
+	\end{equation*}
+	\caption{One-loop diagrams for the N-decay}
+	\label{fig:N_loop}
+\end{figure}
+\noindent
+By comparing this figure to \cite[Fig. 5.1]{Davidson:2008bu} one sees that in figure \ref{fig:N_loop} one diagramm is missing. This missing diagram hoever doesn't contribute to the CP violation and therefore it was neglected. The distinction between N\textsubscript{i} and N\textsubscript{j} has to be made since the virtual neutrinos trasmissioned during these processes aren't of the same flavour as the neutrino in the initial state. This means that in order for CP to be violated there has to exist at least an extra neutrino next to the lightest one. \newline
+This being said one can calculate the CP asymmetry\cite[pp. 24ff.]{Davidson:2008bu}, which is in general defined as
+\begin{equation}
+	\epsilon=\frac{\Gamma(N_1\rightarrow\overline{\phi}\ell)-\Gamma(N_1\rightarrow\phi\overline{\ell})}{\Gamma(N_1\rightarrow\overline{\phi}\ell)+\Gamma(N_1\rightarrow\phi\overline{\ell})}
+	\label{eq:CP_violation}
+\end{equation}
+by interfering the tree level decay with the one-loop decays. This results in \cite[p. 26]{Davidson:2008bu}
+\begin{equation}
+	\epsilon\gtrsim10^{-6}
+	\label{eq:CP_value}
+\end{equation}
+Although this value is rather small it isn't zero and therefore the CP symmetry is violated by the decay of heavy right-handed Majorana neutrinos. 
+\subsubsection{Deviation from the equilibrium}
+The last condition that has to be met for successfull baryogenesis is that the decay of the heavy neutrinos must occur outside of equilibrium. For high enough temperatures, namely for T $\gtrsim$ M\textsubscript{1}, the decay of the neutrino is in equilibrium with the inverse decay $\phi\ell\rightarrow N$ and no net lepton number can be produced even if the other two conditions hold as shown in sec. 2.1.2. Even if during inflation an abundance of N was produced the lepton asymmetry would washed out by equilibrium processes as soon as the temperature rises up to at least the mass of the heavy neutrino during the reheating phase of the ealrly universe. \newline
+However if the temperature drops below M$_1$ the heavy neutrino inverse decay is exponentially surpressed by a Boltzmann factor because with falling temperature it becomes exponentially more unprobable for a lepton and Higgs to have enough energy to form a heavy neutrino, while the neutrinos themselves can still decay into lepton and Higgs. Because of this the equilibrium density of the neutrinos is also heavily Boltzmann surpressed and if the decay rate is small enough the actual neutrino density can be greater than the equilibrium density and stay greater for an considerable amount of time. This means that decays happening before the actual neutrino density converges to the equilibrium density actually happen outside of equilibrium and a net lepton number can be produced that, because of surpression of inverse decays, won't be washed out and as a consequence thereof will be transformed into a baryon abundance through the B+L violating electroweak sphaleron processes, that will still be active as the heavy neutrino mass at least of order of the upper limit of the temperature range in which sphaleron processes act. \newline
+The requirement for the neutrino decay to be slow enough to sustain its out-of-equilibrium state is the following \cite[p. 30]{Taanila:2008}.
+\begin{equation}
+	\Gamma_D<H
+	\label{eq:out_of_eq}
+\end{equation}
+$\Gamma_D$ denotes the total decay rate of the neutrinos while H is the expansion rate of the universe. This relation is equivalent to the one given in \ref{eq:rate_s_hubble} as a requirement for processes to be out of equilibrium. 

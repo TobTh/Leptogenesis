@@ -1,9 +1,8 @@
-\documentclass[11pt,a4paper,oneside]{report}
+\documentclass[11pt,a4paper,oneside]{scrbook}
 \usepackage[T1]{fontenc}
 \usepackage[headheight=13.6pt]{geometry}
 \geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=30mm, headsep=10mm, footskip=12mm}
 \usepackage[english]{babel}
-\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -18,29 +17,60 @@
 \usepackage{bbm}
 \usepackage{tikz}
 \usepackage{hyperref}
-\usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage[compat=1.1.0]{tikz-feynman}
-%\onehalfspacing
-\title{Leptogenesis: A non-relativistic study}
-\author{Tobias Theil}
-\numberwithin{equation}{section}
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\leftmark}
-\lhead{Leptogenesis: A non-relativistic study}
-\rfoot{Page \thepage}
+\usepackage[automark,headsepline=.2pt]{scrlayer-scrpage} 
 
-\begin{document}
+
+
+\ihead{Leptogenesis: A non-relativistic study}
+\ohead{\rightmark} 
+\chead{} 
+\pagestyle{scrheadings} 
+\automark{chapter} 
+
+
+\numberwithin{equation}{section}
+
+%\onehalfspacing
+
+\titlehead{
+		\begin{minipage}{7.2cm}
+			\begin{flushleft}
+				Technische Universit\"at M\"unchen\\Fakult\"at f\"ur Physik
+			
+			\vspace{-6mm}
+			\hspace{-4mm}
+		\end{flushleft}
+		\end{minipage}
+		\begin{minipage}{7.6cm}
+			\begin{flushright}
+				\includegraphics*{Images/PH}
+				\includegraphics*{Images/tumlogo}
+			\end{flushright}
+		\end{minipage}
+		}
+\subject{Abschlussarbeit im Bachelorstudiengang Physik}
+\title{Leptogenesis: A non-relativistic study}
+\subtitle{Leptogenese: Eine nicht-relativistische Betrachtung}
+\author{Tobias Theil}
+\date{\today}
+\publishers{\begin{flushleft}
+Erstgutachter (Themensteller): \\
+Zweitgutachter:
+	\end{flushleft} }
 	
 
-	\begin{titlepage}
-	\centering
+\begin{document}
+	\frontmatter
 	\maketitle
-	%\includegraphics[scale=.5]{Images/leptogenesis.png}
-	\end{titlepage}
+	\newpage 
+	\thispagestyle{empty}
+	\newpage
+	\setcounter{page}{1}
 	\tableofcontents
 	\newpage
+	\mainmatter
 	\input{Chapter/Introduction.tex}
 	\input{Chapter/Outline_of_baryogenesis.tex}
 	\input{Chapter/Outline_of_leptogenesis.tex}
