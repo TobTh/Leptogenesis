@@ -1,15 +1,19 @@
 \appendix
-\chapter{Appendix}
+\chapter{Appendix A}
 \section{The Yukawa interaction term for right-handed neutrinos}
-\chapter{}
-\section{Calculations}
+\subsection{Feynman rules for the Yukawa interaction}
+\subsection{The tree level decay rate for heavy neutrinos}
+\label{ap:tree_level_decay}
+\chapter{Appendix B}
+\section{Integrating the rate equation over phase space}
+\label{ap:phase_space}
 \begin{equation*}
-(\frac{d}{dt}+3H)n_N=-\Gamma_N(n_N-n_N^{eq})+\underbrace{\Gamma_{N,B-L}n_{B-L}}_\text{negligible}
+\left(\frac{d}{dt}+3H\right)n_N=-\Gamma_N\left(n_N-n_N^{eq}\right)+\underbrace{\Gamma_{N,B-L}n_{B-L}}_\text{negligible}
 \end{equation*}
 phase space integral
 \begin{align*}
-\int (\frac{d}{dt}+3H)f_Nd^3p=-\int\Gamma_N(f_N-f_N^{eq})d^3p\\
-\int (\frac{d}{dt}+3H)f_Np^2dp=-\int\Gamma_N(f_N-f_N^{eq})^2dp
+\int \left(\frac{d}{dt}+3H\right)f_Nd^3p=-\int\Gamma_N\left(f_N-f_N^{eq}\right)d^3p\\
+\int \left(\frac{d}{dt}+3H\right)f_Np^2dp=-\int\Gamma_N\left(f_N-f_N^{eq}\right)^2dp
 \end{align*}
 Using
 \begin{equation*}
@@ -20,45 +24,81 @@ Using
 \end{equation*}
 it follows
 \begin{align*}
-\int (\partial_t-Hp\partial_p)f_Np^2dp&=-\int\Gamma_N(f_N-f_N^{eq})p^2dp\\
-\Rightarrow (\partial_t-Hp\partial_p)f_N&=\Gamma_N(f_N^{eq}-f_N)
+\int \left(\partial_t-Hp\partial_p\right)f_Np^2dp&=-\int\Gamma_N\left(f_N-f_N^{eq}\right)p^2dp\\
+\Rightarrow \left(\partial_t-Hp\partial_p\right)f_N&=\Gamma_N\left(f_N^{eq}-f_N\right)
 \end{align*}
-\newpage
+\section{Detailed calculation of $\Gamma_{B-L}$}
+\label{ap:Gamma_B-L}
+First the rather simple derivation of \ref{eq:distri_diff} shall be displayed here. For the product of two Boltzman factors one has
+\begin{equation*}
+f_\ell^{eq}f_\phi^{eq}=e^{-\frac{E_\ell-\mu_\ell}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}=e^{-\frac{E_N-\mu_\ell-\mu_\phi}{T}}=e^{-\frac{E_N}{T}}e^{\frac{\mu_\ell+\mu_\phi}{T}}
+\end{equation*}
+where the relation E\textsubscript{$\ell$}+E\textsubscript{$\phi$}=E\textsubscript{N} was used. \newline
+Expanding this up to first order in the chemical potential results in
+\begin{equation*}
+f_\ell f_\phi\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_\ell+\mu_\phi}{T}\right)
+\end{equation*}
+Finally putting this togehter for leptons and Higgs particles and using the relation $\mu_X=-\mu_{\bar{X}}$ for the chemical potentials of a particle X and its anti particle X yields the result presented above. 
+\begin{equation*}
+f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}-1-\frac{\mu_{\bar{l}}+\mu_{\bar{\phi}}}{T}\right)=2e^{-\frac{E_N}{T}}\frac{\mu_l+\mu_\phi}{T}
+\end{equation*}
+\newline
+Now, as already explained, in order to relate the chemicial potentials to the density n\textsubscript{B-L} one has to expand the left-hand side of \ref{eq:l-lbar} and \ref{eq:phi-phibar} up to first order in the chemical potentials while using Fermi-Dirac and Bose-Einstein distributions instead of Boltzmann statistics.
+\todo{Faktor 2 klären}
 \begin{align*}
-	n_l-n_{\bar{l}}&=\int\frac{d^3p}{(2\pi)^3}f_l-f_{\bar{l}}=\\
-	&=\frac{1}{(2\pi)^3}\int (f_l-f_{\bar{l}})p^2\:dp\:dcos\theta \:d\phi=\\
-	&=\frac{1}{2\pi^2}\int\left(f_l(\mu_l=0)+\frac{e^{E/T}}{(e^{E/T}+1)^2T}\mu_l-f_{\bar{l}}(\mu_{\bar{l}}=0)-\frac{e^{E/T}}{(e^{E/T}+1)^2T}\mu_{\bar{l}}\right)p^2\:dp=\\
-	&=\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{(e^{E/T}+1)^2T}\mu_l\:p^2\:dp=\\
-	&=\frac{\mu_l}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{(e^{E/T}+1)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
-	&=\frac{\mu_lT^2}{6}
+	n_\ell-n_{\bar{\ell}}&=\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
+	&=\frac{1}{\left(2\pi\right)^3}\int \left(f_\ell-f_{\bar{\ell}}\right)p^2\:dp\:dcos\theta \:d\phi=\\
+	&=\frac{1}{2\pi^2}\int\left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2\:dp=\\
+	&=\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell:p^2\:dp=\\
+	&=\frac{\mu_\ell}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
+	&=\frac{\mu_\ell T^2}{6}
 \end{align*}
 Analogous calculation for the Higgs yields:
 \begin{align*}
 	n_\phi-n_{\bar{\phi}}=\frac{\mu_lT^2}{3}
 \end{align*}
-Solving
+Solving \ref{eq:l-lbar} and \ref{eq:phi-phibar} for the chemical potentials results in
+\todo{Minus klären}
 \begin{align*}
-	n_l-n_{\bar{l}}=-c_ln_{B-L}\\
-	n_\phi-n_{\bar{\phi}}=-c_\phi n_{B-L}
+	\mu_l=\frac{3c_l}{T^2}n_{B-L}\\
+	\mu_\phi=\frac{3c_l}{2T^2}n_{B-L}
 \end{align*}
-for the chemical potentials yields
+Plugging all these results into \ref{eq:Gamma_B-L} one gets the following relation
 \begin{align*}
-	\mu_l=-\frac{6c_l}{T^2}n_{B-L}\neq\frac{3c_l}{T^2}n_{B-L}\\
-	\mu_\phi=-\frac{3c_\phi}{T^2}n_{B-L}\neq\frac{3c_l}{2T^2}n_{B-L}
+	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int\prod_{a=N,\ell,\phi}\frac{d^3p_a}{E_a}\delta^4\left(p_\ell+p_\phi-p_N\right)e^{-\frac{E_N}{T}}=\\
+	&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}}\left(\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta^4\left(p_\ell+p_\phi-p_N\right)\right)
 \end{align*}
-\newpage
+For the sake of minimizing the writing of redundant coefficients we first will evaluate the two body decay phase space in the parentheses above. For simplification the frame of reference used will be the rest frame of the neutrino $\vec{p}_N=0$.
+\begin{align*}
+\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta^4\left(p_\ell+p_\phi-p_N\right)&=\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
+&=\int\frac{d^3p}{E_\ell}\frac{1}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)
+\end{align*}
+From the first to the second line the using the delta distribution for the particle momenta yields $\vec{p}\equiv\vec{p}_\ell=-\vec{p}_\phi$. Also by introducing E$\equiv=E_\ell+E_\phi$ and using spherical coordinates and the following change of integration variables
+\begin{align*}
+	E=E_\ell+E_\phi=\sqrt{M_\ell+p^2}+\sqrt{M_\phi+p^2} \Longrightarrow \frac{dE}{dp}=\frac{p}{E_\ell}+\frac{p}{E_\phi} \\
+	\Longrightarrow dp=\left(\frac{p}{E_l}+\frac{p}{E_\phi}\right)^{-1}dE=\frac{E_\ell E_\phi}{pE_\ell+pE_\phi}dE=\frac{E_\ell E_\phi}{pE}dE
+\end{align*}
+one gets
+\begin{align*}
+	4\pi\int \frac{p^2}{pE}\delta\left(E-M_N\right)dE=4\pi\int \frac{p}{E}\delta\left(E-M_N\right)dE=4\pi\frac{p}{M_N}=2\pi \frac{M_N}{M_N}=2\pi
+\end{align*}
+The second to last step uses the delta distribution and the resulting relation E=M\textsubscript{N} while during the last step uses the fact that leptons and Higgs are relativistic and therefore their Energie is E $\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E $\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
+\begin{align*}
+	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}} \cdot 2\pi\frac{E_N}{M_N}=\\
+	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int_0^\infty \frac{dp_N}{E_N}\:p_N^2e^{-\frac{E_N}{T}}
+\end{align*}
+And with the final change of integration variables 
+\begin{align*}
+	x=\sqrt{\frac{p_N^2}{M_N^2}+1}\Longrightarrow p_N=\sqrt{x^2-1}M_N \Longrightarrow dp_N=\frac{x}{\sqrt{x^2-1}}M_N
+\end{align*}
+one gets 
+\begin{align*}
+	\Gamma_{B-L}&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{1}{T^3}\Gamma_0\int_{1}^{\infty}dx\: \frac{\left(x^2-1 \right)M_N^2}{M_N\cdot x}\cdot \frac{x}{\sqrt{x^2-1}}\cdot M_N e^{-zx}=\\
+	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)z^3\Gamma_0\int_{1}^{\infty}dx\: \sqrt{x^2-1}e^{-zx}=\\
+	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)z^2K_1(z)\Gamma_0
+\end{align*}
+where in the last step the definition of the modified Bessel function of the second kind was used
 \begin{equation*}
-	\Gamma_{B-L}n_{B-L}=\int\prod_{a=N,l,\phi}\frac{d^3p_a}{2E_a(2\pi)^3}(2\pi^4)\delta(p_l+p_\phi-p_N)(	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}})\sum|M_0|^2
+	K_n(z)=\frac{\sqrt{\pi}}{\Gamma\left(n-\frac{1}{2}\right)}\left(\frac{1}{2}z\right)^n\int_{1}^{\infty}dx\:\left(x^2-1\right)^{n-\frac{1}{2}}e^{-zx}
 \end{equation*}
-\newline
-\begin{equation*}
-	f_l^{eq}f_\phi^{eq}=e^{-\frac{E_l-\mu_l}{T}}e^{-\frac{E_\phi-\mu_\phi}{T}}\overset{E_l+E_\phi=E_N}{=}e^{-\frac{E_N-\mu_l-\mu_\phi}{T}}=e^{-\frac{E_N}{T}}e^{\frac{\mu_l+\mu_\phi}{T}}
-\end{equation*}
-\begin{equation*}
-	f_lf_\phi\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}\right)
-\end{equation*}
-\begin{equation*}
-	f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}-1-\frac{\mu_{\bar{l}}+\mu_{\bar{\phi}}}{T}\right)\overset{\mu_X=-\mu_{\bar{X}}}{=}2e^{-\frac{E_N}{T}}\frac{\mu_l+\mu_\phi}{T}
-\end{equation*}
-
-\newpage
+With $\Gamma(n)$ the gamma function as generalization of the factorial. 

@@ -18,10 +18,16 @@
 \usepackage{tikz}
 \usepackage{hyperref}
 \usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{todonotes}
+\usepackage{ifthen}
+\usepackage{xkeyval}
+\usepackage{calc}
+
 \usepackage[compat=1.1.0]{tikz-feynman}
 \usepackage[automark,headsepline=.2pt]{scrlayer-scrpage} 
 
-
+\newcommand\myworries[1]{\textcolor{red}{#1}}
 
 \ihead{Leptogenesis: A non-relativistic study}
 \ohead{\rightmark} 
@@ -30,7 +36,7 @@
 \automark{chapter} 
 
 
-\numberwithin{equation}{section}
+\numberwithin{equation}{chapter}
 
 %\onehalfspacing
 

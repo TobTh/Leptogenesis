@@ -12,7 +12,12 @@
 \BOOKMARK [1][-]{section.3.2}{The seesaw Mechanism}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.3}{Leptogenesis and the Sakharov conditions}{chapter.3}% 13
 \BOOKMARK [0][-]{chapter.4}{Analytic approximations and calculations}{}% 14
-\BOOKMARK [0][-]{chapter.5}{Summary}{}% 15
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 16
-\BOOKMARK [1][-]{section.A.1}{The Yukawa interaction term for right-handed neutrinos}{appendix.A}% 17
-\BOOKMARK [1][-]{section.B.1}{Calculations}{appendix.A}% 18
+\BOOKMARK [1][-]{section.4.1}{Rate equations for leptogenesis}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{Summary}{}% 16
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 17
+\BOOKMARK [1][-]{section.A.1}{The Yukawa interaction term for right-handed neutrinos}{appendix.A}% 18
+\BOOKMARK [2][-]{subsection.A.1.1}{Feynman rules for the Yukawa interaction}{section.A.1}% 19
+\BOOKMARK [2][-]{subsection.A.1.2}{The tree level decay rate for heavy neutrinos}{section.A.1}% 20
+\BOOKMARK [0][-]{appendix.B}{Appendix B}{}% 21
+\BOOKMARK [1][-]{section.B.1}{Integrating the rate equation over phase space}{appendix.B}% 22
+\BOOKMARK [1][-]{section.B.2}{Detailed calculation of B-L}{appendix.B}% 23
