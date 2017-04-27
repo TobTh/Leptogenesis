@@ -32,6 +32,7 @@ One might now notice that equation \ref{eq:boltzmann} differs from equation 4 in
 \Gamma_N=\Gamma_0=\frac{|h_{11}|^2M_N}{8\pi}
 \label{eq:Gamma_N}
 \end{equation}
+\todo{Gamma B-L,N erklären}
 Since the coefficient $\Gamma_{B-L}$ refers to the washout of the B-L asymmetry it arises from the inverse decay l$\phi\rightarrow$ N and can be calculated via \todo{Integralherleitung klären}
 \begin{equation}
 \Gamma_{B-L}n_{B-L}=\int\prod_{a=N,\ell,\phi}\frac{d^3p_a}{2E_a(2\pi)^3}(2\pi^4)\delta(p_\ell+p_\phi-p_N)(	f_\ell f_\phi-f_{\bar{\ell}}f_{\bar{\phi}})\sum|M_0|^2
@@ -49,7 +50,7 @@ As mentioned in \cite[p. 7]{Bodeker:2013qaa} the chemical potentials are proport
 	n_\phi-n_{\bar{\phi}}=-c_\phi n_{B-L}
 	\label{eq:phi-phibar}
 \end{align}
-Now by expanding the number distribution for leptons and Higgs and their respective anti particles in the chemical potentials up to first order one can finally put the chemical potential and n$_{B-L}$ in relation to each other. \todo{Fermi, Bose Verteilung klären}
+Now by expanding the number distribution for leptons and Higgs and their respective anti particles in the chemical potentials up to first order one can finally put the chemical potential and n$_{B-L}$ in relation to each other. It is important to note that one has to use the Fermi-Dirac- and Bose-Einstein distribution for leptons and Higgses respectively. The reason for this is that these two particle species are in equilibrium at the temperature T. Because of this and the fact that they are relativistic particles, their kinetic energy and therefore momenta are of order T and quantum effects can't be neglected. On the other hand it is possible to use Boltzmann statistics for leptons and Higgs bosons above since particles taking part in the production of a heavy neutrions having energies or momenta of order $\frac{M\textsubscript{N}}{2}\gg T$ and quantum effects can safely be neglected in this case. Finally using quantum statistics results in
 \begin{align}
 \mu_\ell=\frac{3c_l}{T^2}n_{B-L}
 \label{eq:chempot_l}
@@ -70,11 +71,36 @@ what can be seen as an unitless measure for time, since the temperature of the u
 The exact derivation of these results can be looked up in appendix \ref{ap:Gamma_B-L}. \newline
 Using the relations given in \ref{eq:rate_g_hubble} and \ref{eq:rate_s_hubble} it is usefull to define the so called wash out factor K as follows
 \begin{equation}
-	K\equiv\left.\frac{\Gamma_0}{H}\right|_{T=M_N}
+	K\equiv\left.\frac{\Gamma_0}{H}\right|_{T=M\textsubscript{N}}
 \end{equation}
+Using this and equation 3 of \cite{Buchmuller:2004nz}
+\begin{equation}
+	H(z)=\left.H\right|\textsubscript{T=M\textsubscript{N}}\cdot \frac{1}{z^2}
+	\label{eq:H_von_z}
+\end{equation}
+one can now compare the rates calculated above to the Hubble constant H.\newline
+For T $\lesssim$ M\textsubscript{N} one can approximate $\Gamma\textsubscript{N}$ as $\Gamma_0$ what results in 
+\begin{equation}
+	\frac{\Gamma_\textsubscript{N}}{H}\simeq\frac{\Gamma_0}{\frac{1}{z^2}\left.H\right|\textsubscript{T=M\textsubscript{N}}}=z^2K
+	\label{eq:Gamma_N_H}
+\end{equation}
+Since z increases with time, equation \ref{eq:Gamma_N_H} clearly shows that the rate with which the neutrino number density approaches its equilibrium value gets more and more greater than the expansion of the universe and therefore the deviation from equilibrium vanishes over time. \newline
+Looking at \ref{eq:Gamma_B-l_result} one can easily see that for T $\sim$ M\textsubscript{N}, or z $\approx$ 1, $\Gamma\textsubscript{B-L}$ is of the same order as $\Gamma\textsubscript{N}$, since K$_1$(1)=$\mathcal{O}$(1). On the other hand however for really low temperatures, so T $\ll$ M\textsubscript{arg} or z very big, one can see the quantitative behaviour of $\Gamma\textsubscript{B-L}$ by using the asymptotic expansion of the modified Bessel function given by
+\begin{equation*}
+	K\textsubscript{n}(z)\sim\sqrt{\frac{\pi}{2z}}e^{-z}\sum_{k=0}^{\infty}\frac{a\textsubscript{k}(n)}{z^k}
+\end{equation*}
+with a\textsubscript{k}(n) some coefficients that don't are of any interest for this matter. Now using this and dropping all but the first term of the sum above, what is justified because z is so big, one gets
+\begin{equation}
+	\frac{\Gamma\textsubscript{B-L}}{H}\sim\sqrt{\frac{1}{z}}e^{-z}z^2\frac{\Gamma_0}{\frac{1}{z^2}\left.H\right|\textsubscript{T=M\textsubscript{N}}}=z^\frac{7}{2}e^{-z}K
+	\label{eq:Gamma_B-L_H}
+\end{equation}
+So because $\Gamma\textsubscript{N}$ increases with z for z $\approx$ 1 so does $\Gamma\textsubscript{B-L}$. However as equation \ref{eq:Gamma_B-l_result} suggests, $\Gamma\textsubscript{B-L}$ gets more and more suppressed by the exponential factor for increasing z and therefore has to have some maximum. Additionally for sufficiently low temperatures, like the extremely low 2.7 K of the present universe, the washouth rate $\Gamma\textsubscript{B-L}$ is effectively zero and any symmetry produced in earlier times is frozen out. 
+All this can be seen in figure \ref{fig:rates} where the previously calculated ratios are plotted against z and are normalized to the washout factor K.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Images/rates}
-	\caption{}
+	\includegraphics[width=0.8\linewidth]{Images/rates}
+	\caption{The ratios $\Gamma\textsubscript{N}$/H and $\Gamma\textsubscript{B-L}$/H plotted against H}
 	\label{fig:rates}
 \end{figure}
+\section{Relativistic corections}
+\section{Radiative corrections}

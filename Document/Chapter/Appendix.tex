@@ -43,19 +43,19 @@ f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+
 \end{equation*}
 \newline
 Now, as already explained, in order to relate the chemicial potentials to the density n\textsubscript{B-L} one has to expand the left-hand side of \ref{eq:l-lbar} and \ref{eq:phi-phibar} up to first order in the chemical potentials while using Fermi-Dirac and Bose-Einstein distributions instead of Boltzmann statistics.
-\todo{Faktor 2 klären}
 \begin{align*}
-	n_\ell-n_{\bar{\ell}}&=\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
-	&=\frac{1}{\left(2\pi\right)^3}\int \left(f_\ell-f_{\bar{\ell}}\right)p^2\:dp\:dcos\theta \:d\phi=\\
-	&=\frac{1}{2\pi^2}\int\left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2\:dp=\\
-	&=\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell:p^2\:dp=\\
-	&=\frac{\mu_\ell}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
-	&=\frac{\mu_\ell T^2}{6}
+	n_\ell-n_{\bar{\ell}}&=g\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
+	&=g_\ell\frac{1}{\left(2\pi\right)^3}\int \left(f_\ell-f_{\bar{\ell}}\right)p^2\:dp\:dcos\theta \:d\phi=\\
+	&=g_\ell\frac{1}{2\pi^2}\int\left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2\:dp=\\
+	&=g_\ell\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell:p^2\:dp=\\
+	&=g_\ell\frac{\mu_\ell}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
+	&=\frac{\mu_\ell T^2}{3}
 \end{align*}
 Analogous calculation for the Higgs yields:
 \begin{align*}
-	n_\phi-n_{\bar{\phi}}=\frac{\mu_lT^2}{3}
+	n_\phi-n_{\bar{\phi}}=\frac{2\mu_\phi T^2}{3}
 \end{align*}
+Here the degrees of freedom g$_\ell$=2=g$_\phi$ were used for leptons as well as for the Higgs. \newline
 Solving \ref{eq:l-lbar} and \ref{eq:phi-phibar} for the chemical potentials results in
 \todo{Minus klären}
 \begin{align*}
@@ -72,7 +72,7 @@ For the sake of minimizing the writing of redundant coefficients we first will e
 \int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta^4\left(p_\ell+p_\phi-p_N\right)&=\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
 &=\int\frac{d^3p}{E_\ell}\frac{1}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)
 \end{align*}
-From the first to the second line the using the delta distribution for the particle momenta yields $\vec{p}\equiv\vec{p}_\ell=-\vec{p}_\phi$. Also by introducing E$\equiv=E_\ell+E_\phi$ and using spherical coordinates and the following change of integration variables
+From the first to the second line the using the delta distribution for the particle momenta yields $\vec{p}\equiv\vec{p}_\ell=-\vec{p}_\phi$. Also by introducing E $\equiv E_\ell+E_\phi$ and using spherical coordinates and the following change of integration variables
 \begin{align*}
 	E=E_\ell+E_\phi=\sqrt{M_\ell+p^2}+\sqrt{M_\phi+p^2} \Longrightarrow \frac{dE}{dp}=\frac{p}{E_\ell}+\frac{p}{E_\phi} \\
 	\Longrightarrow dp=\left(\frac{p}{E_l}+\frac{p}{E_\phi}\right)^{-1}dE=\frac{E_\ell E_\phi}{pE_\ell+pE_\phi}dE=\frac{E_\ell E_\phi}{pE}dE

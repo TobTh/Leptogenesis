@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.23)  25 APR 2017 11:05
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.23)  27 APR 2017 19:47
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -1173,13 +1173,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Images/PH.pdf, id=95, 29.8716pt x 29.8716pt>
+<Images/PH.pdf, id=103, 29.8716pt x 29.8716pt>
 File: Images/PH.pdf Graphic file (type pdf)
  <use Images/PH.pdf>
 Package luatex.def Info: Images/PH.pdf used on input line 73.
 (luatex.def)             Requested size: 29.8715pt x 29.8715pt.
 
-<Images/tumlogo.pdf, id=97, 53.24893pt x 28.45631pt>
+<Images/tumlogo.pdf, id=105, 53.24893pt x 28.45631pt>
 File: Images/tumlogo.pdf Graphic file (type pdf)
  <use Images/tumlogo.pdf>
 Package luatex.def Info: Images/tumlogo.pdf used on input line 73.
@@ -1264,18 +1264,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
-[7] [8] <Images/Higgs1.pdf, id=256, 444.66125pt x 235.88126pt>
+[7] [8] <Images/Higgs1.pdf, id=266, 930.47626pt x 457.71pt>
 File: Images/Higgs1.pdf Graphic file (type pdf)
 
 <use Images/Higgs1.pdf>
 Package luatex.def Info: Images/Higgs1.pdf used on input line 212.
-(luatex.def)             Requested size: 223.07211pt x 118.33264pt.
- <Images/Higgs2.pdf, id=257, 444.66125pt x 235.88126pt>
+(luatex.def)             Requested size: 223.07211pt x 109.72693pt.
+ <Images/Higgs2.pdf, id=267, 335.2525pt x 164.615pt>
 File: Images/Higgs2.pdf Graphic file (type pdf)
 
 <use Images/Higgs2.pdf>
 Package luatex.def Info: Images/Higgs2.pdf used on input line 217.
-(luatex.def)             Requested size: 223.07211pt x 118.33264pt.
+(luatex.def)             Requested size: 223.07211pt x 109.5329pt.
  [9<./Images/Higgs1.pdf><./Images/Higgs2.pdf>])
 (./Chapter/Outline_of_leptogenesis.tex [10]
 chapter 3.
@@ -1328,7 +1328,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.111 	}
+l.112 	}
       ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1345,7 +1345,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.121 	}
+l.122 	}
       ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1358,20 +1358,24 @@ chapter 4.
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 ne 35.
- <Images/rates.pdf, id=384, 553.06625pt x 239.89626pt>
+
+
+LaTeX Warning: Marginpar on page 17 moved.
+
+[17] <Images/rates.pdf, id=416, 1253.68375pt x 465.74pt>
 File: Images/rates.pdf Graphic file (type pdf)
 
 <use Images/rates.pdf>
-Package luatex.def Info: Images/rates.pdf used on input line 77.
-(luatex.def)             Requested size: 318.66948pt x 138.2248pt.
-) (./Chapter/Summary.tex [17] [18<./Images/rates.pdf>]
+Package luatex.def Info: Images/rates.pdf used on input line 101.
+(luatex.def)             Requested size: 364.19667pt x 135.29565pt.
+ [18]) (./Chapter/Summary.tex [19<./Images/rates.pdf>]
 chapter 5.
-) (./Chapter/Appendix.tex [19
+) (./Chapter/Appendix.tex [20
 
 
 ]
 chapter A.
-[20
+[21
 
 
 ]
@@ -1392,10 +1396,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 29.
 
-[21
+[22
 
 
-] [22]) (./Chapter/References.tex [23]
+] [23]) (./Chapter/References.tex [24]
 Underfull \hbox (badness 3078) in paragraph at lines 35--39
 []\T1/cmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
 Physics. (2008, Novem-
@@ -1426,7 +1430,7 @@ o-ge-n-e-sis\T1/cmr/m/n/10.95 ; Phys. Rept. \T1/cmr/bx/n/10.95 466 \T1/cmr/m/n/
 10.95 (2008) 105
  []
 
-) [24
+) [25
 
 
 ]
@@ -1436,19 +1440,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: C0F2B81818AAFFF53190746B70F2F439;1565.
+(rerunfilecheck)             Checksum: A4B23FAE16938ED514F3FCB064E18C4D;1703.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28283 strings out of 495119
+ 28288 strings out of 495119
  100000,953878 words of node,token memory allocated
- 15367 words of node memory still in use:
-   160 hlist, 20 vlist, 2 rule, 12 disc, 12 local_par, 1549 glue, 11 kern, 24 pe
-nalty, 174 glyph, 48 glue_spec, 9 write, 8 save_pos, 380 pdf_literal, 3 pdf_acti
-on nodes
-   avail lists: 1:8,2:42,3:309,4:80,5:323,6:4995,7:933,8:103,9:894,10:23,11:413
- 30543 multiletter control sequences out of 65536+600000
+ 14086 words of node memory still in use:
+   121 hlist, 16 vlist, 2 rule, 12 disc, 9 local_par, 1507 glue, 5 kern, 19 pena
+lty, 134 glyph, 48 glue_spec, 7 write, 6 save_pos, 285 pdf_literal, 3 pdf_action
+ nodes
+   avail lists: 1:8,2:42,3:417,4:84,5:329,6:5038,7:1037,8:103,9:904,10:23,11:413
+
+ 30542 multiletter control sequences out of 65536+600000
  77 fonts using 3194567 bytes
  64i,20n,98p,8514b,1694s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
@@ -1478,10 +1483,10 @@ r/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
 fsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx
 2074.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti109
 5.pfb>
-Output written on Leptogenesis.pdf (26 pages, 520511 bytes).
+Output written on Leptogenesis.pdf (27 pages, 577673 bytes).
 
-PDF statistics: 563 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 131072)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 588 PDF objects out of 1000 (max. 8388607)
+ 517 compressed objects within 6 object streams
+ 138 named destinations out of 1000 (max. 131072)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
