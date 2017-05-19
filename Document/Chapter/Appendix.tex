@@ -1,29 +1,182 @@
 \appendix
 \chapter{Appendix A}
 \section{Feynman rules for the Yukawa interaction}
+In quantum field theories without Majorana particles the Feynman rules for evaluating Feynman diagrams are acquired from the elements of the so called scattering matrix S, given as \cite[Eq. 3.26]{Tong:2006}, given as
+\begin{equation}
+\lim\limits_{t_\pm\rightarrow\pm\infty}\braket{f|U(t_+,t_-)|i}=\braket{f|S|i}
+\label{eq:s-matrix}
+\end{equation}
+U(U(t$_+$,t$_-$)) is an unitary time evolution operator explicitly given by Dyson's formula
+\begin{equation*}
+	U(t_+,t_-)=T\exp\left(-i\int_{t_-}^{t_+}dt\:H_{int}(t)\right)
+\end{equation*}
+In the following $\psi_{x_i}\equiv\psi(x_i)$ will describe an arbitrary fermionic Dirac, so one can write the time ordering symbol T above in the following way
+\begin{equation*}
+	T\psi(x)\psi(y)=\left\{\begin{array}{c}\psi(x)\psi(y)\:\:\:\:\:\:\:\:\:\:\text{if } x^0>y^0\\\pm\psi(y)\psi(x)\:\:\:\:\:\:\:\text{if }x^0<y^0\end{array}\right.
+	\end{equation*}
+The sign in the lower line depends on if the number of permutations of anticommutating fermion spinors is odd or even. \newline
+Using equation \ref{eq:Yukterm} for general fields $\psi$ and $\phi$, the interaction Hamiltonian can be given as
+\begin{equation*}
+	H_{int}=g\int d^3x \overline{\psi}\psi\phi
+\end{equation*}
+with g the coupling constant.\newline
+Interesting to note is that, given g is small, by expanding the time evolution operator above one can use quantum mechanical pertubation theory up to an arbitratry order. \newline
+Now in order to transform the matrix element into a purely algebraic expression, one first has to reorder the fields $\psi_1$ to $\psi_n$ in a way that the time order symbol T is not needed any more. This can be done using the so called Wick's theorem
+\begin{equation*}
+	T\left[\psi_1\psi_2\cdots\psi_n\right]=:\psi_1\psi_2\cdots\psi_n+\text{all possible contractions}:
+\end{equation*}
+The colon notation simply means that the field operators are normally ordered, meaning all creation operators are on the left side of a product, while the annihilation operators are on the right. The exact mathematical expression of the contraction of two field is not of importance here, but can be looked up for example in section 4.2 of \cite{Kopp:2016}. On the other hand the notation and the final result of such a contraction are vital for the following discussion.
+\begin{equation*}
+\text{Contraction of $\psi$ and $\overline{\psi}$}=
+\contraction{}{\psi}{(x)}{\bar{\psi}}
+\psi(x)\overline{\psi}(y)=\braket{0|T[\psi(x)\overline{\psi}(y)]|0}\rightarrow S_F(p)
+\end{equation*}
+with S$_F$(p) the fermionic Feynman propagator
+\begin{equation*}
+	S_F(p)=\frac{\left(\slashed p+m\right)}{p^2+m^2+i\epsilon}
+\end{equation*}
+Now, in order to illustrate what the term `all possible contractions' in the Wick theorem above means, this theorem will be applied to a time ordered product of two barred and two unbarred fields will explictily be given
+\begin{align*}
+		T\left[\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4\right]=\:
+		:&\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{}{\psi}{{}_1}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{}{\psi}{\psi_2{}_3}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{}{\psi}{\psi_2\psi_3{}_4}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{\psi_1}{\psi}{{}_1}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\\
+		+\:\contraction{\psi_1}{\psi}{\psi_2{}_3}{\psi}&\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{\psi_1\psi_2}{\psi}{{}_4}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{}{\psi}{{}_1}{\bar{\psi}}\contraction{\psi_1\psi_2}{\psi}{{}_3}{\bar{\psi}}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction{}{\psi}{{}_1\psi_2}{\psi}\contraction[2ex]{\psi_1}{\psi}{{}_2\psi_3}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+
+		\contraction[2ex]{}{\psi}{{}_1\psi_2\psi_3}{\psi}\contraction{\psi_1}{\psi}{{}_2}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4:\:=\\
+		=\::&\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\contraction{}{\psi}{{}_1}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\contraction{}{\psi}{\psi_2\psi_3{}_4}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\contraction{\psi_1}{\psi}{{}_1}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\contraction{\psi_1\psi_2}{\psi}{{}_4}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\\
+		+\:\contraction{}{\psi}{{}_1}{\bar{\psi}}\contraction{\psi_1\psi_2}{\psi}{{}_3}{\bar{\psi}}&\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4+\contraction[2ex]{}{\psi}{{}_1\psi_2\psi_3}{\psi}\contraction{\psi_1}{\psi}{{}_2}{\psi}\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4:
+\end{align*}
+In the last step the relations
+\begin{align}
+	\contraction{}{\overline{\psi}}{(x)}{\bar{\psi}}
+	\overline{{\psi}}(x)\overline{\psi}(y)=0
+	\label{eq:selfcontraction1}
+	\\
+	\contraction{}{\psi}{(x)}{\psi}
+	\psi(x)\psi(y)=0
+	\label{eq:selfcontraction2}
+\end{align}
+were used, having the effect that conctracted field are always adjacend to each other in a sense, that to conctraction symbols do not intersect each other.\newline
+So in order to apply Wicks theorem one has to basically connect two fields pairwise until all possible contractions are performed. \newline
+The next important step ist do note that only terms with no uncontracted fields contribute to the corellation function above. In the previous example this means that only the last three terms have to be taken into account in order to obtain the corresponding Feynman rules. \newline
+Until now only internal contractions, so contractions of two field operators resulting in the internal propagators, where considered. In order to also take the external, so incoming and outgoing, particles into account one has to take a closer look at the initial and final states $\ket{i}$ and $\bra{f}$. Because in general these states are not just the vacuum, but (multi-)particle states they must consist of creation and anihilation operators acting on the vacuum state, causing contractions of such operators and the fields to arise. Asuming that the particles are not plane waves but rather localized wave packages one can write the states $\ket{i}$ and $\bra{f}$ as\cite{Kopp:2016}
+\begin{align*}
+\ket{i}=a_1^\dagger a_2^\dagger \cdots b_{n-1}^\dagger b_n^\dagger \ket{0}
+\\
+\bra{f}=\bra{0}a_1 a_2 \cdots b_{n-1}b_n
+\end{align*}
+with the annihilation operators $a_i,b_i$ and the creation operators $a_i^\dagger,b_i^\dagger$ for particles and antiparticles, respectively. The subsript i is short for p$_i$, the particle momentum. In this notations one distinct creation or annihiliation operator can appear twice if two particle with the same momentum are created or destroyed. \newline
+Using this and equation \ref{eq:s-matrix}, for a scattering process with a m-particle initial state and a n-particle final state, this results in the following matrix element \cite[Eq. 2.2]{Denner:1992vza}
+\begin{equation}
+\left<0\left|a_1 a_2 \cdots  b_{n-1} b_n T\left[\left(\bar{\psi}\Gamma\psi\right)\cdots(\bar{\psi}\Gamma\psi\right)]a_{n+1}^\dagger a_{n+2}^\dagger \cdots  b_{m-1}^\dagger b_m^\dagger\right|0\right>
+\label{eq:matrix_element}
+\end{equation}
+Here the exponential function appearing in the relation above was expanded and only some arbritrary order was chosen, in order to express how the Feynman rules are obtained.\newline
+In analogy to the notation in Ref.\cite{Denner:1992vza} $\Gamma$ describes some arbitrary fermionic interaction
+\begin{equation*}
+	\bar{\psi}\Gamma\psi=g^i_{abc}\bar{\psi}_a\Gamma_i\psi_b\phi_c
+\end{equation*}
+with $\Gamma_i=1,i\gamma_5,\gamma_\mu\gamma_5,\gamma_\mu,\sigma_{\mu\nu}$, but for the next discussion $\Gamma_i=1$ will be assumed simply for the sake of clarity. \newline
+Applying Wick's Theorem to this new matrix element not only results in the already known propagator terms, but because of the contractions of the fields directly with the creation and annihilation operators one also gets \cite[p. 471]{Denner:1992vza}
+\begin{align*}
+		\bcontraction{}{\psi}{(x)}{a}\psi(x) a_i^\dagger(p)=\braket{0|\psi(x) a_i^\dagger(p)|0}&\longrightarrow u(p) \text{ incoming particle }\\
+		\bcontraction{}{a}{{}_i(p)}{\bar{\psi}}a_i(p)\bar{\psi}(x)=\braket{0|a_i(p)\bar{\psi}(x)|0}&\longrightarrow \bar{u}(p) \text{ outgoing particle }\\
+		\bcontraction{}{\bar{\psi}}{(x)}{b}\bar{\psi}(x) b_i^\dagger(p)=\braket{0|\bar{\psi}(x) b_i^\dagger(p)|0}&\longrightarrow \bar{v}(p)\text{ incoming antiparticle }\\
+		\bcontraction{}{b}{{}_i(p)}{\psi}b_i(p)\bar{\psi}(x)=\braket{0|b_i(p)\psi(x)|0}&\longrightarrow v(p)\text{ outgoing antiparticle }
+\end{align*}
+Here u, v and their barred versions describe the incoming or outgoing (anti-)particles as seen above, but their exact mathematical expression is of no greater interest here and will therefore not be given. \newline
+Shortly summarized the previous discussion shows that, for Dirac particles, using the matrix element \ref{eq:matrix_element} one cannot only determine the internal propagators needed in most processes but also the spinors of incoming and outgoing particles. So a full set of Feynman rules,except for internal,which will not be used, and external scalars,which is trivialy 1, was obtained and can directly be used for calculating the scattering matrix elements for various processes. \newline
+However, because the scenario of leptogenesis requires Majorana neutrinos at leas the Feynman rules for exactly this neutrino have to be reiterated. The main difference in obtaining the Feynman rules for Majorana particles in comparison to Dirac particles is that the relations \ref{eq:selfcontraction1} and \ref{eq:selfcontraction2} do no longer hold and therefore contractions of fields not adjacent to each other are possible. \newline
+This problem can be solved by introducing the charge-conjugated particle 
+\begin{align*}
+	\tilde{\psi}&=C\bar{\psi}^T\\
+	\bar{\tilde{\psi}}&=-\psi^T C^{-1}
+\end{align*}
+where C is the charge conjugation operator. The interaction term above then becomes the reversed one
+\begin{equation*}
+		\bar{\psi}\Gamma\psi=g^i_{abc}\bar{\psi}_a\Gamma_i\psi_b\phi_c=(-1)g^i_{abc}\psi_b^T\Gamma_i^T\bar{\psi}_a^T\phi_c=g^i_{abc}\bar{\tilde{\psi}}_aC\Gamma_i^TC^{-1}\tilde{\psi}_b\phi_c=g^i_{abc}\bar{\tilde{\psi}}_a\eta_i\Gamma_i\tilde{\psi}_b\phi_c=:\bar{\tilde{\psi}}\Gamma'\tilde{\psi}
+\end{equation*}
+with the reversed fermion interaction
+\begin{equation*}
+	\Gamma'=C\Gamma C^{-1}
+\end{equation*}
+In additon the relation
+\begin{equation*}
+	C\Gamma_i C^{-1}=\eta_i\Gamma_i
+\end{equation*}
+with 
+\begin{equation*}
+	\eta_i=\left\{\begin{array}{c}+1\:\:\:\:\:\:\:\:\:\:\text{for } 1,i\gamma_5,\gamma_\mu\gamma_5\\-1\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:d\text{for }\gamma_\mu,\sigma_{\mu\nu}\end{array}\right.
+\end{equation*}
+Because for Majorana fermions $\tilde{\psi}=\psi$, it is rather easy to notice that the vertex term and the reversed vertex term are the same, $\Gamma'=\Gamma$. \newline
+How this untangles intersecting contractions will be shown exemplarily using the following contraction.
+\begin{equation*}
+	\contraction{}{\bar{\psi}}{{_a\psi_b\:\bar{\psi}_a\psi_b\:\bar{\psi}_a}}{\psi}
+	\bcontraction[2ex]{\bar{\psi}_a}{\psi}{{}_b\:\bar{\psi}_a}{\psi}
+	\bcontraction{\bar{\psi}_a\psi_b\:}{\bar{\psi}}{{}_a\psi_b\:}{\bar{\psi}}
+	\bar{\psi}_a\psi_b\:\bar{\psi}_a\psi_b\:\bar{\psi}_a\psi_b
+\end{equation*}
+According to the relation above, we now reverse the middle interaction term and therefore get
+\begin{equation*}
+	\bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b\tilde{\psi}_a\:\bar{\psi}_a\psi_b
+\end{equation*}
+Now applying again the contractions, while the same indices as in the original term stay contracted, yields the desired result where all conctracted field are directly next to each other. 
+\begin{equation*}
+\contraction{}{\bar{\psi}}{{_a\psi_b\:\bar{\psi}_a\psi_b\:\bar{\psi}_a}}{\psi}
+\bcontraction{\bar{\psi}_a}{\psi}{{}_b\:}{\psi}
+\bcontraction{\bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b}{\bar{\psi}}{{}_a}{\bar{\psi}}
+\bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b\tilde{\psi}_a\:\bar{\psi}_a\psi_b
+\end{equation*}
+
+
+
+
+
+
 \section{The tree level decay rate for heavy neutrinos}
 \label{ap:tree_level_decay}
+In this section the heavy neutrion decay rate given in equation \ref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}. \newline
+In general the decay rate can be obtained using
+\begin{equation*}
+\Gamma=\int d\Gamma
+\end{equation*}
+with the differential decay rate given as
+\begin{equation*}
+d\Gamma=\frac{1}{2M}\left|\mathcal{M}\right|^2\frac{d^3p_\ell}{2E_\ell}\frac{d^3p_\phi}{2E_\phi}(2\pi)^4\delta\left(p_\ell+p_\phi-p_N\right)
+\end{equation*}
+$\left|\mathcal{M}\right|$ denotes the decay amplitude containing all informations about the decay, that can be read of directly from the corresponding Feynman diagram. 
+Now in order to calculate the decay rate one has to start by determine exactly this decay amplitude. For the process N $\rightarrow\ell\overline{\phi}$ this looks like
+\begin{equation*}
+Inhalt...
+\end{equation*}
 \chapter{Appendix B}
 \section{Integrating the rate equation over phase space}
 \label{ap:phase_space}
+In order to be able to determine $\Gamma_N$ it is usefull to perform the phase space integral over following equation. 
 \begin{equation*}
-\left(\frac{d}{dt}+3H\right)n_N=-\Gamma_N\left(n_N-n_N^{eq}\right)+\underbrace{\Gamma_{N,B-L}n_{B-L}}_\text{negligible}
+\left(\frac{d}{dt}+3H\right)n_N=-\Gamma_N\left(n_N-n_N^{eq}\right)
 \end{equation*}
-phase space integral
+Comparing this to \ref{eq:L_rate_expanding_interaction} one sees that the second term on the right-hand side has already been omitted since it is, as stated above, small enough to be safely neglected. \newline
+Now perfomring the phase space integral results in
 \begin{align*}
-\int \left(\frac{d}{dt}+3H\right)f_Nd^3p=-\int\Gamma_N\left(f_N-f_N^{eq}\right)d^3p\\
-\int \left(\frac{d}{dt}+3H\right)f_Np^2dp=-\int\Gamma_N\left(f_N-f_N^{eq}\right)^2dp
+\int\frac{d^3p}{\left(2\pi\right)^3}\: \left(\frac{d}{dt}+3H\right)f_N=-\int\frac{d^3p}{\left(2\pi\right)^3}\:\Gamma_N\left(f_N-f_N^{eq}\right)\\
+\int dp\: \left(\frac{d}{dt}+3H\right)f_Np^2=-\int dp\:\Gamma_N\left(f_N-f_N^{eq}\right)^2
 \end{align*}
-Using
+Using the following partial integration to evaluate the left-hand side
 \begin{equation*}
-\int p^3\frac{\partial f_N}{\partial p}dp=\left[p^3f_N\right]_0^\infty-3\int p^2f_Ndp=-3\int p^2f_Ndp
+\int dp\:p^3\frac{\partial f_N}{\partial p}=\left[p^3f_N\right]_0^\infty-3\int dp\:p^2f_Ndp=-3\int p^2f_N
 \end{equation*}
 \begin{equation*}
-3H\int f_Np^2dp=-H\int p^3\frac{\partial f_N}{\partial p}dp
+3H\int dp\: f_Np^2=-H\int dp\: p^3\frac{\partial f_N}{\partial p}
 \end{equation*}
-it follows
+it follows that
 \begin{align*}
-\int \left(\partial_t-Hp\partial_p\right)f_Np^2dp&=-\int\Gamma_N\left(f_N-f_N^{eq}\right)p^2dp\\
+\int  dp\:\left(\partial_t-Hp\partial_p\right)f_Np^2&=-\int dp\:\Gamma_N\left(f_N-f_N^{eq}\right)p^2\\
 \Rightarrow \left(\partial_t-Hp\partial_p\right)f_N&=\Gamma_N\left(f_N^{eq}-f_N\right)
 \end{align*}
 \section{Detailed calculation of $\Gamma_{B-L}$}
@@ -44,23 +197,22 @@ f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+
 \newline
 Now, as already explained, in order to relate the chemicial potentials to the density n\textsubscript{B-L} one has to expand the left-hand side of \ref{eq:l-lbar} and \ref{eq:phi-phibar} up to first order in the chemical potentials while using Fermi-Dirac and Bose-Einstein distributions instead of Boltzmann statistics.
 \begin{align*}
-	n_\ell-n_{\bar{\ell}}&=g\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
-	&=g_\ell\frac{1}{\left(2\pi\right)^3}\int \left(f_\ell-f_{\bar{\ell}}\right)p^2\:dp\:dcos\theta \:d\phi=\\
-	&=g_\ell\frac{1}{2\pi^2}\int\left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2\:dp=\\
-	&=g_\ell\frac{1}{2\pi^2}\int\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell:p^2\:dp=\\
-	&=g_\ell\frac{\mu_\ell}{\pi^2T}\underbrace{\int_{0}^{\infty}\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2\:dE}_{=\frac{\pi^2T^3}{6}}=\\
+	n_\ell-n_{\bar{\ell}}&=g_\ell\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
+	&=g_\ell\frac{1}{\left(2\pi\right)^3}\int dp\:dcos\theta \:d\phi\left(f_\ell-f_{\bar{\ell}}\right)p^2=\\
+	&=g_\ell\frac{1}{2\pi^2}\int dp \: \left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2=\\
+	&=g_\ell\frac{1}{2\pi^2}\int dp\: \frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell p^2=\\
+	&=g_\ell\frac{\mu_\ell}{\pi^2T}\int_{0}^{\infty}dE\:\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2=\\
 	&=\frac{\mu_\ell T^2}{3}
 \end{align*}
 Analogous calculation for the Higgs yields:
 \begin{align*}
 	n_\phi-n_{\bar{\phi}}=\frac{2\mu_\phi T^2}{3}
 \end{align*}
-Here the degrees of freedom g$_\ell$=2=g$_\phi$ were used for leptons as well as for the Higgs. \newline
+Here the degrees of freedom g$_\ell=2=$ g$_\phi$ were used for leptons as well as for the Higgs. \newline
 Solving \ref{eq:l-lbar} and \ref{eq:phi-phibar} for the chemical potentials results in
-\todo{Minus klären}
 \begin{align*}
-	\mu_l=\frac{3c_l}{T^2}n_{B-L}\\
-	\mu_\phi=\frac{3c_l}{2T^2}n_{B-L}
+	\mu_\ell=\frac{3c_\ell}{T^2}n_{B-L}\\
+	\mu_\phi=\frac{3c_\phi}{2T^2}n_{B-L}
 \end{align*}
 Plugging all these results into \ref{eq:Gamma_B-L} one gets the following relation
 \begin{align*}
@@ -79,16 +231,16 @@ From the first to the second line the using the delta distribution for the parti
 \end{align*}
 one gets
 \begin{align*}
-	4\pi\int \frac{p^2}{pE}\delta\left(E-M_N\right)dE=4\pi\int \frac{p}{E}\delta\left(E-M_N\right)dE=4\pi\frac{p}{M_N}=2\pi \frac{M_N}{M_N}=2\pi
+	4\pi\int dE\: \frac{p^2}{pE}\delta\left(E-M_N\right)=4\pi\int dE\: \frac{p}{E}\delta\left(E-M_N\right)=4\pi\frac{p}{M_N}=2\pi \frac{M_N}{M_N}=2\pi
 \end{align*}
-The second to last step uses the delta distribution and the resulting relation E=M\textsubscript{N} while during the last step uses the fact that leptons and Higgs are relativistic and therefore their Energie is E $\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E $\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
+The second to last step uses the delta distribution and the resulting relation E=M\textsubscript{N} while during the last step uses the fact that leptons and Higgs are relativistic and therefore their energiy is E$_{\ell,\phi}\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E$_{\ell,\phi}\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
 \begin{align*}
 	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}} \cdot 2\pi\frac{E_N}{M_N}=\\
 	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int_0^\infty \frac{dp_N}{E_N}\:p_N^2e^{-\frac{E_N}{T}}
 \end{align*}
 And with the final change of integration variables 
 \begin{align*}
-	x=\sqrt{\frac{p_N^2}{M_N^2}+1}\Longrightarrow p_N=\sqrt{x^2-1}M_N \Longrightarrow dp_N=\frac{x}{\sqrt{x^2-1}}M_N
+	x=\sqrt{\frac{p_N^2}{M_N^2}+1}\Longrightarrow p_N=\sqrt{x^2-1}M_N \Longrightarrow dp_N=\frac{x}{\sqrt{x^2-1}}M_Ndx
 \end{align*}
 one gets 
 \begin{align*}
@@ -100,4 +252,72 @@ where in the last step the definition of the modified Bessel function of the sec
 \begin{equation*}
 	K_n(z)=\frac{\sqrt{\pi}}{\Gamma\left(n-\frac{1}{2}\right)}\left(\frac{1}{2}z\right)^n\int_{1}^{\infty}dx\:\left(x^2-1\right)^{n-\frac{1}{2}}e^{-zx}
 \end{equation*}
-With $\Gamma(n)$ the gamma function as generalization of the factorial. 
+With $\Gamma(n)$ the gamma function as generalization of the factorial.
+\newpage
+\section{Obtaining relativistic corrections to the rate equations}
+\label{ap:rel_corrections}
+Expanding the factor 1/E$_N$ on the right-hand side of \ref{eq:L_rate_expanding_interaction_rel} by using \ref{eq:rel_energy_momentum} up to order p$^2$, one gets
+\begin{align*}
+		\left(\frac{\partial}{\partial t}-Hp\frac{\partial}{\partial p}\right)f_N=\Gamma_0\left(f_N^{eq}-f_N\right)-\frac{\Gamma_0}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N^{eq}-f_N\right)
+\end{align*}
+Now integrating over p and using the definition of u given in \ref{eq:energy_density} the right-hand side simplifies to
+\begin{equation*}
+	g_N\int \frac{d^3p}{(2\pi)^3}\left(\Gamma_0\left(f_N^{eq}-f_N\right)-\frac{\Gamma_0}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N^{eq}-f_N\right)\right)=\Gamma_N\left(n_N^{eq}-n_N\right)+\Gamma_{N,u}\left(u-u^{eq}\right)
+\end{equation*}
+and it can easily be seen that $\Gamma_{N,u}=\Gamma_{0}$ \newline
+The left-hand side however can be evaluated by performing the steps done in \ref{ap:phase_space}, but in reverse order. \newline
+The next thing to do is acquiring the rate equation for u and therefore one has to multiply equation \ref{eq:L_rate_expanding_interaction_rel} with p$^2$ and integrate over p. At leading order $\left(E_N=M_N\left[1+\mathcal{O}(p^2)\right]\right)$ in p this yields
+\begin{align*}
+	g_N\int \frac{d^3p}{(2\pi)^3\:M_N}\:\left(\frac{\partial}{\partial t}-Hp^3\frac{\partial}{\partial p}\right)f_N=\Gamma_0\:g_N\int \frac{d^3p}{M_N}\left(e^{E_N/T}-f_N\right)p^2
+\end{align*}
+Using the following partial integration
+\begin{align*}
+	-\int d^3p\:Hp^3\frac{\partial}{\partial p}f_N&=-4\pi\int dp\:Hp^5\frac{\partial}{\partial p}f_N=\\
+	&=-4\pi\left(\left[p^5f_N\right]_0^\infty-5\int dp\: p^4f_N\right)=\\
+	&=4\pi\int dp\: 5p^4f_N=5\int d^3p\: p^4f_N
+\end{align*}
+and again the definition of u one easily gets
+\begin{equation*}
+	\left(\frac{d}{dt}+5H\right)u=\Gamma_u\left(u^{eq}-u\right)
+\end{equation*}
+with $\Gamma_u=\Gamma_0$ at leading order in p. \newline
+At last the relativistic correction for the asymmetry rate equation has to be determined. As stated above in order for this to be done one has to only look at the first term on the right-hand side of \ref{eq:B-L_rate_expanding_interaction}.
+\begin{align*}
+	\Gamma_{B-L,N}\left(n_N-n_N^{eq}\right)&=\Gamma_{B-L,N}\:g_N\int \frac{d^3p}{\left(2\pi^2\right)^32E_N}\:\left(f_N-f_N^{eq}\right)\simeq\\
+	&\simeq\Gamma_{B-L,N}\:g_N\int\frac{d^3p}{\left(2\pi\right)^3}\:\frac{1}{2M_N}\left(1-\frac{1}{2}\left(\frac{p}{M_N}\right)^2\right)\left(f_N-f_N^{eq}\right)=\\
+	&=\Gamma_{B-L,N}\left(n_N-n_N^{eq}\right)-\frac{1}{4}\Gamma_{B-L,u}\left(u-u^{eq}\right)
+\end{align*}
+Where in g$_N$=2 was used in the last step.\newline
+Also easy to see is the following
+\begin{equation*}
+	\Gamma_{B-L,u}=\epsilon\Gamma_0
+\end{equation*}
+\section{Obtaining radiative corrections to the rate equations}
+\label{ap:rad_corrections}
+Starting from equation \ref{eq:L_rate_expanding_interaction_rel} one first expresses the number densities through the corresponding distributions and gets
+\begin{equation*}
+	\left(\frac{\partial}{\partial t}+3H\right)\int\frac{d^3p}{\left(2\pi\right)^3}\:f_N=\Gamma_N\int\frac{d^3p}{\left(2\pi\right)^3}\left(f_N^{eq}-f_N\right)+\frac{\Gamma_{N,u}}{M_N}\int\frac{d^3p}{\left(2\pi\right)^3}\frac{p^2}{2M_N}\left(f_N-f_N^{eq}\right)
+\end{equation*}
+Since the integration varibles and range of integration are the same on both sides the integrals and phase space normalization factors can be dropped. Now assuming that these equations hold for f$_N\rightarrow0$ and using \ref{eq:df_dt} this simplifies to 
+\begin{align*}
+	f_N^{eq}\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_Nf_N^{eq}-\Gamma_{N,u}\frac{p^2}{M_N^2}f_N^{eq}\\
+	\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}
+\end{align*}
+Now again, expanding the 1/E$_N$ factor yields
+\begin{align*}
+	\Gamma_0\left(1-\frac{p^2}{M_N^2}\right)\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}\\
+	a\Gamma_0-\frac{1}{2}(a-2b)\Gamma_0\frac{p^2}{M_N^2}+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}
+\end{align*}
+Since equation \ref{eq:L_rate_expanding_interaction_rel} is a relation of order p$^2$ terms of higher order don't need to be taken into account. \newline
+Now simply comparing coefficients of the terms of different order in p yields the already known result
+\begin{align*}
+\Gamma_N=&\Gamma_u=a\Gamma_0\\
+\Gamma_{N,u}=&\frac{1}{2}(a-2b)\Gamma_0
+\end{align*}
+Using the same procedure on equation \ref{eq:rate_u} results in 
+\begin{align*}
+&\left(\frac{\partial}{\partial t}+5H\right)\int\frac{d^3p}{\left(2\pi\right)^3}\frac{p^2}{2M_N^2}\:f_N=\frac{\Gamma_{u}}{M_N}\int\frac{d^3p}{\left(2\pi\right)^3}\frac{p^2}{2M_N}\left(f_N-f_N^{eq}\right)\\
+&\overset{f_N\rightarrow0}{\Longrightarrow}f_N^{eq}\Gamma_0\frac{M_N}{E_N}\left(a+\mathcal{O}\left(\frac{p^2}{M_N^2}\right)\right)=\Gamma_{u}\frac{p^2}{M_N^2}f_N^{eq}\\
+&\overset{E_N=M_N+\mathcal{O}(p^2)}{\Longrightarrow}\Gamma_u=a\Gamma_0
+\end{align*}
+Because equation \ref{eq:rate_u} is only of order p, one can drop all terms of order p$^2$ or higher to obtain this result

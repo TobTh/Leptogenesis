@@ -1,0 +1,61 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      1576,         60]
+NotebookOptionsPosition[      1095,         36]
+NotebookOutlinePosition[      1452,         52]
+CellTagsIndexPosition[      1409,         49]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"gunzip", "-", 
+   RowBox[{"c", " ", "FeynArts"}], "-", 
+   RowBox[{"n", ".", "m", ".", "tar", ".", "gz"}]}], "|", 
+  RowBox[{
+   RowBox[{"tar", " ", "xvf"}], "-"}]}]], "Input",
+ CellChangeTimes->{{3.7032606259020987`*^9, 3.703260625903023*^9}},
+ EmphasizeSyntaxErrors->True],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Syntax","tsntxi",
+   "\"\\\"\\!\\(\\*RowBox[{RowBox[{\\\"tar\\\", \\\"xvf\\\"}], \\\"-\\\"}]\\)\
+\\\" is incomplete; more input is \
+needed.\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\"",2,1,2,
+   26376193640876249352,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.703260633763179*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 590},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 309, 8, 34, "Input"],
+Cell[734, 25, 345, 8, 24, "Message"]
+}, Open  ]]
+}
+]
+*)
+

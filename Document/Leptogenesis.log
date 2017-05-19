@@ -1,17 +1,50 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.23)  27 APR 2017 19:47
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  19 MAY 2017 11:20
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
-LaTeX2e <2016/03/31>
+LaTeX2e <2017/01/01> patch level 3
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/tobiastheil/Library/texlive/2016/texmf-var/l
+uatex-cache/generic)(using read cache: /usr/local/texlive/2016/texmf-var/luatex-
+cache/generic /Users/tobiastheil/Library/texlive/2016/texmf-var/luatex-cache/gen
+eric)
+luaotfload | conf : Root cache directory is /Users/tobiastheil/Library/texlive/2
+016/texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2016/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/tobiastheil/Library/texlive/2
+016/texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.138 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
-Document Class: scrbook 2016/05/10 v3.20 KOMA-Script document class (book)
+Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2016/05/10 v3.20 KOMA-Script package (KOMA-Script-dependent ba
+Package: scrkbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-dependent ba
 sics and keyval usage)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2016/05/10 v3.20 KOMA-Script package (KOMA-Script-independent b
+Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent b
 asics and keyval usage)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
@@ -19,13 +52,13 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2016/05/10 v3.20 KOMA-Script package (loading files)
+Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
 
-Package scrlfile, 2016/05/10 v3.20 KOMA-Script package (loading files)
+Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2016/05/10 v3.20 KOMA-Script package (handling toc-files)
+Package: tocbasic 2017/01/03 v3.22 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
 )
@@ -38,7 +71,7 @@ Package tocbasic Info: omitting babel extension for `lof'
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 134.
-Package tocbasic Info: defining new hook before heading of `' on input line 1601
+Package tocbasic Info: defining new hook before heading of `' on input line 1603
 .
 Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             This is correct!
@@ -53,16 +86,19 @@ Class scrbook Info: You've used standard option `oneside'.
 (scrbook)           you'd have to use `twoside=false' there
 (scrbook)           instead of `oneside', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input lin
-e 2268.
+e 2270.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2016/05/10 v3.20 KOMA-Script font size class option (11pt)
+File: scrsize11pt.clo 2017/01/03 v3.22 KOMA-Script font size class option (11pt)
 
-)
+luaotfload | db : Font names database loaded from /Users/tobiastheil/Library/tex
+live/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /U
+sers/tobiastheil/Library/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/l
+mroman10-regular.luc))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2016/05/10 v3.20 KOMA-Script package (type area)
+Package: typearea 2017/01/03 v3.22 KOMA-Script package (type area)
 
-Package typearea, 2016/05/10 v3.20 KOMA-Script package (type area)
+Package typearea, 2017/01/03 v3.22 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -100,7 +136,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1528.
+(typearea)              on input line 1583.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -116,26 +152,31 @@ Package typearea Info: These are the values describing the layout:
 \scr@dte@subsubsection@maxnumwidth=\skip51
 \scr@dte@paragraph@maxnumwidth=\skip52
 \scr@dte@subparagraph@maxnumwidth=\skip53
-LaTeX Info: Redefining \textsubscript on input line 4771.
+LaTeX Info: Redefining \textsubscript on input line 4826.
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \c@pti@nb@sid@b@x=\box27
 \c@figure=\count87
 \c@table=\count88
-Class scrbook Info: Redefining `\numberline' on input line 5776.
+Class scrbook Info: Redefining `\numberline' on input line 5893.
 \bibindent=\dimen102
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+Package: fontenc 2017/02/22 v2.0g Standard LaTeX package
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+File: t1enc.def 2017/02/22 v2.0g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -163,8 +204,8 @@ Package: babel 2016/04/23 3.9r The Babel package
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/luababel.def
 \l@dumylang=\language1
 \l@nohyphenation=\language2
-\l@german-x-2014-05-21=\language3
-\l@ngerman-x-2014-05-21=\language4
+\l@german-x-2017-03-31=\language3
+\l@ngerman-x-2017-03-31=\language4
 \l@afrikaans=\language5
 \l@ancientgreek=\language6
 \l@ibycus=\language7
@@ -245,7 +286,7 @@ Package: babel 2016/04/23 3.9r The Babel package
 \l@welsh=\language82
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
+Language: english 2017/01/24 v3.3q English support from the babel system
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
@@ -258,7 +299,7 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
@@ -278,20 +319,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count93
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count94
 \leftroot@=\count95
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count96
 \DOTSCASE@=\count97
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
 \big@size=\dimen114
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count98
 \c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
@@ -312,8 +353,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip57
 \multlinetaggap=\skip58
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -329,18 +370,18 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 96.
+Package graphics Info: Driver file: luatex.def on input line 99.
 
-(/usr/local/texlive/2016/texmf-dist/tex/lualatex/luatex-def/luatex.def
-File: luatex.def 2016/01/23 v0.01b Graphics/Color for luaTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2017/01/12 v0.01h Graphics/Color for luaTeX
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -366,13 +407,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen123
 \captionmargin@=\dimen124
@@ -390,7 +431,7 @@ Package caption Info: float package is loaded.
 \c@subtable=\count109
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package: textcomp 2017/02/22 v2.0g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -787,11 +828,8 @@ s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/luatex85/luatex85.sty
-Package: luatex85 2016/03/01 v1.0 pdftex aliases for luatex
-)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
@@ -811,7 +849,7 @@ Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
 
 (/usr/local/texlive/2016/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
 
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -829,7 +867,7 @@ Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
@@ -844,44 +882,44 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count130
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count131
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4446.
-Package hyperref Info: Link nesting OFF on input line 4451.
-Package hyperref Info: Hyper index ON on input line 4454.
-Package hyperref Info: Plain pages OFF on input line 4461.
-Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4691.
+Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count132
-LaTeX Info: Redefining \url on input line 5044.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen178
 \Fld@menulength=\count133
 \Field@Width=\dimen179
 \Fld@charsize=\dimen180
-Package hyperref Info: Hyper figures OFF on input line 6298.
-Package hyperref Info: Link nesting OFF on input line 6303.
-Package hyperref Info: Hyper index ON on input line 6306.
-Package hyperref Info: backreferencing OFF on input line 6313.
-Package hyperref Info: Link coloring OFF on input line 6318.
-Package hyperref Info: Link coloring with OCG OFF on input line 6323.
-Package hyperref Info: PDF/A mode OFF on input line 6328.
-LaTeX Info: Redefining \ref on input line 6368.
-LaTeX Info: Redefining \pageref on input line 6372.
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
 \Hy@abspage=\count134
 \c@Item=\count135
 \c@Hfootnote=\count136
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver (autodetected): hluatex.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2017/03/14 v6.85a Hyperref driver for luaTeX
 \Fld@listcount=\count137
 \c@bookmark@seq@number=\count138
 
@@ -932,7 +970,18 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count143
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tikz-feynman/tikz-feynman.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/braket/braket.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/simplewick/simplewick.sty
+Package: simplewick 2007/11/23 v1.2a
+
+Package: simplewick v1.2a (2007/11/23)
+\swb@xone=\box43
+\swb@xtwo=\box44
+\swb@xthree=\box45
+\swb@xfour=\box46
+\swdimen@ne=\dimen183
+\swdimentw@=\dimen184
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/tikz-feynman/tikz-feynman.sty
 Package: tikz-feynman 2016/02/05v1.1.0Feynman diagrams with TikZ
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfopts/pgfopts.sty
@@ -945,10 +994,10 @@ ode.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen183
-\pgfarrowlength=\dimen184
-\pgfarrowwidth=\dimen185
-\pgfarrowlinewidth=\dimen186
+\pgfarrowinset=\dimen185
+\pgfarrowlength=\dimen186
+\pgfarrowwidth=\dimen187
+\pgfarrowlinewidth=\dimen188
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
@@ -958,16 +1007,16 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen187
-\pgfdecoratedremainingdistance=\dimen188
-\pgfdecoratedinputsegmentcompleteddistance=\dimen189
-\pgfdecoratedinputsegmentremainingdistance=\dimen190
-\pgf@decorate@distancetomove=\dimen191
+\pgfdecoratedcompleteddistance=\dimen189
+\pgfdecoratedremainingdistance=\dimen190
+\pgfdecoratedinputsegmentcompleteddistance=\dimen191
+\pgfdecoratedinputsegmentremainingdistance=\dimen192
+\pgf@decorate@distancetomove=\dimen193
 \pgf@decorate@repeatstate=\count144
-\pgfdecorationsegmentamplitude=\dimen192
-\pgfdecorationsegmentlength=\dimen193
+\pgfdecorationsegmentamplitude=\dimen194
+\pgfdecorationsegmentlength=\dimen195
 )
-\tikz@lib@dec@box=\box43
+\tikz@lib@dec@box=\box47
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.markings.code.tex
@@ -1012,10 +1061,10 @@ File: tikzlibrarygraphdrawing.code.tex 2013/08/05 v3.0.1a (rcs-revision 1.20)
 graphdrawing.code.tex
 File: pgflibrarygraphdrawing.code.tex 2015/06/08 v3.0.1a (rcs-revision 1.39)
 \pgf@gd@parameter@stack@height=\count147
-\pgf@gd@node@box=\box44
-\pgf@gd@edge@box=\box45
-\pgf@gd@prekind@box=\box46
-\pgf@gd@postkind@box=\box47
+\pgf@gd@node@box=\box48
+\pgf@gd@edge@box=\box49
+\pgf@gd@prekind@box=\box50
+\pgf@gd@postkind@box=\box51
 ))[\directlua]:1: ')' expected near '\'.
 \tikzfeynman@apply@patch ...eynman.patch.#1.lua")}
                                                    
@@ -1028,20 +1077,20 @@ remainder of this lua chunk will be ignored.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.cod
 e.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
-Package: scrlayer-scrpage 2016/05/10 v3.20 KOMA-Script package (end user interfa
+Package: scrlayer-scrpage 2017/01/03 v3.22 KOMA-Script package (end user interfa
 ce for scrlayer)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrlayer.sty
-Package: scrlayer 2016/05/10 v3.20 KOMA-Script package (defining layers and page
+Package: scrlayer 2017/01/03 v3.22 KOMA-Script package (defining layers and page
  styles)
 Package scrlayer Info: Using already defined \footheight
 (scrlayer)             hoping, that this is a length and
 (scrlayer)             not only a macro on input line 107.
-Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 1975
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 1987
 .
 )
 Package scrlayer-scrpage Info: deactivating warning for font element
-(scrlayer-scrpage)             `pagefoot' on input line 1191.
+(scrlayer-scrpage)             `pagefoot' on input line 1203.
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 
@@ -1053,27 +1102,29 @@ Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 (./Leptogenesis.aux)
 \openout1 = Leptogenesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1112,13 +1163,13 @@ LaTeX Font Info:    ... okay on input line 70.
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count148
-\scratchdimen=\dimen194
-\scratchbox=\box48
+\scratchdimen=\dimen196
+\scratchbox=\box52
 \nofMPsegments=\count149
 \nofMParguments=\count150
 \everyMPshowfont=\toks42
 \MPscratchCnt=\count151
-\MPscratchDim=\dimen195
+\MPscratchDim=\dimen197
 \MPnumerator=\count152
 \makeMPintoPDFobject=\count153
 \everyMPtoPDFconversion=\toks43
@@ -1144,51 +1195,52 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 70.
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 71.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
 (./Leptogenesis.out) (./Leptogenesis.out)
 \@outlinefile=\write4
 
 \openout4 = Leptogenesis.out
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Images/PH.pdf, id=103, 29.8716pt x 29.8716pt>
+<Images/PH.pdf, id=119, 29.8716pt x 29.8716pt>
 File: Images/PH.pdf Graphic file (type pdf)
  <use Images/PH.pdf>
-Package luatex.def Info: Images/PH.pdf used on input line 73.
+Package luatex.def Info: Images/PH.pdf used on input line 74.
 (luatex.def)             Requested size: 29.8715pt x 29.8715pt.
 
-<Images/tumlogo.pdf, id=105, 53.24893pt x 28.45631pt>
+<Images/tumlogo.pdf, id=121, 53.24893pt x 28.45631pt>
 File: Images/tumlogo.pdf Graphic file (type pdf)
  <use Images/tumlogo.pdf>
-Package luatex.def Info: Images/tumlogo.pdf used on input line 73.
+Package luatex.def Info: Images/tumlogo.pdf used on input line 74.
 (luatex.def)             Requested size: 53.2488pt x 28.45624pt.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 73.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 74.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
+Non-PDF special ignored!
 
 
 
@@ -1264,17 +1316,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
-[7] [8] <Images/Higgs1.pdf, id=266, 930.47626pt x 457.71pt>
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
+ne 178.
+
+Overfull \hbox (9.38208pt too wide) in paragraph at lines 178--178
+\T1/lmr/m/n/10.95 schaulichung 
+ []
+
+
+Overfull \hbox (9.38208pt too wide) in paragraph at lines 178--178
+\T1/lmr/m/n/10.95 schaulichung 
+ []
+
+
+Overfull \hbox (9.38208pt too wide) in paragraph at lines 178--178
+\T1/lmr/m/n/10.95 schaulichung 
+ []
+
+
+Overfull \hbox (9.38208pt too wide) in paragraph at lines 178--178
+\T1/lmr/m/n/10.95 schaulichung 
+ []
+
+[7] [8] <Images/Higgs1.pdf, id=283, 930.47626pt x 457.71pt>
 File: Images/Higgs1.pdf Graphic file (type pdf)
 
 <use Images/Higgs1.pdf>
-Package luatex.def Info: Images/Higgs1.pdf used on input line 212.
+Package luatex.def Info: Images/Higgs1.pdf used on input line 213.
 (luatex.def)             Requested size: 223.07211pt x 109.72693pt.
- <Images/Higgs2.pdf, id=267, 335.2525pt x 164.615pt>
+ <Images/Higgs2.pdf, id=284, 335.2525pt x 164.615pt>
 File: Images/Higgs2.pdf Graphic file (type pdf)
 
 <use Images/Higgs2.pdf>
-Package luatex.def Info: Images/Higgs2.pdf used on input line 217.
+Package luatex.def Info: Images/Higgs2.pdf used on input line 218.
 (luatex.def)             Requested size: 223.07211pt x 109.5329pt.
  [9<./Images/Higgs1.pdf><./Images/Higgs2.pdf>])
 (./Chapter/Outline_of_leptogenesis.tex [10]
@@ -1282,9 +1356,9 @@ chapter 3.
 [11
 
 
-] [12]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/
-generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled
- incorrectly
+] [12] [13]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t
+/tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table f
+illed incorrectly
 stack traceback:
 	[C]: in function 'assert'
 	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
@@ -1294,8 +1368,8 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.88 		d   -- [edge label=N] b}
-                             ;
+l.118 		d   -- [edge label=N] b}
+                              ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
@@ -1311,14 +1385,14 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.93 		d  --[edge label=N] b  }
-                             ;
+l.123 		d  --[edge label=N] b  }
+                              ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[13]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
-neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
-ncorrectly
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
 stack traceback:
 	[C]: in function 'assert'
 	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
@@ -1328,7 +1402,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.112 	}
+l.141 	}
       ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1345,148 +1419,172 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.122 	}
+l.151 	}
       ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[14]) (./Chapter/Analytic_approximations_and_calculations.tex [15]
+[14] [15]) (./Chapter/Analytic_approximations_and_calculations.tex [16]
 chapter 4.
-[16
+[17
 
 
-]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
-ne 35.
-
-
-LaTeX Warning: Marginpar on page 17 moved.
-
-[17] <Images/rates.pdf, id=416, 1253.68375pt x 465.74pt>
+] [18] <Images/rates.pdf, id=443, 1253.68375pt x 465.74pt>
 File: Images/rates.pdf Graphic file (type pdf)
 
 <use Images/rates.pdf>
-Package luatex.def Info: Images/rates.pdf used on input line 101.
+Package luatex.def Info: Images/rates.pdf used on input line 106.
 (luatex.def)             Requested size: 364.19667pt x 135.29565pt.
- [18]) (./Chapter/Summary.tex [19<./Images/rates.pdf>]
+ [19] [20<./Images/rates.pdf>] [21])
+(./Chapter/Summary.tex [22]
 chapter 5.
-) (./Chapter/Appendix.tex [20
+) (./Chapter/Appendix.tex [23
 
 
 ]
 chapter A.
-[21
+[24
 
 
-]
+] [25] [26] [27]
 chapter B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 29.
+(hyperref)                removing `math shift' on input line 182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 29.
+(hyperref)                removing `\Gamma' on input line 182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 29.
+(hyperref)                removing `subscript' on input line 182.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 29.
+(hyperref)                removing `math shift' on input line 182.
 
-[22
+[28
 
 
-] [23]) (./Chapter/References.tex [24]
-Underfull \hbox (badness 3078) in paragraph at lines 35--39
-[]\T1/cmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
+] [29] [30] [31]) (./Chapter/References.tex [32]
+Underfull \hbox (badness 2653) in paragraph at lines 35--39
+[]\T1/lmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
 Physics. (2008, Novem-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--39
-\T1/cmr/m/n/10.95 ber 25). \T1/cmr/m/it/10.95 Sakharov Con-di-tions for Baryo-g
-e-n-e-sis\T1/cmr/m/n/10.95 . Re-trieved 10.02.2017 from
+\T1/lmr/m/n/10.95 ber 25). \T1/lmr/m/it/10.95 Sakharov Con-di-tions for Baryo-g
+e-n-e-sis\T1/lmr/m/n/10.95 . Re-trieved 10.02.2017 from
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--39
-[]\T1/cmr/m/n/10.95 http://phys.columbia.edu/ dvp/dvp-sakharov.pdf[] archived a
+[]\T1/lmr/m/n/10.95 http://phys.columbia.edu/ dvp/dvp-sakharov.pdf[] archived a
 t []http://www.we-bc-i-ta-
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 51--55
-[]\T1/cmr/m/n/10.95 P. Di Bari, \T1/cmr/m/it/10.95 Be-yond the Stan-dard Model 
-with lep-to-ge-n-e-sis and neu-trino data\T1/cmr/m/n/10.95 ,
+Underfull \hbox (badness 4454) in paragraph at lines 51--55
+[]\T1/lmr/m/n/10.95 P. Di Bari, \T1/lmr/m/it/10.95 Be-yond the Stan-dard Model 
+with lep-to-ge-n-e-sis and neu-trino data\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 87--93
-[]\T1/cmr/m/n/10.95 S. David-son, E. Nardi and Y. Nir, \T1/cmr/m/it/10.95 Lep-t
-o-ge-n-e-sis\T1/cmr/m/n/10.95 ; Phys. Rept. \T1/cmr/bx/n/10.95 466 \T1/cmr/m/n/
+Underfull \hbox (badness 2181) in paragraph at lines 87--93
+[]\T1/lmr/m/n/10.95 S. David-son, E. Nardi and Y. Nir, \T1/lmr/m/it/10.95 Lep-t
+o-ge-n-e-sis\T1/lmr/m/n/10.95 ; Phys. Rept. \T1/lmr/bx/n/10.95 466 \T1/lmr/m/n/
 10.95 (2008) 105
  []
 
-) [25
+
+Underfull \hbox (badness 3229) in paragraph at lines 123--126
+[]\T1/lmr/m/n/10.95 Kopp, J.,(2016, Septem-ber 16). Jo-hannes Guten-berg Uni-ve
+r-sität Mainz,\T1/lmr/m/it/10.95 Quan-tum
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 123--126
+\T1/lmr/m/it/10.95 Field The-ory - Lec-ture notes\T1/lmr/m/n/10.95 . Re-trieved
+ 15.05.2017 from []https://www.staff.uni-
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 123--126
+\T1/lmr/m/n/10.95 mainz.de/jkopp/qft2-2016-material/lecture-notes.pdf[] archive
+d at []http://www.we-bc-i-ta-
+ []
+
+[33
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Underfull \hbox (badness 6910) in paragraph at lines 134--137
+[]\T1/lmr/m/n/10.95 Tong, D.,(2016). Uni-ver-sity of Cam-bridge De-part-ment of
+ Ap-plied Math-e-mat-
+ []
+
+
+Underfull \hbox (badness 6493) in paragraph at lines 134--137
+\T1/lmr/m/n/10.95 ics and The-o-ret-i-cal Physics,\T1/lmr/m/it/10.95 Quan-tum F
+ield The-ory\T1/lmr/m/n/10.95 . Re-trieved 18.05.2017 from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+[]\T1/lmr/m/n/10.95 http://www.damtp.cam.ac.uk/user/tong/qft.html[] archived at
+ []http://www.we-bc-i-ta-
+ []
+
+) [34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
  (./Leptogenesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: A4B23FAE16938ED514F3FCB064E18C4D;1703.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
+(rerunfilecheck)             Checksum: 82908C8FC08051B9DFE36A8B21072EB1;2066.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28288 strings out of 495119
+ 28387 strings out of 494577
  100000,953878 words of node,token memory allocated
- 14086 words of node memory still in use:
-   121 hlist, 16 vlist, 2 rule, 12 disc, 9 local_par, 1507 glue, 5 kern, 19 pena
-lty, 134 glyph, 48 glue_spec, 7 write, 6 save_pos, 285 pdf_literal, 3 pdf_action
- nodes
-   avail lists: 1:8,2:42,3:417,4:84,5:329,6:5038,7:1037,8:103,9:904,10:23,11:413
+ 20568 words of node memory still in use:
+   47 hlist, 8 vlist, 2 rule, 10 disc, 3 local_par, 2300 glue, 9 kern, 9 penalty
+, 2 sub_mlist, 74 glyph, 667 attribute, 49 glue_spec, 667 attribute_list, 3 writ
+e, 2 save_pos, 95 pdf_literal, 5 pdf_action nodes
+   avail lists: 1:7,2:2756,3:726,4:92,5:325,6:4818,7:676,8:183,9:833,10:18,11:41
+7
+ 31096 multiletter control sequences out of 65536+600000
+ 78 fonts using 4940031 bytes
+ 64i,20n,98p,8846b,1696s stack positions out of 5000i,500n,10000p,200000b,100000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/lm/lmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
+lmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
+sbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb>
+Output written on Leptogenesis.pdf (36 pages, 602531 bytes).
 
- 30542 multiletter control sequences out of 65536+600000
- 77 fonts using 3194567 bytes
- 64i,20n,98p,8514b,1694s stack positions out of 5000i,500n,10000p,200000b,100000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/cm-super/sfrm1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/cm-super/sfsl1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/c
-m-super/sfsx0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-s
-uper/sfsx1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-supe
-r/sfsx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
-fsx1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx
-2074.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti109
-5.pfb>
-Output written on Leptogenesis.pdf (27 pages, 577673 bytes).
-
-PDF statistics: 588 PDF objects out of 1000 (max. 8388607)
- 517 compressed objects within 6 object streams
- 138 named destinations out of 1000 (max. 131072)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 715 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
+ 181 named destinations out of 1000 (max. 131072)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
