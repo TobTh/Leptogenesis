@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{\nonumberline Departure from thermal equilibrium and elecroweak phase transistion}{7}{section*.4}
 \contentsline {subsection}{\numberline {2.2.3}Failures of the SM}{9}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Outline of leptogenesis}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Expandig the SM}{11}{section.3.1}
+\contentsline {section}{\numberline {3.1}Expanding the SM}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}The seesaw Mechanism}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Leptogenesis and the Sakharov conditions}{14}{section.3.3}
 \contentsline {subsubsection}{\nonumberline B violation}{14}{section*.8}
@@ -26,9 +26,9 @@
 \contentsline {chapter}{\numberline {5}Summary}{23}{chapter.5}
 \contentsline {chapter}{\numberline {A}Appendix A}{24}{appendix.A}
 \contentsline {section}{\numberline {A.1}Feynman rules for the Yukawa interaction}{24}{section.A.1}
-\contentsline {section}{\numberline {A.2}The tree level decay rate for heavy neutrinos}{27}{section.A.2}
-\contentsline {chapter}{\numberline {B}Appendix B}{28}{appendix.B}
-\contentsline {section}{\numberline {B.1}Integrating the rate equation over phase space}{28}{section.B.1}
-\contentsline {section}{\numberline {B.2}Detailed calculation of $\Gamma _{B-L}$}{28}{section.B.2}
-\contentsline {section}{\numberline {B.3}Obtaining relativistic corrections to the rate equations}{31}{section.B.3}
-\contentsline {section}{\numberline {B.4}Obtaining radiative corrections to the rate equations}{32}{section.B.4}
+\contentsline {section}{\numberline {A.2}The tree level decay rate for heavy neutrinos}{29}{section.A.2}
+\contentsline {chapter}{\numberline {B}Appendix B}{32}{appendix.B}
+\contentsline {section}{\numberline {B.1}Integrating the rate equation over phase space}{32}{section.B.1}
+\contentsline {section}{\numberline {B.2}Detailed calculation of $\Gamma _{B-L}$}{32}{section.B.2}
+\contentsline {section}{\numberline {B.3}Obtaining relativistic corrections to the rate equations}{35}{section.B.3}
+\contentsline {section}{\numberline {B.4}Obtaining radiative corrections to the rate equations}{36}{section.B.4}

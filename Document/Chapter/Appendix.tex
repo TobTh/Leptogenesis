@@ -31,10 +31,15 @@ The colon notation simply means that the field operators are normally ordered, m
 \contraction{}{\psi}{(x)}{\bar{\psi}}
 \psi(x)\overline{\psi}(y)=\braket{0|T[\psi(x)\overline{\psi}(y)]|0}\rightarrow S_F(p)
 \end{equation*}
-with S$_F$(p) the fermionic Feynman propagator
+The arrow simply corresponds to the Fourier transformed, since the matrix element above lives in position-space, while it is easier to compute Feynman rules in momentum space. S$_F$(p) is the fermionic Feynman propagator
 \begin{equation*}
 	S_F(p)=\frac{\left(\slashed p+m\right)}{p^2+m^2+i\epsilon}
 \end{equation*}
+where the Feynman slash notation
+\begin{equation*}
+	\slashed p=\gamma^\mu p_\mu
+\end{equation*}
+was used.
 Now, in order to illustrate what the term `all possible contractions' in the Wick theorem above means, this theorem will be applied to a time ordered product of two barred and two unbarred fields will explictily be given
 \begin{align*}
 		T\left[\psi_1\overline{\psi}_2\psi_3\overline{\psi}_4\right]=\:
@@ -61,7 +66,7 @@ In the last step the relations
 	\psi(x)\psi(y)=0
 	\label{eq:selfcontraction2}
 \end{align}
-were used, having the effect that conctracted field are always adjacend to each other in a sense, that to conctraction symbols do not intersect each other.\newline
+were used, having the effect that conctracted field are always adjacend to each other in a sense, that to conctraction symbols do not intersect each other. These contractions of just $\psi$ with $\bar{\psi}$ fields can be interpreted as a fermion number flow and therefore the conservation of fermion number. It can be thought of as an incoming particle $\psi$ that becomes an outgoing particle $\bar{\psi}$ after interacting and therefore the fermion number stays the same.\newline
 So in order to apply Wicks theorem one has to basically connect two fields pairwise until all possible contractions are performed. \newline
 The next important step ist do note that only terms with no uncontracted fields contribute to the corellation function above. In the previous example this means that only the last three terms have to be taken into account in order to obtain the corresponding Feynman rules. \newline
 Until now only internal contractions, so contractions of two field operators resulting in the internal propagators, where considered. In order to also take the external, so incoming and outgoing, particles into account one has to take a closer look at the initial and final states $\ket{i}$ and $\bra{f}$. Because in general these states are not just the vacuum, but (multi-)particle states they must consist of creation and anihilation operators acting on the vacuum state, causing contractions of such operators and the fields to arise. Asuming that the particles are not plane waves but rather localized wave packages one can write the states $\ket{i}$ and $\bra{f}$ as\cite{Kopp:2016}
@@ -82,16 +87,27 @@ In analogy to the notation in Ref.\cite{Denner:1992vza} $\Gamma$ describes some 
 	\bar{\psi}\Gamma\psi=g^i_{abc}\bar{\psi}_a\Gamma_i\psi_b\phi_c
 \end{equation*}
 with $\Gamma_i=1,i\gamma_5,\gamma_\mu\gamma_5,\gamma_\mu,\sigma_{\mu\nu}$, but for the next discussion $\Gamma_i=1$ will be assumed simply for the sake of clarity. \newline
-Applying Wick's Theorem to this new matrix element not only results in the already known propagator terms, but because of the contractions of the fields directly with the creation and annihilation operators one also gets \cite[p. 471]{Denner:1992vza}
+Applying Wick's Theorem to this new matrix element not only results in the already known propagator terms, but because of the contractions of the fields directly with the creation and annihilation operators one also gets
 \begin{align*}
-		\bcontraction{}{\psi}{(x)}{a}\psi(x) a_i^\dagger(p)=\braket{0|\psi(x) a_i^\dagger(p)|0}&\longrightarrow u(p) \text{ incoming particle }\\
-		\bcontraction{}{a}{{}_i(p)}{\bar{\psi}}a_i(p)\bar{\psi}(x)=\braket{0|a_i(p)\bar{\psi}(x)|0}&\longrightarrow \bar{u}(p) \text{ outgoing particle }\\
-		\bcontraction{}{\bar{\psi}}{(x)}{b}\bar{\psi}(x) b_i^\dagger(p)=\braket{0|\bar{\psi}(x) b_i^\dagger(p)|0}&\longrightarrow \bar{v}(p)\text{ incoming antiparticle }\\
-		\bcontraction{}{b}{{}_i(p)}{\psi}b_i(p)\bar{\psi}(x)=\braket{0|b_i(p)\psi(x)|0}&\longrightarrow v(p)\text{ outgoing antiparticle }
+		\bcontraction{}{\psi}{}{a}\psi a_i^\dagger=\braket{0|\psi(x) a_i^\dagger(p,s)|0}&\longrightarrow u(p,s) \text{ incoming particle }\\
+		\bcontraction{}{a}{{}_i}{\bar{\psi}}a_i\bar{\psi}=\braket{0|a_i(p,s)\bar{\psi}(x)|0}&\longrightarrow \bar{u}(p,s) \text{ outgoing particle }\\
+		\bcontraction{}{\bar{\psi}}{}{b}\bar{\psi} b_i^\dagger=\braket{0|\bar{\psi}(x) b_i^\dagger(p,s)|0}&\longrightarrow \bar{v}(p,s)\text{ incoming antiparticle }\\
+		\bcontraction{}{b}{{}_i}{\psi}b_i\bar{\psi}=\braket{0|b_i(p,s)\psi(x)|0}&\longrightarrow v(p,s)\text{ outgoing antiparticle }
 \end{align*}
-Here u, v and their barred versions describe the incoming or outgoing (anti-)particles as seen above, but their exact mathematical expression is of no greater interest here and will therefore not be given. \newline
+Here the following expressions for fermion fields
+\begin{align*}
+\psi=\sum_{s=\pm1/2}\int \frac{d^3p}{2(\pi)^3}\:\frac{1}{2E}\left(a(p,s)u(p,s)e^{-ipx}+b^\dagger(p,s)v(p,s)e^{ipx}\right)\\
+\bar{\psi}=\sum_{s=\pm1/2}\int \frac{d^3p}{2(\pi)^3}\:\frac{1}{2E}\left(a^\dagger(p,s)\bar{u}(p,s)e^{ipx}+b(p,s)\bar{v}(p,s)e^{-ipx}\right)
+\end{align*}
+and the anti-commutator relations
+\begin{align*}
+		&\{a(p,s),a^\dagger(q,s')\}=\{b(p,s),b^\dagger(q,s')\}=\delta(p-q)\delta_{ss'}\\
+		&\{a(p,s),a(q,s')\}=\{b(p,s),b(q,s')\}=0
+\end{align*}
+where used to obtain the results above.
+In this context $u$, $v$ and their barred versions describe the incoming or outgoing (anti-)particles as seen above, but their exact mathematical expression is of no greater interest here and will therefore not be given. \newline
 Shortly summarized the previous discussion shows that, for Dirac particles, using the matrix element \ref{eq:matrix_element} one cannot only determine the internal propagators needed in most processes but also the spinors of incoming and outgoing particles. So a full set of Feynman rules,except for internal,which will not be used, and external scalars,which is trivialy 1, was obtained and can directly be used for calculating the scattering matrix elements for various processes. \newline
-However, because the scenario of leptogenesis requires Majorana neutrinos at leas the Feynman rules for exactly this neutrino have to be reiterated. The main difference in obtaining the Feynman rules for Majorana particles in comparison to Dirac particles is that the relations \ref{eq:selfcontraction1} and \ref{eq:selfcontraction2} do no longer hold and therefore contractions of fields not adjacent to each other are possible. \newline
+However, because the scenario of leptogenesis requires Majorana neutrinos at leas the Feynman rules for exactly this neutrino have to be reiterated. The main difference in obtaining the Feynman rules for Majorana particles in comparison to Dirac particles is that the relations \ref{eq:selfcontraction1} and \ref{eq:selfcontraction2} do no longer hold and therefore contractions of fields not adjacent to each other are possible. It can easy be seen that the same reasoning from above with incoming and outgoing fermions for Dirac particles can not be applied for Majorana particles because of lepton number non-conserving contractions containing just $\psi$ or $\bar{\psi}$ fields.\newline
 This problem can be solved by introducing the charge-conjugated particle 
 \begin{align*}
 	\tilde{\psi}&=C\bar{\psi}^T\\
@@ -111,7 +127,7 @@ In additon the relation
 \end{equation*}
 with 
 \begin{equation*}
-	\eta_i=\left\{\begin{array}{c}+1\:\:\:\:\:\:\:\:\:\:\text{for } 1,i\gamma_5,\gamma_\mu\gamma_5\\-1\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:d\text{for }\gamma_\mu,\sigma_{\mu\nu}\end{array}\right.
+	\eta_i=\left\{\begin{array}{c}+1\:\:\:\:\:\:\:\:\:\:\text{for } 1,i\gamma_5,\gamma_\mu\gamma_5\\-1\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\text{for }\gamma_\mu,\sigma_{\mu\nu}\end{array}\right.
 \end{equation*}
 Because for Majorana fermions $\tilde{\psi}=\psi$, it is rather easy to notice that the vertex term and the reversed vertex term are the same, $\Gamma'=\Gamma$. \newline
 How this untangles intersecting contractions will be shown exemplarily using the following contraction.
@@ -126,34 +142,260 @@ According to the relation above, we now reverse the middle interaction term and 
 	\bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b\tilde{\psi}_a\:\bar{\psi}_a\psi_b
 \end{equation*}
 Now applying again the contractions, while the same indices as in the original term stay contracted, yields the desired result where all conctracted field are directly next to each other. 
-\begin{equation*}
+\begin{equation}
 \contraction{}{\bar{\psi}}{{_a\psi_b\:\bar{\psi}_a\psi_b\:\bar{\psi}_a}}{\psi}
 \bcontraction{\bar{\psi}_a}{\psi}{{}_b\:}{\psi}
 \bcontraction{\bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b}{\bar{\psi}}{{}_a}{\bar{\psi}}
 \bar{\psi}_a\psi_b\:\bar{\tilde{\psi}}_b\tilde{\psi}_a\:\bar{\psi}_a\psi_b
+\label{eq:untangled}
+\end{equation}
+This can be applied to an arbitrarlily long string of field operators and therefore any combination of general fermion fields can be transformed in a way that is has the same structure as for Dirac fermions, with the only difference being that some fields may be exchanged with their charge conjugated counterparts. As already mentioned, these kind of interaction terms do not conserve fermion number, however, equation \ref{eq:untangled} having the same structure as for Dirac particles the fermion number flow has to be replaced by something else, namely the so called fermiom flow. This fermion flow plays the role of an orientation of a Feynman diagram. This orientation can be chosen arbitrarily, the resulting matrix element are still the same, regardless of the chosen orientation\newline 
+The Feynman rules than can be obtained exactly in the same way as for Dirac particles. Using the definition of the charge conjugated fields results in the algebraic expression for the internal propagator given as
+\begin{equation*}
+	\braket{0|T[\tilde{\psi}\bar{\tilde{\psi}}]|0}=C\braket{0|T[\psi\bar{\psi}]|0}^TC^{-1}\longrightarrow CS(p)^TC^{-1}=\frac{\left(-\slashed p+m\right)}{p^2+m^2+i\epsilon}=S(-p)=:S'(p)
 \end{equation*}
-
-
-
-
-
-
+Using the explicit expressions for the charge conjugated fields
+\begin{align*}
+\tilde{\psi}=\sum_{s=\pm1/2}\int \frac{d^3p}{2(\pi)^3}\:\frac{1}{2E}\left(a^\dagger(p,s)u(p,s)e^{-ipx}+b(p,s)v(p,s)e^{ipx}\right)\\
+\bar{\tilde{\psi}}=\sum_{s=\pm1/2}\int \frac{d^3p}{2(\pi)^3}\:\frac{1}{2E}\left(a(p,s)\bar{u}(p,s)e^{ipx}+b^\dagger(p,s)\bar{v}(p,s)e^{-ipx}\right)
+\end{align*}
+ and the exact same anti-commutator relations one gets the analogous results for the external fermion fields.
+\begin{align*}
+\bcontraction{}{\psi}{}{a}\tilde{\psi} b_i^\dagger=\braket{0|\tilde{\psi}(x) b_i^\dagger(p,s)|0}&\longrightarrow u(p,s) \\
+\bcontraction{}{a}{{}_i}{\bar{\psi}}b_i\bar{\tilde{\psi}}=\braket{0|b_i(p,s)\bar{\tilde{\psi}}(x)|0}&\longrightarrow \bar{u}(p,s) \\
+\bcontraction{}{\bar{\psi}}{}{b}\bar{\tilde{\psi}} a_i^\dagger=\braket{0|\bar{\tilde{\psi}}(x) a_i^\dagger(p,s)|0}&\longrightarrow \bar{v}(p,s)\\
+\bcontraction{}{b}{{}_i}{\psi}a_i\bar{\tilde{\psi}}=\braket{0|a_i(p,s)\tilde{\psi}(x)|0}&\longrightarrow v(p,s)
+\end{align*}
+Summarizing all these results gives a full set of Feynman rules for Majorana as well as Dirac fermions, as they are given in \cite{Denner:1992vza}. For the sake of completeness they will be given here as well. In the following diagramms dotted lines represent a boson field, solid lines without arrows represent Majorana fermions and solid lines with arrows represent Dirac fermions, while the arrow points in the direction of fermion number flow, the thin arrows indicate the fermion flow. The momentum always flows from left to right. 
+\begin{figure}[H]
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+			b -- [edge,thick,momentum'] a,
+			b-- [edge,thick,rmomentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+			b -- [edge,thick,momentum'] a,
+			b-- [anti fermion,thick,rmomentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma
+		\qquad
+		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+			b -- [fermion,thick,momentum'] a,
+			b-- [edge,thick,rmomentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma
+		\qquad
+		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+			b -- [fermion,thick,momentum'] a,
+			b-- [anti fermion,thick,rmomentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma
+		\end{equation*}
+	\end{subfigure}
+\begin{subfigure}{\linewidth}
+	\begin{equation*}
+	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+		b -- [edge,thick,rmomentum'] a,
+		b-- [edge,thick,momentum] c,
+		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+	\qquad		
+	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+		b -- [edge,thick,rmomentum'] a,
+		b-- [anti fermion,thick,momentum] c,
+		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+	\qquad
+	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+		b -- [fermion,thick,rmomentum'] a,
+		b-- [edge,thick,momentum] c,
+		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+	\qquad
+	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+		b -- [fermion,thick,rmomentum'] a,
+		b-- [anti fermion,thick,momentum] c,
+		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+	\end{equation*}
+\end{subfigure}
+	\caption{Feynman rules for fermionic vertices}
+	\label{fig:Feynman_veritces}
+\end{figure}
+\begin{figure}[H]
+	\begin{equation*}
+	\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+		a[dot]-- [fermion,thick,momentum'] b[dot] }; \quad \sim iS(p)
+	\qquad		
+	\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+		a[dot]-- [fermion,thick,rmomentum'] b[dot] }; \quad \sim iS(-p)
+	\qquad		
+	\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+		a[dot] -- [edge,thick,momentum'] b[dot]}; \quad \sim iS(p)
+	\end{equation*}
+	\caption{Feynman rules for internal fermionic propagators}
+	\label{fig:Feynman_intprop}
+\end{figure}
+\begin{figure}[H]
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot]-- [fermion,thick,momentum'] b};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot]-- [anti fermion,thick,momentum'] b};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot] -- [edge,thick,momentum'] b}; 
+		\quad
+		\sim\bar{u}(p,s)
+		\end{equation*}
+	\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot]-- [fermion,thick,rmomentum'] b};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot]-- [anti fermion,thick,rmomentum'] b};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a[dot] -- [edge,thick,rmomentum'] b}; 
+		\quad
+		\sim v(p,s)
+		\end{equation*}
+	\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a-- [fermion,thick,momentum'] b[dot]};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a-- [anti fermion,thick,momentum'] b[dot]};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a -- [edge,thick,momentum'] b[dot]}; 
+		\quad
+		\sim u(p,s)
+		\end{equation*}
+	\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a-- [fermion,thick,rmomentum'] b[dot]};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a-- [anti fermion,thick,rmomentum'] b[dot]};
+		\qquad		
+		\feynmandiagram [small, baseline=(d.base), horizontal=a to b] {
+			a -- [edge,thick,rmomentum'] b[dot]}; 
+		\quad
+		\sim \bar{v}(p,s)
+		\end{equation*}
+	\end{subfigure}
+	\caption{Feynman rules for external fermion lines}
+	\label{fig:external_lines}
+\end{figure}
 \section{The tree level decay rate for heavy neutrinos}
 \label{ap:tree_level_decay}
-In this section the heavy neutrion decay rate given in equation \ref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}. \newline
+In this section the heavy neutrion decay rate given in equation \ref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}, which, for the sake of clarity, will be given here once more, but also with arrows showing the arbitrarily chosen orientation
+	\begin{equation*}
+	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
+		b -- [scalar,thick, edge label=\(\overline{\phi}\)] a,
+		b-- [fermion,thick, edge label =\(\ell\),momentum'] c,
+		d   -- [thick, edge label=N,momentum'] b}; 
+	\qquad \text{or} \qquad
+	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
+		b -- [scalar, thick, edge label = \(\phi\)] a,
+		b-- [anti fermion, thick,edge label=\(\overline{\ell}\),momentum'] c,
+		d  --[thick,edge label=N,momentum'] b  }; 
+	\end{equation*}
 In general the decay rate can be obtained using
 \begin{equation*}
 \Gamma=\int d\Gamma
 \end{equation*}
 with the differential decay rate given as
 \begin{equation*}
-d\Gamma=\frac{1}{2M}\left|\mathcal{M}\right|^2\frac{d^3p_\ell}{2E_\ell}\frac{d^3p_\phi}{2E_\phi}(2\pi)^4\delta\left(p_\ell+p_\phi-p_N\right)
+d\Gamma=\frac{1}{2M_N}\left|\mathcal{M}\right|^2\frac{d^3p_\ell}{(2\pi)^32E_\ell}\frac{d^3p_\phi}{(2\pi)^32E_\phi}(2\pi)^4\delta^4\left(p_\ell+p_\phi-p_N\right)
 \end{equation*}
-$\left|\mathcal{M}\right|$ denotes the decay amplitude containing all informations about the decay, that can be read of directly from the corresponding Feynman diagram. 
-Now in order to calculate the decay rate one has to start by determine exactly this decay amplitude. For the process N $\rightarrow\ell\overline{\phi}$ this looks like
+$\left|\mathcal{M}\right|$ denotes the matrix element corresponding to exactly this decay, that can be read of directly from the corresponding Feynman diagram. 
+Now, using the Feynman rules obtained in the previous section one has to first formulate this matrix element in order to be able to evaluate it. Choosing an arbitrary orientation the matrix element for the decay into $\bar{\phi}$ and a lepton reads
 \begin{equation*}
-Inhalt...
+i\mathcal{M}=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})ih_{a1}P_Ru_N(p_N,s_N)
 \end{equation*}
+where the subscripts $\ell_a$ and N describe the lepton of flavor a and heavy neutrino, respectively and
+\begin{equation*}
+	P_R=\frac{1+\gamma^5}{2} \qquad P_L=\frac{1-\gamma^5}{2}
+\end{equation*}
+the chirality operators. This can be used because the heavy neutrino N, per defnition, is right-handed.
+Then the respective absolute square of this matrix element is 
+\begin{equation*}
+|\mathcal{M}|^2=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a})
+\end{equation*} \newline
+However, this matrix element only describes the decay of a neutrino with a certain spin into a lepton of another certain spin. In order to generalize this for unknown spins of the lepton as well as of the spin one has to sum over the final spins of the lepton and average over the initial spin of the neutrino, resulting in
+\begin{equation*}
+|\mathcal{M}|^2=2\cdot\frac{1}{2}\sum_{s_N,s_{\ell_a}}\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a})
+\end{equation*}
+The factor of 2 arises from the fact that general leptons are part of a weak isospin doublet, so there are two possible values for the isospin, or more precise, its third component, namely T$_3$=-1/2 for the charged leptons e, $\mu$, $\tau$ and T$_3$=1/2 for the corresponding light neutrinos $\nu_{e,\mu,\tau}$. If we just looked at the decay into for example the light neutrinos this factor of 2 has to be omitted since there is only one isospin component T$_3$ possible. Additionally, the heavy neutrino doesn't contribute to this factor because it is a weak isospin singulett and therefore only T$_3$=0 is possible. \newline
+In the following we only consider the decay into one lepton flavor a=1, taking more flavors into account simply means summing the following result with different coupling constants h$_{a1}$ for each lepton flavor. This results in
+\begin{align*}
+|\mathcal{M}|^2&=\sum_{s_N,s_{\ell}}\bar{u}_{\ell}(p_{\ell},s_{\ell})h_{11}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{11}u_{\ell}(p_{\ell},s_{\ell})=\\
+&=|h_{11}|^2\sum_{s_N,s_{\ell}}\bar{u}_{\ell}(p_{\ell},s_{\ell})_\nu\, P_R^{\nu\mu}\,u_N(p_N,s_N)_\mu\:\bar{u}_{N}(p_{N},s_{N})_\alpha\, P_L^{\alpha\beta}\,u_{\ell}(p_{\ell},s_{\ell})_\beta=\\
+&=|h_{11}|^2\sum_{s_{\ell}}\bar{u}_{\ell}(p_{\ell},s_{\ell})_\nu\, P_R^{\nu\mu}\,(\slashed p_N+M_N)_{\mu\alpha}\, P_L^{\alpha\beta}\,u_{\ell}(p_{\ell},s_{\ell})_\beta=\\
+&=|h_{11}|^2P_R^{\nu\mu}\,(\slashed p_N+M_N)_{\mu\alpha}\, P_L^{\alpha\beta}\,(\slashed p_\ell+M_\ell)_{\beta\nu}=\\
+&=|h_{11}|^2\,\text{Tr}\left[P_R\,(\slashed p_N+M_N)\, P_L\,\slashed p_\ell\right]
+\end{align*}
+with $\nu,\mu,\alpha,\beta$ being spinor indices.\newline
+The way this trace was obtained is commonly known as the Casimir trick, which uses the following relation
+\begin{equation*}
+	\sum_s u(p,s)\bar{u}(p,s)=\slashed p +m
+\end{equation*}
+m being the mass of the particle. \newline
+Because the leptons are relativistic their mass can be neglected, what was done in the last step above.\newline
+The trace now simplifies to
+\begin{align*}
+	\text{Tr}\left[P_R\,(\slashed p_N+M_N)\, P_L\,\slashed p_\ell\right]&=\frac{1}{4}\text{Tr}\left[\left(1+\gamma^5\right)\,(\slashed p_N+M_N)\,\left(1-\gamma^5\right)\,\slashed p_\ell\right]=\\
+	&=\frac{1}{4}\left(\text{Tr}\left[\gamma^\mu (p_N)_\mu \gamma^\nu (p_\ell)_\nu\right]+ \text{Tr}\left[M\gamma^\mu (p_\ell)_\mu\right]+\right.\\ 
+	&+\text{Tr}\left[\gamma^5\gamma^\mu (p_N)_\mu\gamma^\nu (p_\ell)_\nu\right]+ \text{Tr}\left[M\gamma^5\gamma^\mu (p_\ell)_\mu\right]-\\
+	 &-\text{Tr}\left[\gamma^\mu (p_N)_\mu\gamma^5\gamma^\nu (p_\ell)_\nu\right]- \text{Tr}\left[M\gamma^5\gamma^\mu (p_\ell)_\mu\right]-\\
+	  &\left.-\text{Tr}\left[\gamma^5\gamma^\mu (p_N)_\mu\gamma^5\gamma^\nu (p_\ell)_\nu\right]- \text{Tr}\left[M\gamma^5\gamma^5\gamma^\mu (p_\ell)_\mu\right] \right)=\\
+	&=\frac{1}{4}\text{Tr}\left[\gamma^\mu (p_N)_\mu\gamma^\nu (p_\ell)_\nu\right]-\text{Tr}\left[\gamma^5\gamma^\mu (p_N)_\mu\gamma^5\gamma^\nu (p_\ell)_\nu\right]=\\
+	&=\frac{1}{2}\text{Tr}\left[\gamma^\mu (p_N)_\mu\gamma^\nu (p_\ell)_\nu\right]=\frac{1}{2}\text{Tr}\left[\slashed p_N \slashed p_\ell\right]
+\end{align*}
+All of the terms, aside from the first and last one, vanish becaus of the following relations
+\begin{equation*}
+	\text{Tr}\left[\gamma^\mu\right]=0 \qquad \text{Tr}\left[\gamma^\mu\gamma^\nu\gamma^5\right]=0\qquad \text{Tr}\left[\text{odd number of $\gamma$'s}\right]=0
+\end{equation*}
+The final relation necessary to finally evaluate the trace is
+\begin{equation*}
+	\text{Tr}[\gamma^\mu\gamma^\nu]=4\eta^{\mu\nu}
+\end{equation*}
+and the Minkowski metric $\eta^{\mu\nu}$. Using this one gets the final result for the squared matrix element
+\begin{equation*}
+	|\mathcal{M}|^2=\frac{1}{2}|h_{11}|^2\text{Tr}\left[\slashed p_N \slashed p_\ell\right]=2|h_{11}|^2(p_N)_\mu (p_\ell)_\nu\eta^{\mu\nu}=2|h_{11}|^2p_Np_\ell
+\end{equation*}
+In order to rewrite the product of the 4-momentum vectors the decay will be treated in the center of mass system, meaning $p_N=(M_N,\vec{0})$. Additionally, treating the leptons as relativistic particles, so $p_\ell=(|\vec{p}_\ell|,\vec{p}_\ell)$, results in
+\begin{equation*}
+|\mathcal{M}|^2=2|h_{11}|^2p_Np_\ell=2|h_{11}|^2M_N|\vec{p}_\ell|
+\end{equation*}
+But due to the neutrino not only decaying into leptons but also into anti-leptons this is not the whole contribution to the tree level decay rate. However, looking at figure \ref{fig:external_lines}, the corresponding matrix element looks exactly the the same and therefore would contribute the same term to the decay rate. This result is not surprising, remembering that CP violation only arises through interference of tree level and one-loop diagrams, thus $\Gamma(N\rightarrow\bar{\phi}\ell)=\Gamma(N\rightarrow\phi\bar{\ell})$. Plugging both these contribution back into the relation for the total decay rate results in 
+\begin{align*}
+	\Gamma&=\frac{1}{2M_N}\int\frac{d^3p_\ell}{(2\pi)^32E_\ell}\frac{d^3p_\phi}{(2\pi)^32E_\phi}(2\pi)^44|h_{11}|^2M_N|\vec{p}_\ell|\delta^4\left(p_\ell+p_\phi-p_N\right)=\\
+	&=\frac{1}{8\pi^2}\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}|h_{11}|^2M_N|\vec{p}_\ell|\delta\left(|\vec{p}_\ell|+|\vec{p}_\phi|-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
+	&=\frac{|h_{11}|^2}{8\pi^2}\int\frac{d^3p_\ell}{E_\ell}\frac{1}{E_\phi}|\vec{p}_\ell|\delta\left(2|\vec{p}_\ell|-M_N\right)=\\
+	&=\frac{|h_{11}|^2}{8\pi^2}\int\frac{d^3p_\ell}{p_\ell}\delta\left(2|\vec{p}_\ell|-M_N\right)=\\
+\end{align*}
+To get to the third line the 3-momentum delta function was used, resulting in $\vec{p}_N=-\vec{p}_\ell$. Also, since the Higgs particles and leptons are relativistic their energies can be replaced by the absolute value of their momentum. To solve the last remaining integral, one has to use the final delta function.
+\begin{align*}
+	\Gamma&=\frac{|h_{11}|^2}{8\pi^2}\int\frac{d^3p_\ell}{p_\ell}\delta\left(2|\vec{p}_\ell|-M_N\right)=\\
+	&=\frac{|h_{11}|^2}{2\pi}\int_0^{\infty} dp_\ell \:p_\ell\delta\left(2|\vec{p}_\ell|-M_N\right)=\\
+	&=\frac{|h_{11}|^2}{2\pi}\int_0^{\infty} \frac{dx}{4}\:x\delta\left(x-M_N\right)=\\
+	&=\frac{|h_{11}|^2}{8\pi}M_N
+\end{align*}
+
+
+
+
+
+
+
+
+
 \chapter{Appendix B}
 \section{Integrating the rate equation over phase space}
 \label{ap:phase_space}
@@ -224,7 +466,7 @@ For the sake of minimizing the writing of redundant coefficients we first will e
 \int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta^4\left(p_\ell+p_\phi-p_N\right)&=\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
 &=\int\frac{d^3p}{E_\ell}\frac{1}{E_\phi}\delta\left(E_\ell+E_\phi-M_N\right)
 \end{align*}
-From the first to the second line the using the delta distribution for the particle momenta yields $\vec{p}\equiv\vec{p}_\ell=-\vec{p}_\phi$. Also by introducing E $\equiv E_\ell+E_\phi$ and using spherical coordinates and the following change of integration variables
+From the first to the second line using the delta distribution for the particle momenta yields $\vec{p}\equiv\vec{p}_\ell=-\vec{p}_\phi$. Also by introducing E $\equiv E_\ell+E_\phi$ and using spherical coordinates and the following change of integration variables
 \begin{align*}
 	E=E_\ell+E_\phi=\sqrt{M_\ell+p^2}+\sqrt{M_\phi+p^2} \Longrightarrow \frac{dE}{dp}=\frac{p}{E_\ell}+\frac{p}{E_\phi} \\
 	\Longrightarrow dp=\left(\frac{p}{E_l}+\frac{p}{E_\phi}\right)^{-1}dE=\frac{E_\ell E_\phi}{pE_\ell+pE_\phi}dE=\frac{E_\ell E_\phi}{pE}dE
@@ -233,7 +475,7 @@ one gets
 \begin{align*}
 	4\pi\int dE\: \frac{p^2}{pE}\delta\left(E-M_N\right)=4\pi\int dE\: \frac{p}{E}\delta\left(E-M_N\right)=4\pi\frac{p}{M_N}=2\pi \frac{M_N}{M_N}=2\pi
 \end{align*}
-The second to last step uses the delta distribution and the resulting relation E=M\textsubscript{N} while during the last step uses the fact that leptons and Higgs are relativistic and therefore their energiy is E$_{\ell,\phi}\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E$_{\ell,\phi}\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
+In order to evaluate the last integral one has to use the delta distribution, resulting in E=M\textsubscript{N}, while the last step uses the fact that leptons and Higgs are relativistic and therefore their energy is E$_{\ell,\phi}\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E$_{\ell,\phi}\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
 \begin{align*}
 	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}} \cdot 2\pi\frac{E_N}{M_N}=\\
 	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int_0^\infty \frac{dp_N}{E_N}\:p_N^2e^{-\frac{E_N}{T}}
@@ -281,7 +523,8 @@ and again the definition of u one easily gets
 	\left(\frac{d}{dt}+5H\right)u=\Gamma_u\left(u^{eq}-u\right)
 \end{equation*}
 with $\Gamma_u=\Gamma_0$ at leading order in p. \newline
-At last the relativistic correction for the asymmetry rate equation has to be determined. As stated above in order for this to be done one has to only look at the first term on the right-hand side of \ref{eq:B-L_rate_expanding_interaction}.
+At last, the relativistic correction for the asymmetry rate equation has to be determined. As stated above in order for this to be done one has to only look at the first term on the right-hand side of \ref{eq:B-L_rate_expanding_interaction}.
+\todo{Faktor + Minus klären}
 \begin{align*}
 	\Gamma_{B-L,N}\left(n_N-n_N^{eq}\right)&=\Gamma_{B-L,N}\:g_N\int \frac{d^3p}{\left(2\pi^2\right)^32E_N}\:\left(f_N-f_N^{eq}\right)\simeq\\
 	&\simeq\Gamma_{B-L,N}\:g_N\int\frac{d^3p}{\left(2\pi\right)^3}\:\frac{1}{2M_N}\left(1-\frac{1}{2}\left(\frac{p}{M_N}\right)^2\right)\left(f_N-f_N^{eq}\right)=\\
@@ -298,7 +541,7 @@ Starting from equation \ref{eq:L_rate_expanding_interaction_rel} one first expre
 \begin{equation*}
 	\left(\frac{\partial}{\partial t}+3H\right)\int\frac{d^3p}{\left(2\pi\right)^3}\:f_N=\Gamma_N\int\frac{d^3p}{\left(2\pi\right)^3}\left(f_N^{eq}-f_N\right)+\frac{\Gamma_{N,u}}{M_N}\int\frac{d^3p}{\left(2\pi\right)^3}\frac{p^2}{2M_N}\left(f_N-f_N^{eq}\right)
 \end{equation*}
-Since the integration varibles and range of integration are the same on both sides the integrals and phase space normalization factors can be dropped. Now assuming that these equations hold for f$_N\rightarrow0$ and using \ref{eq:df_dt} this simplifies to 
+Since the integration variables and range of integration are the same on both sides the integrals and phase space normalization factors can be dropped. Now assuming that these equations hold for f$_N\rightarrow0$ and using \ref{eq:df_dt} this simplifies to 
 \begin{align*}
 	f_N^{eq}\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_Nf_N^{eq}-\Gamma_{N,u}\frac{p^2}{M_N^2}f_N^{eq}\\
 	\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}
@@ -308,8 +551,9 @@ Now again, expanding the 1/E$_N$ factor yields
 	\Gamma_0\left(1-\frac{p^2}{M_N^2}\right)\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}\\
 	a\Gamma_0-\frac{1}{2}(a-2b)\Gamma_0\frac{p^2}{M_N^2}+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}
 \end{align*}
-Since equation \ref{eq:L_rate_expanding_interaction_rel} is a relation of order p$^2$ terms of higher order don't need to be taken into account. \newline
+Since equation \ref{eq:L_rate_expanding_interaction_rel} is a relation of order p$^2$ terms of higher order do not need to be taken into account. \newline
 Now simply comparing coefficients of the terms of different order in p yields the already known result
+\todo{Faktor 2 klären}
 \begin{align*}
 \Gamma_N=&\Gamma_u=a\Gamma_0\\
 \Gamma_{N,u}=&\frac{1}{2}(a-2b)\Gamma_0
