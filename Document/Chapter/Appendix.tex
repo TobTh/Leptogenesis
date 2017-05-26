@@ -387,16 +387,17 @@ To get to the third line the 3-momentum delta function was used, resulting in $\
 	&=\frac{|h_{11}|^2}{2\pi}\int_0^{\infty} \frac{dx}{4}\:x\delta\left(x-M_N\right)=\\
 	&=\frac{|h_{11}|^2}{8\pi}M_N
 \end{align*}
-
-
-
-
-
-
-
-
-
 \chapter{Appendix B}
+\section{The CP-Violation parameter}
+
+
+
+
+
+
+
+
+\chapter{Appendix C}
 \section{Integrating the rate equation over phase space}
 \label{ap:phase_space}
 In order to be able to determine $\Gamma_N$ it is usefull to perform the phase space integral over following equation. 
@@ -565,3 +566,61 @@ Using the same procedure on equation \ref{eq:rate_u} results in
 &\overset{E_N=M_N+\mathcal{O}(p^2)}{\Longrightarrow}\Gamma_u=a\Gamma_0
 \end{align*}
 Because equation \ref{eq:rate_u} is only of order p, one can drop all terms of order p$^2$ or higher to obtain this result
+\section{Obtaining quantum corrections}
+Although the Higgs particles and leptons are of high energy and can therefore be treated using Maxwell-Boltzmann statistics, it is interesting to see how using the correct quantum statistics, namely Fermi-Dirac and Bose-Einstein statistics respectively, affect previous results.\newline
+The only point where this difference between classical and quantum distributions comes into play is during the calculation of $\Gamma_{B-L}$, because this is the only time where the explicit form of the equilibrium distributions is used, more precisely the factor $f_\ell f_\phi-f_{\bar{\ell}}f_{\bar{\phi}}$. How this factor will be corrected using the correct statistics will be shown in this section. \newline
+The product of these two distribution simply yields
+\begin{equation*}
+	f_\ell f_\phi=\frac{1}{\left(e^{\left(E_\ell-\mu_\ell\right)/T}+1\right)\left(e^{\left(E_\phi-\mu_\phi\right)/T}-1\right)}
+\end{equation*}
+Now using the following derivatives
+\begin{align*}
+	\frac{\partial}{\partial\mu_\ell}f_\ell f_\phi=\frac{1}{\left(e^{\left(E_\ell-\mu_\ell\right)/T}+1\right)^2\left(e^{\left(E_\phi-\mu_\phi\right)/T}-1\right)}\:\frac{e^{\left(E_\ell-\mu_\ell\right)/T}}{T}\\
+	\frac{\partial}{\partial\mu_\phi}f_\ell f_\phi=\frac{1}{\left(e^{\left(E_\ell-\mu_\ell\right)/T}+1\right)\left(e^{\left(E_\phi-\mu_\phi\right)/T}-1\right)^2}\:\frac{e^{\left(E_\phi-\mu_\phi\right)/T}}{T}
+\end{align*}
+this product can be expanded for small chemical potentials up to linear order.
+\begin{equation*}
+	f_\ell f_\phi=\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(1+\frac{e^{E_\phi/T}}{T\left(e^{E_\phi/T}-1\right)}\mu_\phi+\frac{e^{E_\ell/T}}{T\left(e^{E_\ell/T}-1\right)}\mu_\ell\right)+\mathcal{O}(\mu^2)
+\end{equation*}
+Using this and the relations for the chemical potentials form chapter \ref{ap:Gamma_B-L} one gets
+\begin{equation*}
+	f_\ell f_\phi-f_{\bar{\ell}} f_{\bar{\phi}}=\frac{6n_{B-L}}{T^3\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)
+\end{equation*}
+where again the relation $\mu_x=\mu_{\bar{x}}$ was used. \newline
+It is also easy to see that by neglecting the $\pm$1 terms in the denominators, so for high Higgs and lepton energies, exactly the result that is obtained by using Maxwell-Boltzmann statistics is reproduced. \newline
+Putting this back into \ref{eq:Gamma_B-L} results in
+\begin{align*}
+	\Gamma_{B-L,q}&=\frac{3}{8\pi^4}\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}\cdot\\
+	&\cdot\left(\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)\delta^4\left(p_\ell+p_\phi-p_N\right)\right)
+\end{align*} 
+The addition q to the subscript simply means that this is the quantum corrected rate $\Gamma_{B-L}$
+First the integral in parentheses will be calculated using the 4-momentum delta function.
+\begin{align*}
+	&\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)\delta^4\left(p_\ell+p_\phi-p_N\right)=\\
+	&=\int\frac{d^3p_\ell}{E_\ell}\frac{1}{E_\phi}\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)\delta\left(E_\ell+E_\phi-M_N\right)=\\
+	&=\frac{1}{e^{E_N/T}-1}\int\frac{d^3p_\ell}{p_\ell}\left(\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}\:\frac{c_\phi}{2}+\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}c_\ell\right)\delta\left(2p_\ell-M_N\right)
+\end{align*}
+The fact that Higgs particles and leptons are relativistic was used and therefore their masses can be neglected. By utilizing the remaining delta function this integral can be calculated as follows 
+\begin{align*}
+&\frac{1}{e^{E_N/T}-1}\int\frac{d^3p_\ell}{p_\ell}\left(\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}\:\frac{c_\phi}{2}+\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}c_\ell\right)\delta\left(2p_\ell-M_N\right)=\\
+&=\frac{4\pi}{e^{E_N/T}-1}\int_0^\infty dp\:\left(\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}\:\frac{c_\phi}{2}+\frac{e^{p_\ell/T}}{e^{p_\ell/T}-1}c_\ell\right)\delta\left(2p_\ell-M_N\right)=\\
+&=\frac{2\pi}{e^{E_N/T}-1}\int_0^\infty dx\:\left(\frac{e^{x/2T}}{e^{x/2T}-1}\:\frac{c_\phi}{2}+\frac{e^{x/2T}}{e^{x/2T}-1}c_\ell\right)\delta\left(x-M_N\right)=\\
+&=\frac{2\pi}{e^{E_N/T}-1}\left(\frac{e^{M_N/2T}}{e^{M_N/2T}-1}\:\frac{c_\phi}{2}+\frac{e^{M_N/2T}}{e^{M_N/2T}-1}c_\ell\right)=\\
+&=\frac{2\pi}{e^{E_N/T}-1}\left(\frac{e^{z/2}}{e^{z/2}-1}\:\frac{c_\phi}{2}+\frac{e^{z/2}}{e^{z/2}-1}c_\ell\right)
+\end{align*}
+Plugging this back into the original relation for $\Gamma_{B-L,q}$ results in
+\begin{equation*}
+\Gamma_{B-L,q}=\frac{3}{4\pi^2}\:\frac{M_N}{T^3}\left(\frac{e^{z/2}}{e^{z/2}-1}\:\frac{c_\phi}{2}+\frac{e^{z/2}}{e^{z/2}-1}c_\ell\right)\Gamma_0\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}
+\end{equation*}
+The fact that a term -1 arises in the denominator in the integral means that this integral cannot be evaluated analytically or even expressed in terms of some known functions as the Bessel function in the case of the uncorrected rate $\Gamma_{B-L}$. However, using the same substitution as for calculating $\Gamma_{B-L}$ we get the final result for the corrections due to the correct quantum statistics
+\begin{equation*}
+	\Gamma_{B-L,q}=\frac{3}{\pi^2}\:z^3\left(\frac{e^{z/2}}{e^{z/2}-1}\:\frac{c_\phi}{2}+\frac{e^{z/2}}{e^{z/2}-1}c_\ell\right)I(z)\Gamma_0
+\end{equation*}
+with 
+\begin{equation*}
+	I(z):=\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}=4\pi M_N^2\int_{1}^{\infty}\frac{\sqrt{x^2-1}}{e^{zx}-1}
+\end{equation*}
+Using this result one can easily see that for high z, meaning for an high neutrino mass M$_N$ and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, where classical statistics were used.
+\begin{equation*}
+	\Gamma_{B-L,q}\overset{z\rightarrow\infty}{\longrightarrow}\Gamma_{B-L}
+\end{equation*}

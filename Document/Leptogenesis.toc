@@ -28,7 +28,10 @@
 \contentsline {section}{\numberline {A.1}Feynman rules for the Yukawa interaction}{24}{section.A.1}
 \contentsline {section}{\numberline {A.2}The tree level decay rate for heavy neutrinos}{29}{section.A.2}
 \contentsline {chapter}{\numberline {B}Appendix B}{32}{appendix.B}
-\contentsline {section}{\numberline {B.1}Integrating the rate equation over phase space}{32}{section.B.1}
-\contentsline {section}{\numberline {B.2}Detailed calculation of $\Gamma _{B-L}$}{32}{section.B.2}
-\contentsline {section}{\numberline {B.3}Obtaining relativistic corrections to the rate equations}{35}{section.B.3}
-\contentsline {section}{\numberline {B.4}Obtaining radiative corrections to the rate equations}{36}{section.B.4}
+\contentsline {section}{\numberline {B.1}The CP-Violation parameter}{32}{section.B.1}
+\contentsline {chapter}{\numberline {C}Appendix C}{33}{appendix.C}
+\contentsline {section}{\numberline {C.1}Integrating the rate equation over phase space}{33}{section.C.1}
+\contentsline {section}{\numberline {C.2}Detailed calculation of $\Gamma _{B-L}$}{33}{section.C.2}
+\contentsline {section}{\numberline {C.3}Obtaining relativistic corrections to the rate equations}{36}{section.C.3}
+\contentsline {section}{\numberline {C.4}Obtaining radiative corrections to the rate equations}{37}{section.C.4}
+\contentsline {section}{\numberline {C.5}Obtaining quantum corrections}{37}{section.C.5}

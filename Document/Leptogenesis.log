@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  22 MAY 2017 21:43
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  26 MAY 2017 17:41
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.138 seconds
+luaotfload | main : initialization completed in 0.145 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
@@ -1224,13 +1224,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Images/PH.pdf, id=119, 29.8716pt x 29.8716pt>
+<Images/PH.pdf, id=131, 29.8716pt x 29.8716pt>
 File: Images/PH.pdf Graphic file (type pdf)
  <use Images/PH.pdf>
 Package luatex.def Info: Images/PH.pdf used on input line 74.
 (luatex.def)             Requested size: 29.8715pt x 29.8715pt.
 
-<Images/tumlogo.pdf, id=121, 53.24893pt x 28.45631pt>
+<Images/tumlogo.pdf, id=133, 53.24893pt x 28.45631pt>
 File: Images/tumlogo.pdf Graphic file (type pdf)
  <use Images/tumlogo.pdf>
 Package luatex.def Info: Images/tumlogo.pdf used on input line 74.
@@ -1338,13 +1338,13 @@ Overfull \hbox (9.38208pt too wide) in paragraph at lines 178--178
 \T1/lmr/m/n/10.95 schaulichung 
  []
 
-[7] [8] <Images/Higgs1.pdf, id=283, 930.47626pt x 457.71pt>
+[7] [8] <Images/Higgs1.pdf, id=299, 930.47626pt x 457.71pt>
 File: Images/Higgs1.pdf Graphic file (type pdf)
 
 <use Images/Higgs1.pdf>
 Package luatex.def Info: Images/Higgs1.pdf used on input line 213.
 (luatex.def)             Requested size: 223.07211pt x 109.72693pt.
- <Images/Higgs2.pdf, id=284, 335.2525pt x 164.615pt>
+ <Images/Higgs2.pdf, id=300, 335.2525pt x 164.615pt>
 File: Images/Higgs2.pdf Graphic file (type pdf)
 
 <use Images/Higgs2.pdf>
@@ -1432,7 +1432,7 @@ chapter 4.
 [17
 
 
-] [18] <Images/rates.pdf, id=444, 1253.68375pt x 465.74pt>
+] [18] <Images/rates.pdf, id=459, 1253.68375pt x 465.74pt>
 File: Images/rates.pdf Graphic file (type pdf)
 
 <use Images/rates.pdf>
@@ -1833,26 +1833,36 @@ remainder of this lua chunk will be ignored.
 
 [29] [30] [31]
 chapter B.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
-
 [32
 
 
-] [33] [34] [35]) (./Chapter/References.tex [36]
+]
+chapter C.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Gamma' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 425.
+
+[33
+
+
+] [34] [35] [36] [37]
+Overfull \hbox (11.99025pt too wide) in paragraph at lines 595--595
+[] 
+ []
+
+[38]) (./Chapter/References.tex [39]
 Underfull \hbox (badness 2653) in paragraph at lines 35--39
 []\T1/lmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
 Physics. (2008, Novem-
@@ -1901,7 +1911,7 @@ Underfull \hbox (badness 3547) in paragraph at lines 123--126
 d at []http://www.we-bc-i-ta-
  []
 
-[37
+[40
 
 
 ]
@@ -1922,14 +1932,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--137
  []http://www.we-bc-i-ta-
  []
 
-) [38]
+) [41]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
  (./Leptogenesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: B959C2E3D7A3DB13CAE17912B47BDA3F;2067.
+(rerunfilecheck)             Checksum: 272932226E0CFAB57F64082290B4DE80;2265.
 
 
 LaTeX Warning: There were undefined references.
@@ -1938,42 +1948,43 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28494 strings out of 494577
+ 28503 strings out of 494577
  156265,953878 words of node,token memory allocated
- 29584 words of node memory still in use:
-   123 hlist, 16 vlist, 2 rule, 16 disc, 9 local_par, 3098 glue, 15 kern, 21 pen
-alty, 2 sub_mlist, 142 glyph, 1043 attribute, 49 glue_spec, 1043 attribute_list,
+ 32804 words of node memory still in use:
+   123 hlist, 16 vlist, 2 rule, 16 disc, 9 local_par, 3538 glue, 15 kern, 21 pen
+alty, 2 sub_mlist, 142 glyph, 1078 attribute, 49 glue_spec, 1078 attribute_list,
  7 write, 6 save_pos, 285 pdf_literal, 5 pdf_action nodes
-   avail lists: 1:16,2:10852,3:2363,4:92,5:318,6:4752,7:3825,8:184,9:1496,10:17,
-11:418
- 31193 multiletter control sequences out of 65536+600000
+   avail lists: 1:14,2:10782,3:2363,4:101,5:317,6:4751,7:3385,8:185,9:1496,10:17
+,11:418
+ 31196 multiletter control sequences out of 65536+600000
  78 fonts using 4940031 bytes
  64i,20n,98p,8846b,1942s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/lm/lmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/
-lmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
-sbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb>
-Output written on Leptogenesis.pdf (40 pages, 629043 bytes).
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/lm/lmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
+m/lmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
+mssbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb>
+Output written on Leptogenesis.pdf (43 pages, 649863 bytes).
 
-PDF statistics: 742 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 191 named destinations out of 1000 (max. 131072)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 778 PDF objects out of 1000 (max. 8388607)
+ 694 compressed objects within 7 object streams
+ 197 named destinations out of 1000 (max. 131072)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
