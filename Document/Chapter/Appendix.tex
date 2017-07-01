@@ -388,16 +388,6 @@ To get to the third line the 3-momentum delta function was used, resulting in $\
 	&=\frac{|h_{11}|^2}{8\pi}M_N
 \end{align*}
 \chapter{Appendix B}
-\section{The CP-Violation parameter}
-
-
-
-
-
-
-
-
-\chapter{Appendix C}
 \section{Integrating the rate equation over phase space}
 \label{ap:phase_space}
 In order to be able to determine $\Gamma_N$ it is usefull to perform the phase space integral over following equation. 
@@ -408,7 +398,7 @@ Comparing this to \ref{eq:L_rate_expanding_interaction} one sees that the second
 Now perfomring the phase space integral results in
 \begin{align*}
 \int\frac{d^3p}{\left(2\pi\right)^3}\: \left(\frac{d}{dt}+3H\right)f_N=-\int\frac{d^3p}{\left(2\pi\right)^3}\:\Gamma_N\left(f_N-f_N^{eq}\right)\\
-\int dp\: \left(\frac{d}{dt}+3H\right)f_Np^2=-\int dp\:\Gamma_N\left(f_N-f_N^{eq}\right)^2
+\int dp\: \left(\frac{d}{dt}+3H\right)f_Np^2=-\int dp\:\Gamma_N\left(f_N-f_N^{eq}\right)p^2
 \end{align*}
 Using the following partial integration to evaluate the left-hand side
 \begin{equation*}
@@ -511,28 +501,30 @@ and it can easily be seen that $\Gamma_{N,u}=\Gamma_{0}$ \newline
 The left-hand side however can be evaluated by performing the steps done in \ref{ap:phase_space}, but in reverse order. \newline
 The next thing to do is acquiring the rate equation for u and therefore one has to multiply equation \ref{eq:L_rate_expanding_interaction_rel} with p$^2$ and integrate over p. At leading order $\left(E_N=M_N\left[1+\mathcal{O}(p^2)\right]\right)$ in p this yields
 \begin{align*}
-	g_N\int \frac{d^3p}{(2\pi)^3\:M_N}\:\left(\frac{\partial}{\partial t}-Hp^3\frac{\partial}{\partial p}\right)f_N=\Gamma_0\:g_N\int \frac{d^3p}{M_N}\left(e^{E_N/T}-f_N\right)p^2
+	g_N\int \frac{d^3p}{(2\pi)^3\:M_N}\:\left(p^2\frac{\partial}{\partial t}-Hp^3\frac{\partial}{\partial p}\right)f_N=\Gamma_0\:g_N\int \frac{d^3p}{M_N}\left(e^{E_N/T}-f_N\right)p^2
 \end{align*}
 Using the following partial integration
 \begin{align*}
 	-\int d^3p\:Hp^3\frac{\partial}{\partial p}f_N&=-4\pi\int dp\:Hp^5\frac{\partial}{\partial p}f_N=\\
 	&=-4\pi\left(\left[p^5f_N\right]_0^\infty-5\int dp\: p^4f_N\right)=\\
-	&=4\pi\int dp\: 5p^4f_N=5\int d^3p\: p^4f_N
+	&=4\pi\int dp\: 5p^4f_N=5\int d^3p\: p^2f_N
 \end{align*}
 and again the definition of u one easily gets
 \begin{equation*}
 	\left(\frac{d}{dt}+5H\right)u=\Gamma_u\left(u^{eq}-u\right)
 \end{equation*}
 with $\Gamma_u=\Gamma_0$ at leading order in p. \newline
-At last, the relativistic correction for the asymmetry rate equation has to be determined. As stated above in order for this to be done one has to only look at the first term on the right-hand side of \ref{eq:B-L_rate_expanding_interaction}.
-\todo{Faktor + Minus klären}
-\begin{align*}
-	\Gamma_{B-L,N}\left(n_N-n_N^{eq}\right)&=\Gamma_{B-L,N}\:g_N\int \frac{d^3p}{\left(2\pi^2\right)^32E_N}\:\left(f_N-f_N^{eq}\right)\simeq\\
-	&\simeq\Gamma_{B-L,N}\:g_N\int\frac{d^3p}{\left(2\pi\right)^3}\:\frac{1}{2M_N}\left(1-\frac{1}{2}\left(\frac{p}{M_N}\right)^2\right)\left(f_N-f_N^{eq}\right)=\\
-	&=\Gamma_{B-L,N}\left(n_N-n_N^{eq}\right)-\frac{1}{4}\Gamma_{B-L,u}\left(u-u^{eq}\right)
-\end{align*}
-Where in g$_N$=2 was used in the last step.\newline
-Also easy to see is the following
+By performing the same steps as shown in \ref{ap:phase_space} but applied on equation \ref{eq:B-L_rate_expanding_interaction} one gets an equation equivalent to \ref{eq:boltzmann}. The last part will be neglected in the following since it doesn't matter considering relativistic corrections.
+\begin{equation*}
+\left(\frac{\partial}{\partial t}-Hp\frac{\partial}{\partial p}\right)f_{B-L}=\frac{M_N\Gamma_{B-L}}{E_N}\left(f_N-e^{-E_N/T}\right)
+\end{equation*}
+Here the Lorentz invariant phase space was already taken into account.\newline
+Analogous to the procedure above one has to only consider the right-hand side of this equation and expanding the factor 1/E$_N$ results in
+\todo{Minus klären}
+\begin{equation*}
+g_N\int \frac{d^3p}{(2\pi)^3}\left(\Gamma_{B-L}\left(f_N-f_N^{eq}\right)-\frac{\Gamma_{B-L}}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N-f_N^{eq}\right)\right)=\Gamma_{B-L}\left(n_N-n_N^{eq}\right)-\Gamma_{B-L,u}\left(u-u^{eq}\right)
+\end{equation*}
+Also easy to see is the following relation:
 \begin{equation*}
 	\Gamma_{B-L,u}=\epsilon\Gamma_0
 \end{equation*}
@@ -620,7 +612,7 @@ with
 \begin{equation*}
 	I(z):=\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}=4\pi M_N^2\int_{1}^{\infty}\frac{\sqrt{x^2-1}}{e^{zx}-1}
 \end{equation*}
-Using this result one can easily see that for high z, meaning for an high neutrino mass M$_N$ and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, where classical statistics were used.
+Using this result one can easily see that a certain temperature for high z, meaning for an high neutrino mass M$_N$ and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, where classical statistics were used.
 \begin{equation*}
 	\Gamma_{B-L,q}\overset{z\rightarrow\infty}{\longrightarrow}\Gamma_{B-L}
 \end{equation*}
