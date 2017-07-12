@@ -1,5 +1,5 @@
 \appendix
-\chapter{Appendix A}
+\chapter{The Yukawa interaction term}
 \section{Feynman rules for the Yukawa interaction}
 In quantum field theories without Majorana particles the Feynman rules for evaluating Feynman diagrams are acquired from the elements of the so called scattering matrix S, given as \cite[Eq. 3.26]{Tong:2006}, given as
 \begin{equation}
@@ -387,7 +387,7 @@ To get to the third line the 3-momentum delta function was used, resulting in $\
 	&=\frac{|h_{11}|^2}{2\pi}\int_0^{\infty} \frac{dx}{4}\:x\delta\left(x-M_N\right)=\\
 	&=\frac{|h_{11}|^2}{8\pi}M_N
 \end{align*}
-\chapter{Appendix B}
+\chapter{Detailed calculations}
 \section{Integrating the rate equation over phase space}
 \label{ap:phase_space}
 In order to be able to determine $\Gamma_N$ it is usefull to perform the phase space integral over following equation. 
@@ -468,7 +468,7 @@ one gets
 \end{align*}
 In order to evaluate the last integral one has to use the delta distribution, resulting in E=M\textsubscript{N}, while the last step uses the fact that leptons and Higgs are relativistic and therefore their energy is E$_{\ell,\phi}\approx$ p and in addition that the energy needed for the inverse decay to be possible in the neutrino's rest frame has to be E$_{\ell,\phi}\approx p=\frac{M\textsubscript{N}}{2}$. Finally plugging this into the original relation for $\Gamma_{B-L}$ yields
 \begin{align*}
-	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}} \cdot 2\pi\frac{E_N}{M_N}=\\
+	\Gamma_{B-L}&=\frac{3}{8\pi^4}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}e^{-\frac{E_N}{T}} \cdot 2\pi=\\
 	&=\frac{3}{\pi^2}\:\left(c_\ell+\frac{c_\phi}{2}\right)\:\frac{M_N}{T^3}\Gamma_0\int_0^\infty \frac{dp_N}{E_N}\:p_N^2e^{-\frac{E_N}{T}}
 \end{align*}
 And with the final change of integration variables 
@@ -483,7 +483,7 @@ one gets
 \end{align*}
 where in the last step the definition of the modified Bessel function of the second kind was used
 \begin{equation*}
-	K_n(z)=\frac{\sqrt{\pi}}{\Gamma\left(n-\frac{1}{2}\right)}\left(\frac{1}{2}z\right)^n\int_{1}^{\infty}dx\:\left(x^2-1\right)^{n-\frac{1}{2}}e^{-zx}
+	K_n(z)=\frac{\sqrt{\pi}}{\Gamma\left(n+\frac{1}{2}\right)}\left(\frac{1}{2}z\right)^n\int_{1}^{\infty}dx\:\left(x^2-1\right)^{n-\frac{1}{2}}e^{-zx}
 \end{equation*}
 With $\Gamma(n)$ the gamma function as generalization of the factorial.
 \newpage
@@ -558,7 +558,9 @@ Using the same procedure on equation \ref{eq:rate_u} results in
 &\overset{E_N=M_N+\mathcal{O}(p^2)}{\Longrightarrow}\Gamma_u=a\Gamma_0
 \end{align*}
 Because equation \ref{eq:rate_u} is only of order p, one can drop all terms of order p$^2$ or higher to obtain this result
-\section{Obtaining quantum corrections}
+\section{Differences between quantum and classical statistics}
+\label{ap:statistics}
+\todo{Boltzmann}
 Although the Higgs particles and leptons are of high energy and can therefore be treated using Maxwell-Boltzmann statistics, it is interesting to see how using the correct quantum statistics, namely Fermi-Dirac and Bose-Einstein statistics respectively, affect previous results.\newline
 The only point where this difference between classical and quantum distributions comes into play is during the calculation of $\Gamma_{B-L}$, because this is the only time where the explicit form of the equilibrium distributions is used, more precisely the factor $f_\ell f_\phi-f_{\bar{\ell}}f_{\bar{\phi}}$. How this factor will be corrected using the correct statistics will be shown in this section. \newline
 The product of these two distribution simply yields
@@ -602,7 +604,7 @@ The fact that Higgs particles and leptons are relativistic was used and therefor
 \end{align*}
 Plugging this back into the original relation for $\Gamma_{B-L,q}$ results in
 \begin{equation*}
-\Gamma_{B-L,q}=\frac{3}{4\pi^2}\:\frac{M_N}{T^3}\left(\frac{e^{z/2}}{e^{z/2}-1}\:\frac{c_\phi}{2}+\frac{e^{z/2}}{e^{z/2}-1}c_\ell\right)\Gamma_0\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}
+\Gamma_{B-L,q}=\frac{3}{4\pi^3}\:\frac{M_N}{T^3}\left(\frac{e^{z/2}}{e^{z/2}-1}\:\frac{c_\phi}{2}+\frac{e^{z/2}}{e^{z/2}-1}c_\ell\right)\Gamma_0\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}
 \end{equation*}
 The fact that a term -1 arises in the denominator in the integral means that this integral cannot be evaluated analytically or even expressed in terms of some known functions as the Bessel function in the case of the uncorrected rate $\Gamma_{B-L}$. However, using the same substitution as for calculating $\Gamma_{B-L}$ we get the final result for the corrections due to the correct quantum statistics
 \begin{equation*}
@@ -610,7 +612,7 @@ The fact that a term -1 arises in the denominator in the integral means that thi
 \end{equation*}
 with 
 \begin{equation*}
-	I(z):=\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}=4\pi M_N^2\int_{1}^{\infty}\frac{\sqrt{x^2-1}}{e^{zx}-1}
+	I(z):=\frac{1}{4\pi\: M_N^2}\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}=\int_{1}^{\infty}dx\frac{\sqrt{x^2-1}}{e^{zx}-1}
 \end{equation*}
 Using this result one can easily see that a certain temperature for high z, meaning for an high neutrino mass M$_N$ and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, where classical statistics were used.
 \begin{equation*}

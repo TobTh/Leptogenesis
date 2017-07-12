@@ -1,6 +1,4 @@
-function ndot = density_nonRel(z,N,K)        
-    cl = 344/537;
-    cp = 52/179;
+function ndot = density_nonRel(z,N,K,cl,cp)        
     l = 0.5;
     g1 = 1;
     g2 = 1;

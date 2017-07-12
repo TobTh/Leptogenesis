@@ -1,6 +1,4 @@
-function ndot = density_nonCorr(z,N,K)               
-    cl = 344/537;
-    cp = 52/179;
+function ndot = density_nonCorr(z,N,K,cl,cp)               
     epsilon = 10^(-6);
     nE = 3/8*z^2*besselk(2,z);
     

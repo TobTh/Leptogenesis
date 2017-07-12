@@ -83,7 +83,7 @@ Zweitgutachter:
 	\input{Chapter/Outline_of_baryogenesis.tex}
 	\input{Chapter/Outline_of_leptogenesis.tex}
 	\input{Chapter/Analytic_approximations_and_calculations.tex}
-	\input{Chapter/Numerical_results.tex}
+	\input{Chapter/Numerical results.tex}
 	\input{Chapter/Summary.tex}
 	\input{Chapter/Appendix.tex}
 	\input{Chapter/References.tex}
