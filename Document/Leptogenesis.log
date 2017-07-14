@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  12 JUL 2017 15:27
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  14 JUL 2017 12:03
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.138 seconds
+luaotfload | main : initialization completed in 0.149 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
@@ -1310,21 +1310,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 File: Images/Higgs1.png Graphic file (type png)
 
 <use Images/Higgs1.png>
-Package luatex.def Info: Images/Higgs1.png used on input line 212.
+Package luatex.def Info: Images/Higgs1.png used on input line 214.
 (luatex.def)             Requested size: 318.66948pt x 124.2885pt.
  <Images/Higgs2.png, id=307, 1770.615pt x 690.58pt>
 File: Images/Higgs2.png Graphic file (type png)
 
 <use Images/Higgs2.png>
-Package luatex.def Info: Images/Higgs2.png used on input line 217.
+Package luatex.def Info: Images/Higgs2.png used on input line 219.
 (luatex.def)             Requested size: 318.66948pt x 124.2885pt.
- [10<./Images/Higgs1.png><./Images/Higgs2.png>])
-(./Chapter/Outline_of_leptogenesis.tex [11]
+ [10] [11<./Images/Higgs1.png><./Images/Higgs2.png>])
+(./Chapter/Outline_of_leptogenesis.tex [12]
 chapter 3.
-[12
+[13
 
 
-] [13] [14]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t
+] [14] [15]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t
 /tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table f
 illed incorrectly
 stack traceback:
@@ -1392,47 +1392,47 @@ l.146 	}
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[15] [16]) (./Chapter/Analytic_approximations_and_calculations.tex [17]
+[16] [17]) (./Chapter/Analytic_approximations_and_calculations.tex [18]
 chapter 4.
-[18
+[19
 
 
-] [19] [20] <Images/rates.png, id=476, 1770.615pt x 746.79pt>
+] [20] [21] <Images/rates.png, id=481, 1770.615pt x 746.79pt>
 File: Images/rates.png Graphic file (type png)
 
 <use Images/rates.png>
 Package luatex.def Info: Images/rates.png used on input line 125.
 (luatex.def)             Requested size: 364.19667pt x 153.60571pt.
- [21<./Images/rates.png>] [22])
-(./Chapter/Numerical_results.tex [23]
+ [22<./Images/rates.png>] [23])
+(./Chapter/Numerical_results.tex [24]
 chapter 5.
-[24
+[25
 
 
-] <Images/quantum.png, id=542, 1770.615pt x 879.285pt>
+] <Images/quantum.png, id=547, 1770.615pt x 879.285pt>
 File: Images/quantum.png Graphic file (type png)
 
 <use Images/quantum.png>
 Package luatex.def Info: Images/quantum.png used on input line 39.
 (luatex.def)             Requested size: 364.19667pt x 180.85835pt.
- [25<./Images/quantum.png>]
-<Images/quantum1.png, id=552, 1770.615pt x 809.0225pt>
+ [26<./Images/quantum.png>]
+<Images/quantum1.png, id=557, 1770.615pt x 809.0225pt>
 File: Images/quantum1.png Graphic file (type png)
 
 <use Images/quantum1.png>
 Package luatex.def Info: Images/quantum1.png used on input line 53.
 (luatex.def)             Requested size: 364.19667pt x 166.40619pt.
-) (./Chapter/Summary.tex [26<./Images/quantum1.png>]
+) (./Chapter/Summary.tex [27<./Images/quantum1.png>]
 chapter 6.
-) (./Chapter/Appendix.tex [27
+) (./Chapter/Appendix.tex [28
 
 
 ]
 chapter A.
-[28
+[29
 
 
-] [29] [30] [31]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213:
+] [30] [31] [32]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213:
  ...t/tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization ta
 ble filled incorrectly
 stack traceback:
@@ -1444,7 +1444,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.176 			d   -- [scalar,thick] b}
+l.177 			d   -- [scalar,thick] b}
                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1461,7 +1461,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.181 			d   -- [scalar,thick] b}
+l.182 			d   -- [scalar,thick] b}
                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1478,7 +1478,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.186 			d   -- [scalar,thick] b}
+l.187 			d   -- [scalar,thick] b}
                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1495,7 +1495,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.191 			d   -- [scalar,thick] b}
+l.192 			d   -- [scalar,thick] b}
                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1512,7 +1512,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.199 		d   -- [scalar,thick] b}
+l.200 		d   -- [scalar,thick] b}
                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1529,7 +1529,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.204 		d   -- [scalar,thick] b}
+l.205 		d   -- [scalar,thick] b}
                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1546,7 +1546,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.209 		d   -- [scalar,thick] b}
+l.210 		d   -- [scalar,thick] b}
                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1563,13 +1563,13 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.214 		d   -- [scalar,thick] b}
+l.215 		d   -- [scalar,thick] b}
                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
 
-Overfull \hbox (6.61542pt too wide) detected at line 215
+Overfull \hbox (6.61542pt too wide) detected at line 216
 []  \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/
 cmsy/m/n/10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/cmsy/m/n/
 10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/cmsy/m/n/10.95  \
@@ -1588,7 +1588,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.238 			a[dot]-- [fermion,thick,momentum'] b}
+l.239 			a[dot]-- [fermion,thick,momentum'] b}
                                             ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1605,7 +1605,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.241 			a[dot]-- [anti fermion,thick,momentum'] b}
+l.242 			a[dot]-- [anti fermion,thick,momentum'] b}
                                                  ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1622,7 +1622,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.244 			a[dot] -- [edge,thick,momentum'] b}
+l.245 			a[dot] -- [edge,thick,momentum'] b}
                                           ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1639,7 +1639,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.252 			a[dot]-- [fermion,thick,rmomentum'] b}
+l.253 			a[dot]-- [fermion,thick,rmomentum'] b}
                                              ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1656,7 +1656,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.255 			a[dot]-- [anti fermion,thick,rmomentum'] b}
+l.256 			a[dot]-- [anti fermion,thick,rmomentum'] b}
                                                   ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1673,7 +1673,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.258 			a[dot] -- [edge,thick,rmomentum'] b}
+l.259 			a[dot] -- [edge,thick,rmomentum'] b}
                                            ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1690,7 +1690,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.266 			a-- [fermion,thick,momentum'] b[dot]}
+l.267 			a-- [fermion,thick,momentum'] b[dot]}
                                             ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1707,7 +1707,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.269 			a-- [anti fermion,thick,momentum'] b[dot]}
+l.270 			a-- [anti fermion,thick,momentum'] b[dot]}
                                                  ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1724,7 +1724,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.272 			a -- [edge,thick,momentum'] b[dot]}
+l.273 			a -- [edge,thick,momentum'] b[dot]}
                                           ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1741,7 +1741,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.280 			a-- [fermion,thick,rmomentum'] b[dot]}
+l.281 			a-- [fermion,thick,rmomentum'] b[dot]}
                                              ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1758,7 +1758,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.283 			a-- [anti fermion,thick,rmomentum'] b[dot]}
+l.284 			a-- [anti fermion,thick,rmomentum'] b[dot]}
                                                   ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1775,12 +1775,12 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.286 			a -- [edge,thick,rmomentum'] b[dot]}
+l.287 			a -- [edge,thick,rmomentum'] b[dot]}
                                            ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[32]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
+[33]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
 neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
 ncorrectly
 stack traceback:
@@ -1792,7 +1792,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.301 		d   -- [thick, edge label=N,momentum'] b}
+l.302 		d   -- [thick, edge label=N,momentum'] b}
                                                ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1809,47 +1809,47 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.306 		d  --[thick,edge label=N,momentum'] b  }
+l.307 		d  --[thick,edge label=N,momentum'] b  }
                                               ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[33] [34] [35]
+[34] [35] [36]
 chapter B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 415.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 415.
+(hyperref)                removing `\Gamma' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 415.
+(hyperref)                removing `subscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 415.
+(hyperref)                removing `math shift' on input line 416.
 
-[36
+[37
 
 
-] [37] [38]
+] [38] [39]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 ne 523.
 
-Overfull \hbox (23.12312pt too wide) detected at line 526
+Overfull \hbox (27.98976pt too wide) detected at line 526
 \OML/cmm/m/it/10.95 g[] [] [] [] \OT1/cmr/m/n/10.95 =  [] [] \OMS/cmsy/m/n/10.9
-5   \OT1/cmr/m/n/10.95  [] []
+5   \OT1/cmr/m/n/10.95  [] [] \OML/cmm/m/it/10.95 :
  []
 
-[39] [40]
-Overfull \hbox (11.99025pt too wide) in paragraph at lines 589--589
+[40] [41] [42]
+Overfull \hbox (22.33191pt too wide) in paragraph at lines 607--607
 [] 
  []
 
-[41]) (./Chapter/References.tex [42]
+[43]) (./Chapter/References.tex [44]
 Underfull \hbox (badness 2653) in paragraph at lines 26--30
 []\T1/lmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
 Physics. (2008, Novem-
@@ -1898,7 +1898,7 @@ Underfull \hbox (badness 3547) in paragraph at lines 89--92
 d at []http://www.we-bc-i-ta-
  []
 
-[43
+[45
 
 
 ]
@@ -1919,7 +1919,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
  []http://www.we-bc-i-ta-
  []
 
-) [44]
+) [46]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./Leptogenesis.aux)
@@ -1931,15 +1931,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28571 strings out of 494577
- 156259,953878 words of node,token memory allocated
- 33759 words of node memory still in use:
-   117 hlist, 16 vlist, 2 rule, 6 disc, 9 local_par, 3717 glue, 5 kern, 15 penal
-ty, 2 sub_mlist, 72 glyph, 1165 attribute, 49 glue_spec, 1165 attribute_list, 7 
-write, 6 save_pos, 285 pdf_literal, 6 pdf_action nodes
-   avail lists: 1:14,2:10498,3:2261,4:96,5:328,6:4242,7:3339,8:184,9:1455,10:20,
-11:370
- 31232 multiletter control sequences out of 65536+600000
+ 28565 strings out of 494577
+ 156254,953878 words of node,token memory allocated
+ 33485 words of node memory still in use:
+   80 hlist, 12 vlist, 2 rule, 4 disc, 6 local_par, 3862 glue, 5 kern, 10 penalt
+y, 2 sub_mlist, 52 glyph, 1053 attribute, 49 glue_spec, 1053 attribute_list, 5 w
+rite, 4 save_pos, 190 pdf_literal, 6 pdf_action nodes
+   avail lists: 1:11,2:10722,3:2365,4:94,5:327,6:4396,7:3216,8:185,9:1496,10:20,
+11:393
+ 31225 multiletter control sequences out of 65536+600000
  78 fonts using 4940031 bytes
  64i,20n,98p,8846b,1943s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
@@ -1964,10 +1964,10 @@ onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
 mssbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb>
-Output written on Leptogenesis.pdf (46 pages, 792891 bytes).
+Output written on Leptogenesis.pdf (48 pages, 799205 bytes).
 
-PDF statistics: 827 PDF objects out of 1000 (max. 8388607)
- 740 compressed objects within 8 object streams
- 217 named destinations out of 1000 (max. 131072)
+PDF statistics: 843 PDF objects out of 1000 (max. 8388607)
+ 754 compressed objects within 8 object streams
+ 218 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

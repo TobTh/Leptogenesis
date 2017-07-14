@@ -23,7 +23,7 @@ The last condition to be met in order for baryogenesis to be achievable is that 
 The energy $E_X$ and the momentum $\vec{p}_X$ are related via the relativistic energy-momentum-relation $E_X^2=\vec{p}_X^2+m_X^2$. $\mu_X$ describes the chemical potential of the particle species X, which is an important quantity for describing thermal equilibrium states, as the chemical potentials of two species X and Y, which are in thermal equilibrium, are related by $\mu_X=\mu_Y$ or for more species $\sum_i\mu_i=0$.\newline\indent
 Using eq. \eqref{eq:distribution} to compute the particle density of a certain particle species one gets 
 \begin{equation}
-	n_X=g_X\int\frac{d^3p}{(2\pi)^3}\:f_X(E)
+	n_X=g_X\int\frac{d^3p}{(2\pi)^3}\:f_X(E),
 	\label{eq:density_n}
 \end{equation}
 where g$_X$ denotes the number of inner degrees of freedom of X. \newline\indent
@@ -66,8 +66,8 @@ Although nowadays there are no records or experimental proofs on earth for baryo
 As it turns out, the electroweak part of the SM with its SU(2)$_L\times$U(1)$_Y$ symmetry groups suits best for describing baryogenesis. But before the way this is achieved in the SM is displayed, this section will give a short rundown on the SU(2)$_L\times$U(1)$_Y$ symmetry found in the SM.\newline\indent
 The U(1)$_Y$ symmetry can be represented by the following transformations:
 \begin{align*}
-\Psi \longrightarrow e^{i\frac{Y}{2}\alpha(x)}\Psi\\
-\bar{\Psi} \longrightarrow e^{-i\frac{Y}{2}\alpha(x)}\bar{\Psi}
+\Psi \longrightarrow e^{i\frac{Y}{2}\alpha(x)}\Psi,\\
+\bar{\Psi} \longrightarrow e^{-i\frac{Y}{2}\alpha(x)}\bar{\Psi},
 \end{align*}
 with $\Psi$ a Dirac spinor and $\alpha(x)$ being an arbitrary function. Y denotes the U(1)$_Y$ quantum number, the hypercharge. Because of the exponential nature of this transformation to check for U(1)$_Y$-symmetry, the hypercharges of all appearing particles in each term of the Lagrangian must add up to zero. \newline\indent
 The SU(2)$_L$ symmetry however acts just on left-handed particles with the transformation looking like
@@ -93,7 +93,7 @@ Nevertheless the elektroweak part of the SM, more precise the weak interactions,
 Although the first Sakharov condition, the necessity of baryon number violating processes, seems to be the most obvious, the way these are realised in the SM is not obvious because of non-perturbative processes. \newline\indent
 Since at the first glance the baryonic and, as it is going to play an important role during the following discussion, the leptonic currents are  conserved
 \begin{align}
-	\partial^\mu J_\mu^B=0
+	\partial^\mu J_\mu^B=0,
 	\label{eq:Bcurrent}
 	\\
 	\partial^\mu J_\mu^L=0,
@@ -101,7 +101,7 @@ Since at the first glance the baryonic and, as it is going to play an important 
 \end{align}
 one would assume there is no way the SM could produce an baryon asymmetry. However, by considering quantum fluctuation meaning orders higher than just tree level one finds that the currents for the left- and right-handed parts $f_L$ and $f_R$ respectively, where $f$ stands for quarks and leptons equally, are not conserved and furthermore not the same \cite{Bernreuther:2002uj}
 \begin{align}
-	\partial^\mu\bar{f}_L\gamma_\mu f_L&=-c_L\frac{g^2}{32\pi^2}F^a_{\mu\nu}\tilde{F}^{a\mu\nu}
+	\partial^\mu\bar{f}_L\gamma_\mu f_L&=-c_L\frac{g^2}{32\pi^2}F^a_{\mu\nu}\tilde{F}^{a\mu\nu},
 	\label{eq:l_chiralty_current}
 	\\
 	\partial^\mu\bar{f}_R\gamma_\mu f_R&=+c_R\frac{g^2}{32\pi^2}F^a_{\mu\nu}\tilde{F}^{a\mu\nu},
@@ -147,21 +147,22 @@ First of all, consider a thin wall, so that the area where quarks and fermions i
 At the start of this baryon asymmetry generating process there is the same amount of particles and anti-particles. \newline\indent
 While the bubble expands, left- and right-handed quarks and anti-quarks from the unbroken phase hit the bubble wall, get reflected under CP violating processes and change their helicity due to angular momentum conservation and since charge conservation holds (anti-)quarks are only allowed to scatter into (anti-)quarks. The scattering processes are the following:
 \begin{align*}
-	q_L\rightarrow q_R\\
-	q_R\rightarrow q_L\\
-	\bar{q}_L\rightarrow \bar{q}_R\\
-	\bar{q}_L\rightarrow \bar{q}_R
+	q_L\rightarrow q_R,\\
+	q_R\rightarrow q_L,\\
+	\bar{q}_L\rightarrow \bar{q}_R,\\
+	\bar{q}_L\rightarrow \bar{q}_R.
 \end{align*}
-Since these scattering processes are not CP conserving the reflection coefficents are not the same for all of the reactions above.
+Since these scattering processes are not CP conserving the reflection coefficents are not the same for all of the reactions above:
 \begin{equation}
-	\Delta R=R_{\bar{L}\rightarrow\bar{R}}-R_{R\rightarrow L}=R_{\bar{R}\rightarrow\bar{L}}-R_{L\rightarrow R}
+	\Delta R=R_{\bar{L}\rightarrow\bar{R}}-R_{R\rightarrow L}=R_{\bar{R}\rightarrow\bar{L}}-R_{L\rightarrow R}.
 	\label{eq:reflection_coeff}
 \end{equation}
 Using CPT invariance yields
 \begin{align}
-	R_{\bar{L}\rightarrow\bar{R}}=R_{L\rightarrow R}\\
-	R_{\bar{R}\rightarrow\bar{L}}=R_{R\rightarrow L}
+	R_{\bar{L}\rightarrow\bar{R}}=R_{L\rightarrow R},\\
+	R_{\bar{R}\rightarrow\bar{L}}=R_{R\rightarrow L}.
 \end{align}
+These relations alone imply that there still is no net baryon number, since the differences $J^L_q$ of the fluxes of $\bar{q}_R$ and $q_L$ and the  $J^R_q$ of $q_R$ and $\bar{q}_L$ reflected back into the symmetric phase are the same and cancel each other out, as depicted in figure \ref{fig:reflection}. Now taking into account the weak (B+L) violating sphaleron processes changes only $J^L_q$ while  $J^R_q$ stays the same, since weak forces only interact with left-handed particles and right-handed anti-particles. These processes then change the baryon number to a value $\Delta B\neq$0 near the bubble wall and this baryon number gets frozen in after the bubble sweeps over this particular area because in the symmetry phase the (B+L) violating processes are strongly Boltzmann suppressed \cite{Bernreuther:2002uj}. This means that the only factor responsible for the sign of the baryon number are the sphaleron processes. In particular this means that every bubble of broken phase contributes the with the same sign to the whole baryon number and no two or more bubbles cancel each other out, because the sphaleron processes everywhere act the same way. The way these have to work in order to produce a positive baryon number is shown in section 5.4 of \cite{Bernreuther:2002uj}.
 \begin{figure}
 	\centering
 	\begin{tikzpicture}
@@ -193,19 +194,20 @@ Using CPT invariance yields
 	\caption{Reflection of quarks and anti-quarks with different helicities respectively at a bubble wall. The length of the arrows of the reflected particles represents the flux of the respective particle. The effect of CP violation was chosen arbitrarily, by inverting it only the sings of the difference currents $J^L_q$ and $J^R_q$ would change but they would still cancel each other.}
 	\label{fig:reflection}
 \end{figure}
-These relations alone imply that there still is no net baryon number, since the differences $J^L_q$ of the fluxes of $\bar{q}_R$ and $q_L$ and the  $J^R_q$ of $q_R$ and $\bar{q}_L$ reflected back into the symmetric phase are the same and cancel each other out, as depicted in figure \ref{fig:reflection}. Now taking into account the weak (B+L) violating sphaleron processes changes only $J^L_q$ while  $J^R_q$ stays the same, since weak forces only interact with left-handed particles and right-handed anti-particles. These processes then change the baryon number to a value $\Delta B\neq$0 near the bubble wall and this baryon number gets frozen in after the bubble sweeps over this particular area because in the symmetry phase the (B+L) violating processes are strongly Boltzmann suppressed \cite{Bernreuther:2002uj}. This means that the only factor responsible for the sign of the baryon number are the sphaleron processes. In particular this means that every bubble of broken phase contributes the with the same sign to the whole baryon number and no two or more bubbles cancel each other out, because the sphaleron processes everywhere act the same way. The way these have to work in order to produce a positive baryon number is shown in section 5.4 of \cite{Bernreuther:2002uj}.
 \subsection{Failures of the SM}
 Since the SM offers everything needed to describe baryogenesis in the early universe, from B via C and CP violation to departures from the thermal equillibrium during the electroweak phase transition of possibly first order, one could naively say that the only thing left is the experimental proof to be delivered. \newline\indent
 Having said this, recent experiments have shown that the SM alone, is not able to provide a strong enough phase transition of first order or more precisely a phase transition of first order at all. This will be shown in the following. \newline\indent
-First, the reason why a strong first order transition is needed for baryogenesis is the following \cite[p. 25]{Bernreuther:2002uj}: Only 
-According to the Landau theory phase transitions are described by the behaviour of a order parameter. So for a first order phase transition the order parameter has to change dicontinuously at the critical point, while for a second order transition the order parameter has to change drastically as well, but this change occurs continuously. In a case of the electroweak phase transition the order parameter is the expectation value of the Higgs field, denoted as $\phi$. In addtion to this, one needs to describe the temperature dependent free energy of the system as a function of the parameter which result in the effective potential $V_\text{eff}(\phi,T)$. This potential describes the energy of a system in a state with the Higgs expectation value $v$. Since in general this state is not one of minimal energy and because every system prefers to minimize its energy, it changes into a state described by the minimum of the potential where the expectation value of the Higgs is by definition the Higgs VEV. \newline\indent
-As it is already known, the Higgs VEV had to change from zero at the big bang to a non-zero value while the universe cooled down to the temperature measured nowadays, so it is just natural to look at the change of this value with temperature. The change of the VEV can now happen continunously in which case the system undergoes a second order phase transition or discontinuously what is needed for a first order transition and especially for elektroweak baryogenesis. 
-Both cases are shown in figure \ref{fig:higgs} for the effective Higgs potential including one-loop corrections \cite{Petropoulos:2003pm}
+First, the reason why a strong first order transition is needed for baryogenesis is the following \cite[p. 25]{Bernreuther:2002uj}: Only for a strong first order phase transition the transition itself happens rapidly enough to keep up with the particle reactions and to induce a out-of-equilibrium state that way.\newline\indent
+According to the Landau theory phase transitions are described by the behaviour of a order parameter. So for a first order phase transition the order parameter has to change dicontinuously at the critical point, while for a second order transition the order parameter has to change drastically as well, but this change occurs continuously. The way the order of the phase transition can be determinded is by introducing the order parameter as a new variable to the effective potential describing the free energy of the system which can be Taylor expanded with respect to the order parameter and temperature dependent coefficients in the vicinity of the phase transition, because here the order paramter ist small. The next step is to minimize the free energy with respect to the order parameter. If at some temperature the free energy shows to degenerated minima a first order phase transitions occurs because the transition from one minimum, or ground state, to another has to happen discontinously. If there are not more than one minima at a certain temperature but the ground state changes anyway a continuous phase transiton of higher order occured. 
+\newline \indent
+In a case of the electroweak phase transition the order parameter ist the expectation value of the Higgs field denoted as $v$ and the potential describes the energy of a system in a state with the Higgs expectation value $v$. Since in general this state is not one of minimal energy and because every system prefers to minimize its energy, it changes into a state described by the minimum of the potential where the expectation value of the Higgs is by definition the Higgs VEV. \newline\indent
+As it is already known, the Higgs VEV had to change from zero at the big bang to a non-zero value while the universe cooled down to the temperature measured nowadays, so it is just natural to look at the change of this value with temperature. As discribed above, the change of the VEV can now happen continunously in which case the system undergoes a second order phase transition or discontinuously what is needed for a first order transition and especially for elektroweak baryogenesis. 
+Both cases are shown in figure \ref{fig:higgs} for the effective Higgs potential
 \begin{equation}
-	V_\text{eff}=D(T^2-T_0)^2\phi^2-ET\phi^3-\frac{1}{4}\lambda\phi^4
+	V_\text{eff}=D(T^2-T_0)^2\phi^2-ET\phi^3-\frac{1}{4}\lambda\phi^4,
 	\label{effective_pot}
 \end{equation}
-for different non-zero temperature regimes. D and E are constant factors which are not relevant for this discussion and $\lambda$ describes the 4-Higgs self coupling.
+,including one-loop corrections \cite{Petropoulos:2003pm} for different non-zero temperature regimes. D and E are constant factors which are not relevant for this discussion and $\lambda$ describes the 4-Higgs self coupling.
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.7\textwidth}
@@ -227,7 +229,7 @@ How this can be imagined in the early universe is that at some point in space an
 On the other hand, figure \ref{fig:higgs2} shows how the universe would develop in case of a second order transition. In this case even at T=T$_c$ there are no two degenerated minima but the new one develops gradually while the orignial minimum more and more becomes the unstable maximum you also get in figure \ref{fig:higgs1} for low temperatures. Since there are no two minima the universe can choose between, there is also no bubble formation but instead a continuous condensation throughout the universe which is not enough to induce baryogenesis. \newline\indent
 Now that the two possibilities of the electroweak phase transition were represented the question how and why the SM fails to provide a strong enough first order phase transition still needs to be answered. \newline\indent
 To do this it is useful to define a quantity that corresponds to the strenght of the phase transistion, which in this case will be 
-pon\begin{equation}
+\begin{equation}
 	\frac{v_{T_c}}{T_c}\gtrsim1.
 	\label{eq:strength_transition}
 \end{equation}
