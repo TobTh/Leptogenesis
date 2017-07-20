@@ -3,14 +3,17 @@ clc
 cl = 1;
 cp = 0;
 
-z = linspace(1,10^3);
-x0 = [0 0];
-x1 = [0,3/4];
+a = 0.1646; %= 1/pi^2*besselk(2,1)
 
- A12=zeros(1,199);
- A22=zeros(1,199);
- A32=zeros(1,199);
- A42=zeros(1,199);
+z = linspace(1,20);
+x0 = [0 0]; 
+x1 = [0,a];
+
+
+A12=zeros(1,199);
+A22=zeros(1,199);
+A32=zeros(1,199);
+A42=zeros(1,199);
  
  
 for K=1:0.5:100
@@ -25,18 +28,27 @@ for K=1:0.5:100
     A42(1,int16(K*2-1)) = N4(end,1);
 end
 
+figure(3)
+ quinticMA1 = sgolayfilt(A32./A12, 10, 31);
+quinticMA2 = sgolayfilt(A42./A22, 10, 31);
 
-semilogx((1:0.5:100),abs(A32./A12))
-hold on
-semilogx((1:0.5:100),abs(A42./A22))
-hold off
-xlabel('K')
-ylabel('\kappa/\kappa_{classical}')
+ semilogx((1:0.5:100),quinticMA1)
+ hold on
+ semilogx((1:0.5:100),quinticMA2)
+ hold off
+ xlabel('K')
+ ylabel('\kappa/\kappa_{classical}')
 
+function ndot = density_nonCorr(z,N,K,cl,cp)               
+    nE = 1/pi^2*z^2*besselk(2,z);
+    
+    ndot=[z*5.4737*K*(N(2)-nE)-3/pi^2*(cl + cp/2)*z^3*besselk(1,z)*K*N(1);...
+         -K*(N(2)-nE)*z];
+end
 
-% loglog((1:0.01:10),abs(A1.*(10^6*4/3)))
-% hold on
-% loglog((1:0.01:10),abs(A2.*(10^6*4/3)))
-% loglog((1:0.01:10),abs(A3.*(10^6*4/3)))
-% loglog((1:0.01:10),abs(A4.*(10^6*4/3)))
-% hold off
+function ndot = density_nonCorr_classic(z,N,K,cl,cp)               
+    nE = 1/pi^2*z^2*besselk(2,z);
+    
+    ndot=[z*5.4737*K*(N(2)-nE)-1/4*(cl + cp/2)*z^3*besselk(1,z)*K*N(1);...
+         -K*(N(2)-nE)*z];
+end

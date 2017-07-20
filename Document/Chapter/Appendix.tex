@@ -292,6 +292,27 @@ Summarizing all these results gives a full set of Feynman rules for Majorana as 
 	\caption{Feynman rules for external fermion lines}
 	\label{fig:external_lines}
 \end{figure}
+Now looking at the Lagrangian given in \eqref{eq:Yukterm} one gets the following vertex term for the Feynman diagrams given in figure \ref{fig:N-decay}:
+\todo{Nochmal anschauen, sigma 2, linkshändiger projektor}
+\begin{figure}[H]
+	\begin{equation*}
+	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
+		b -- [scalar,thick, edge label=\(\overline{\phi}\)] a,
+		b-- [fermion,thick, edge label =\(\ell\)] c,
+		d   -- [thick, edge label=N] b};
+		\qquad = \qquad
+	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
+		b -- [scalar, thick, edge label = \(\phi\)] a,
+		b-- [anti fermion, thick,edge label=\(\overline{\ell}\)] c,
+		d  --[thick,edge label=N] b  };  \quad \sim iP_R
+	\end{equation*}
+	with
+
+	\begin{equation*}
+	P_R=\frac{1+\gamma^5}{2}, \qquad P_L=\frac{1-\gamma^5}{2}
+	\end{equation*}
+	the chirality operators, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, where $\gamma^i$ denotes the gamma matrices.This chirality operator here enters the matrix element because the heavy neutrino N, per defnition, is right-handed. The whole matrix element will be given in the following section.
+\end{figure}
 \section{The tree level decay rate for heavy neutrinos}
 \label{ap:tree_level_decay}
 In this section the heavy neutrion decay rate given in equation \ref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}, which, for the sake of clarity, will be given here once more, but also with arrows showing the arbitrarily chosen orientation
@@ -319,11 +340,7 @@ Now, using the Feynman rules obtained in the previous section one has to first f
 \begin{equation*}
 i\mathcal{M}=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})ih_{a1}P_Ru_N(p_N,s_N),
 \end{equation*}
-where the subscripts $\ell_a$ and N describe the lepton of flavor a and heavy neutrino, respectively and
-\begin{equation*}
-	P_R=\frac{1+\gamma^5}{2} \qquad P_L=\frac{1-\gamma^5}{2}
-\end{equation*}
-the chirality operators with $\gamma^5=\gamma^0\gamma^1\gamma^2\gamma^3\gamma^4$, where $\gamma^i$ denotes the gamma matrices. This can be used because the heavy neutrino N, per defnition, is right-handed.
+where the subscripts $\ell_a$ and N describe the lepton of flavor a and heavy neutrino, respectively.\newline\indent
 Then the respective absolute square of this matrix element is 
 \begin{equation*}
 |\mathcal{M}|^2=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a}).
@@ -374,7 +391,7 @@ In order to rewrite the product of the 4-momentum vectors the decay will be trea
 \begin{equation*}
 |\mathcal{M}|^2=2|h_{11}|^2p_Np_\ell=2|h_{11}|^2M_N|\vec{p}_\ell|.
 \end{equation*}
-But due to the neutrino not only decaying into leptons but also into anti-leptons this is not the whole contribution to the tree level decay rate. However, looking at figure \ref{fig:external_lines}, the corresponding matrix element looks exactly the the same and therefore would contribute the same term to the decay rate. This result is not surprising, remembering that CP violation only arises through interference of tree level and one-loop diagrams, thus $\Gamma(N\rightarrow\bar{\phi}\ell)=\Gamma(N\rightarrow\phi\bar{\ell})$. Plugging both these contribution back into the relation for the total decay rate results in 
+But due to the neutrino not only decaying into leptons but also into anti-leptons this is not the whole contribution to the tree level decay rate. However, looking at figure \ref{fig:external_lines}, the corresponding squared matrix element looks exactly the the same and therefore would contribute the same term to the decay rate. This result is not surprising, remembering that CP violation only arises through interference of tree level and one-loop diagrams, thus $\Gamma(N\rightarrow\bar{\phi}\ell)=\Gamma(N\rightarrow\phi\bar{\ell})$. Plugging both these contribution back into the relation for the total decay rate results in 
 \begin{align*}
 	\Gamma&=\frac{1}{2M_N}\int\frac{d^3p_\ell}{(2\pi)^32E_\ell}\frac{d^3p_\phi}{(2\pi)^32E_\phi}(2\pi)^44|h_{11}|^2M_N|\vec{p}_\ell|\delta^4\left(p_\ell+p_\phi-p_N\right)=\\
 	&=\frac{1}{8\pi^2}\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}|h_{11}|^2M_N|\vec{p}_\ell|\delta\left(|\vec{p}_\ell|+|\vec{p}_\phi|-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
@@ -520,7 +537,6 @@ By performing the same steps as shown in \ref{ap:phase_space} but applied on equ
 \end{equation*}
 Here the Lorentz invariant phase space was already taken into account.\newline\indent
 Analogous to the procedure above one has to only consider the right-hand side of this equation and expanding the factor 1/E$_N$ results in
-\todo{Minus klären}
 \begin{equation*}
 g_N\int \frac{d^3p}{(2\pi)^3}\left(\Gamma_{B-L}\left(f_N-f_N^{eq}\right)-\frac{\Gamma_{B-L}}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N-f_N^{eq}\right)\right)=\Gamma_{B-L}\left(n_N-n_N^{eq}\right)-\Gamma_{B-L,u}\left(u-u^{eq}\right).
 \end{equation*}
@@ -536,20 +552,19 @@ Starting from equation \ref{eq:L_rate_expanding_interaction_rel} one first expre
 \end{equation*}
 Since the integration variables and range of integration are the same on both sides the integrals and phase space normalization factors can be dropped. Now assuming that these equations hold for f$_N\rightarrow0$ and using \ref{eq:df_dt} this simplifies to 
 \begin{align*}
-	f_N^{eq}\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_Nf_N^{eq}-\Gamma_{N,u}\frac{p^2}{M_N^2}f_N^{eq}\\
-	\Rightarrow\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}.
+	f_N^{eq}\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_Nf_N^{eq}-\Gamma_{N,u}\frac{p^2}{2M_N^2}f_N^{eq}\\
+	\Rightarrow\Gamma_0\frac{M_N}{E_N}\left(a+\frac{p^2}{2M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}.
 \end{align*}
 Now again, expanding the 1/E$_N$ factor yields
 \begin{align*}
-	\Gamma_0\left(1-\frac{p^2}{M_N^2}\right)\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}\\
-	\Rightarrow a\Gamma_0-\frac{1}{2}(a-2b)\Gamma_0\frac{p^2}{M_N^2}+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}.
+	\Gamma_0\left(1-\frac{p^2}{M_N^2}\right)\left(a+\frac{p^2}{M_N^2}b+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{2M_N^2}\\
+	\Rightarrow a\Gamma_0-(a-2b)\Gamma_0\frac{p^2}{2M_N^2}+\mathcal{O}\left(\frac{p^4}{M_N^4}\right)=\Gamma_N-\Gamma_{N,u}\frac{p^2}{M_N^2}.
 \end{align*}
 Since equation \ref{eq:L_rate_expanding_interaction_rel} is a relation of order p$^2$ terms of higher order do not need to be taken into account. \newline\indent
 Now simply comparing coefficients of the terms of different order in p yields the already known result
-\todo{Faktor 2 klären}
 \begin{align*}
 \Gamma_N=&\Gamma_u=a\Gamma_0,\\
-\Gamma_{N,u}=&\frac{1}{2}(a-2b)\Gamma_0.
+\Gamma_{N,u}=&(a-2b)\Gamma_0.
 \end{align*}
 Using the same procedure on equation \ref{eq:rate_u} results in 
 \begin{align*}
@@ -569,8 +584,8 @@ n_\ell-n_{\bar{\ell}}&=g_\ell\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{
 &=g_\ell\frac{\mu_\ell}{\pi^2T}\int_{0}^{\infty}dE\:2e^{E/T}\:E^2=\\
 &=-\frac{4\mu_\ell T^2}{\pi^2},
 \end{align*}
-where $g_ell$=2 was used.
-Since Boltzmann statistics do not distinguish between fermions and bosons $n_\phi-n_{\bar{\phi}}=n_\phi-n_{\bar{\phi}}$, yielding
+where $g_\ell$=2 was used.
+Since Boltzmann statistics do not distinguish between fermions and bosons $n_\ell-n_{\bar{\ell}}=n_\phi-n_{\bar{\phi}}$, yielding
 \begin{align*}
 \mu_\ell=\frac{\pi^2c_\ell}{4T^2}n_{B-L},\\
 \mu_\phi=\frac{\pi^2c_\phi}{4T^2}n_{B-L}.

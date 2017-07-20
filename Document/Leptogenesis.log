@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  14 JUL 2017 12:03
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  20 JUL 2017 17:18
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.149 seconds
+luaotfload | main : initialization completed in 0.146 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
@@ -1312,12 +1312,12 @@ File: Images/Higgs1.png Graphic file (type png)
 <use Images/Higgs1.png>
 Package luatex.def Info: Images/Higgs1.png used on input line 214.
 (luatex.def)             Requested size: 318.66948pt x 124.2885pt.
- <Images/Higgs2.png, id=307, 1770.615pt x 690.58pt>
+ <Images/Higgs2.png, id=307, 1770.615pt x 708.6475pt>
 File: Images/Higgs2.png Graphic file (type png)
 
 <use Images/Higgs2.png>
 Package luatex.def Info: Images/Higgs2.png used on input line 219.
-(luatex.def)             Requested size: 318.66948pt x 124.2885pt.
+(luatex.def)             Requested size: 318.66948pt x 127.54024pt.
  [10] [11<./Images/Higgs1.png><./Images/Higgs2.png>])
 (./Chapter/Outline_of_leptogenesis.tex [12]
 chapter 3.
@@ -1409,30 +1409,50 @@ chapter 5.
 [25
 
 
-] <Images/quantum.png, id=547, 1770.615pt x 879.285pt>
+]
+
+LaTeX Warning: Reference `ap:equlibrium' on page 26 undefined on input line 70.
+
+<Images/efficiency.png, id=560, 1770.615pt x 807.015pt>
+File: Images/efficiency.png Graphic file (type png)
+
+<use Images/efficiency.png>
+Package luatex.def Info: Images/efficiency.png used on input line 74.
+(luatex.def)             Requested size: 455.24411pt x 207.4916pt.
+ [26]
+<Images/corrections.png, id=574, 1770.615pt x 807.015pt>
+File: Images/corrections.png Graphic file (type png)
+
+<use Images/corrections.png>
+Package luatex.def Info: Images/corrections.png used on input line 81.
+(luatex.def)             Requested size: 455.24411pt x 207.4916pt.
+ [27<./Images/efficiency.png><./Images/corrections.png>] <Images/quantum.png, i
+d=584, 1770.615pt x 634.37pt>
 File: Images/quantum.png Graphic file (type png)
 
 <use Images/quantum.png>
-Package luatex.def Info: Images/quantum.png used on input line 39.
-(luatex.def)             Requested size: 364.19667pt x 180.85835pt.
- [26<./Images/quantum.png>]
-<Images/quantum1.png, id=557, 1770.615pt x 809.0225pt>
+Package luatex.def Info: Images/quantum.png used on input line 96.
+(luatex.def)             Requested size: 455.24411pt x 163.10284pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
+ne 100.
+ <Images/quantum1.png, id=587, 1770.615pt x 634.37pt>
 File: Images/quantum1.png Graphic file (type png)
 
 <use Images/quantum1.png>
-Package luatex.def Info: Images/quantum1.png used on input line 53.
-(luatex.def)             Requested size: 364.19667pt x 166.40619pt.
-) (./Chapter/Summary.tex [27<./Images/quantum1.png>]
+Package luatex.def Info: Images/quantum1.png used on input line 111.
+(luatex.def)             Requested size: 455.24411pt x 163.10284pt.
+ [28<./Images/quantum.png>]) (./Chapter/Summary.tex
+[29<./Images/quantum1.png>]
 chapter 6.
-) (./Chapter/Appendix.tex [28
+) (./Chapter/Appendix.tex [30
 
 
 ]
 chapter A.
-[29
+[31
 
 
-] [30] [31] [32]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213:
+] [32] [33] [34]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213:
  ...t/tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization ta
 ble filled incorrectly
 stack traceback:
@@ -1780,9 +1800,29 @@ l.287 			a -- [edge,thick,rmomentum'] b[dot]}
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[33]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
-neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
-ncorrectly
+[35]
+Overfull \hbox (1.47397pt too wide) in paragraph at lines 296--296
+\T1/lmr/m/n/10.95 linkshändi- 
+ []
+
+
+Overfull \hbox (1.47397pt too wide) in paragraph at lines 296--296
+\T1/lmr/m/n/10.95 linkshändi- 
+ []
+
+
+Overfull \hbox (1.47397pt too wide) in paragraph at lines 296--296
+\T1/lmr/m/n/10.95 linkshändi- 
+ []
+
+
+Overfull \hbox (1.47397pt too wide) in paragraph at lines 296--296
+\T1/lmr/m/n/10.95 linkshändi- 
+ []
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
 stack traceback:
 	[C]: in function 'assert'
 	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
@@ -1792,7 +1832,41 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.302 		d   -- [thick, edge label=N,momentum'] b}
+l.302 		d   -- [thick, edge label=N] b}
+                                     ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.307 		d  --[thick,edge label=N] b  }
+                                    ;  \quad \sim iP_R
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.323 		d   -- [thick, edge label=N,momentum'] b}
                                                ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1809,47 +1883,44 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.307 		d  --[thick,edge label=N,momentum'] b  }
+l.328 		d  --[thick,edge label=N,momentum'] b  }
                                               ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[34] [35] [36]
+[36] [37] [38] [39]
 chapter B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 416.
+(hyperref)                removing `math shift' on input line 433.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 416.
+(hyperref)                removing `\Gamma' on input line 433.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 416.
+(hyperref)                removing `subscript' on input line 433.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 416.
+(hyperref)                removing `math shift' on input line 433.
 
-[37
+[40
 
 
-] [38] [39]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
-ne 523.
-
-Overfull \hbox (27.98976pt too wide) detected at line 526
+] [41] [42]
+Overfull \hbox (27.98976pt too wide) detected at line 542
 \OML/cmm/m/it/10.95 g[] [] [] [] \OT1/cmr/m/n/10.95 =  [] [] \OMS/cmsy/m/n/10.9
 5   \OT1/cmr/m/n/10.95  [] [] \OML/cmm/m/it/10.95 :
  []
 
-[40] [41] [42]
-Overfull \hbox (22.33191pt too wide) in paragraph at lines 607--607
+[43] [44] [45]
+Overfull \hbox (22.33191pt too wide) in paragraph at lines 622--622
 [] 
  []
 
-[43]) (./Chapter/References.tex [44]
+[46]) (./Chapter/References.tex [47]
 Underfull \hbox (badness 2653) in paragraph at lines 26--30
 []\T1/lmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
 Physics. (2008, Novem-
@@ -1898,7 +1969,7 @@ Underfull \hbox (badness 3547) in paragraph at lines 89--92
 d at []http://www.we-bc-i-ta-
  []
 
-[45
+[48
 
 
 ]
@@ -1919,7 +1990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
  []http://www.we-bc-i-ta-
  []
 
-) [46]
+) [49]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./Leptogenesis.aux)
@@ -1927,21 +1998,25 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
 (rerunfilecheck)             Checksum: EEA03C2B4EDB6A2AB795F5C5333BD884;2090.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28565 strings out of 494577
- 156254,953878 words of node,token memory allocated
- 33485 words of node memory still in use:
-   80 hlist, 12 vlist, 2 rule, 4 disc, 6 local_par, 3862 glue, 5 kern, 10 penalt
-y, 2 sub_mlist, 52 glyph, 1053 attribute, 49 glue_spec, 1053 attribute_list, 5 w
-rite, 4 save_pos, 190 pdf_literal, 6 pdf_action nodes
-   avail lists: 1:11,2:10722,3:2365,4:94,5:327,6:4396,7:3216,8:185,9:1496,10:20,
-11:393
- 31225 multiletter control sequences out of 65536+600000
+ 28618 strings out of 494577
+ 156265,953878 words of node,token memory allocated
+ 37544 words of node memory still in use:
+   131 hlist, 16 vlist, 2 rule, 12 disc, 9 local_par, 4074 glue, 25 kern, 25 pen
+alty, 2 sub_mlist, 188 glyph, 1232 attribute, 49 glue_spec, 1232 attribute_list,
+ 7 write, 6 save_pos, 285 pdf_literal, 6 pdf_action nodes
+   avail lists: 1:11,2:10999,3:2463,4:94,5:318,6:4256,7:3261,8:185,9:1530,10:20,
+11:385
+ 31249 multiletter control sequences out of 65536+600000
  78 fonts using 4940031 bytes
- 64i,20n,98p,8846b,1943s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 64i,20n,98p,8846b,1942s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/tex
@@ -1964,10 +2039,10 @@ onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/lm/lmro10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
 mssbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb>
-Output written on Leptogenesis.pdf (48 pages, 799205 bytes).
+Output written on Leptogenesis.pdf (51 pages, 930966 bytes).
 
-PDF statistics: 843 PDF objects out of 1000 (max. 8388607)
- 754 compressed objects within 8 object streams
- 218 named destinations out of 1000 (max. 131072)
+PDF statistics: 889 PDF objects out of 1000 (max. 8388607)
+ 795 compressed objects within 8 object streams
+ 235 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
