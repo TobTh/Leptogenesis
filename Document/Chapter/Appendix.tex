@@ -293,25 +293,24 @@ Summarizing all these results gives a full set of Feynman rules for Majorana as 
 	\label{fig:external_lines}
 \end{figure}
 Now looking at the Lagrangian given in \eqref{eq:Yukterm} one gets the following vertex term for the Feynman diagrams given in figure \ref{fig:N-decay}:
-\todo{Nochmal anschauen, sigma 2, linkshändiger projektor}
 \begin{figure}[H]
 	\begin{equation*}
 	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
-		b -- [scalar,thick, edge label=\(\overline{\phi}\)] a,
+		b -- [scalar,thick, edge label=\(\phi^\dagger\)] a,
 		b-- [fermion,thick, edge label =\(\ell\)] c,
 		d   -- [thick, edge label=N] b};
-		\qquad = \qquad
+		\qquad \sim i\sigma^2_{nm}P_R\qquad;\qquad
 	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
 		b -- [scalar, thick, edge label = \(\phi\)] a,
 		b-- [anti fermion, thick,edge label=\(\overline{\ell}\)] c,
-		d  --[thick,edge label=N] b  };  \quad \sim iP_R
+		d  --[thick,edge label=N] b  };  \quad \sim -i\sigma^2_{nm}P_L
 	\end{equation*}
 	with
 
 	\begin{equation*}
 	P_R=\frac{1+\gamma^5}{2}, \qquad P_L=\frac{1-\gamma^5}{2}
 	\end{equation*}
-	the chirality operators, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, where $\gamma^i$ denotes the gamma matrices.This chirality operator here enters the matrix element because the heavy neutrino N, per defnition, is right-handed. The whole matrix element will be given in the following section.
+	the chirality operators, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, where $\gamma^i$ denotes the gamma matrices and $n,m$ isospin indices. This chirality operators here enters the matrix element because the heavy neutrino N, per defnition, has a fixed chirality. The whole matrix element will be given in the following section.
 \end{figure}
 \section{The tree level decay rate for heavy neutrinos}
 \label{ap:tree_level_decay}
@@ -338,13 +337,14 @@ d\Gamma=\frac{1}{2M_N}\left|\mathcal{M}\right|^2\frac{d^3p_\ell}{(2\pi)^32E_\ell
 $\left|\mathcal{M}\right|$ denotes the matrix element corresponding to exactly this decay, that can be read of directly from the corresponding Feynman diagram. 
 Now, using the Feynman rules obtained in the previous section one has to first formulate this matrix element in order to be able to evaluate it. Choosing an arbitrary orientation the matrix element for the decay into $\bar{\phi}$ and a lepton reads
 \begin{equation*}
-i\mathcal{M}=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})ih_{a1}P_Ru_N(p_N,s_N),
+i\mathcal{M}=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})ih_{a1}\sigma_{nm}^2P_Ru_N(p_N,s_N),
 \end{equation*}
 where the subscripts $\ell_a$ and N describe the lepton of flavor a and heavy neutrino, respectively.\newline\indent
 Then the respective absolute square of this matrix element is 
 \begin{equation*}
-|\mathcal{M}|^2=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a}).
-\end{equation*} \newline\indent
+|\mathcal{M}|^2=\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a}),
+\end{equation*}
+where the Pauli matrix $\sigma_{nm}^2$ vanished because of $\left(\sigma^i\right)^2=1$ for $i=1,2,3$. \newline\indent
 However, this matrix element only describes the decay of a neutrino with a certain spin into a lepton of another certain spin. In order to generalize this for unknown spins of the lepton as well as of the spin one has to sum over the final spins of the lepton and average over the initial spin of the neutrino, resulting in
 \begin{equation*}
 |\mathcal{M}|^2=2\cdot\frac{1}{2}\sum_{s_N,s_{\ell_a}}\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a}).
@@ -573,6 +573,35 @@ Using the same procedure on equation \ref{eq:rate_u} results in
 &\overset{E_N=M_N+\mathcal{O}(p^2)}{\Longrightarrow}\Gamma_u=a\Gamma_0.
 \end{align*}
 Because equation \ref{eq:rate_u} is only of order p, one can drop all terms of order p$^2$ or higher to obtain this result
+\section{Equlibrium densities}
+\label{ap:equlibrium}
+In order to be able to solve the rate equations for leptogenesis one has to determine the equlibrium densities $X_N^{eq}$ and $X_u^{eq}$. Since the heavy neutrinos are non-relativistic, Boltzmann distributions can be used to do so and one gets
+\begin{align*}
+	X_N^{eq}&=\frac{g}{T^3(2\pi)^3}\int d^3p \:e^{-\sqrt{p^2+M_N^2}/T}=\\
+	&=\frac{1}{\pi^2T^3}\int_0^\infty dp \:e^{-\sqrt{p^2+M_N^2}/T}p^2=\\
+	&=\frac{1}{\pi^2T^3}\int_{M_N}^\infty dx \:x\sqrt{x^2-M_N^2}e^{-x/T}=\\
+	&=\frac{1}{\pi^2T^3}\left(\left[\frac{1}{3}\sqrt{x^2-M_N^2}^3e^{-x/T}\right]_{M_N}^\infty+\frac{1}{3T}\int_{M_N}^{\infty}dx\:\sqrt{x^2-M_N^2}^3e^{-x/T}\right)=\\
+	&=\frac{M_N^3}{3\pi^2T^4}\int_{M_N}^{\infty}dx\:\sqrt{\frac{x^2}{M_N^2}-1}^3e^{-x/T}=\\
+	&=\frac{M_N^4}{3\pi^2T^4}\int_{1}^{\infty}dy\:\sqrt{y^2-1}^3e^{-zy}=\\
+	&=\frac{M_N^4}{3\pi^2T^4}\frac{4}{z^2}\frac{\Gamma(5/2)}{\sqrt{\pi}}K_2(z)=\\
+	&=\frac{1}{\pi^2}z^2K_2(z).
+\end{align*}
+Similarly an expression for $X_u^{eq}$ can be derived:
+\begin{align*}
+X_u^{eq}&=\frac{g}{T^3(2\pi)^3}\int d^3p \:e^{-\sqrt{p^2+M_N^2}/T}p^3=\\
+&=\frac{1}{\pi^2T^5}\int_0^\infty dp \:e^{-\sqrt{p^2+M_N^2}/T}p^4=\\
+&=\frac{1}{\pi^2T^5}\int_{M_N}^\infty dx \:x\sqrt{x^2-M_N^2}^3e^{-x/T}=\\
+&=\frac{1}{\pi^2T^5}\left(\left[\frac{1}{5}\sqrt{x^2-M_N^2}^5e^{-x/T}\right]_{M_N}^\infty+\frac{1}{5T}\int_{M_N}^{\infty}dx\:\sqrt{x^2-M_N^2}^5e^{-x/T}\right)=\\
+&=\frac{M_N^5}{3\pi^2T^6}\int_{M_N}^{\infty}dx\:\sqrt{\frac{x^2}{M_N^2}-1}^5e^{-x/T}=\\
+&=\frac{M_N^6}{3\pi^2T^6}\int_{1}^{\infty}dy\:\sqrt{y^2-1}^5e^{-zy}=\\
+&=\frac{M_N^6}{3\pi^2T^6}\frac{8}{z^3}\frac{\Gamma(7/2)}{\sqrt{\pi}}K_3(z)=\\
+&=\frac{3}{2\pi^2}z^3K_2(z).
+\end{align*}
+These two relations can now be used to easily obtain the thermal inital conditions for $X_N^{eq}$ and $X_u^{eq}$, namely
+\begin{align*}
+	X_N(1)=X_N^{eq}(1)=\frac{1}{\pi^2}K_2(1)\approx 0.165,\\
+	X_u(1)=X_u^{eq}(1)=\frac{3}{2\pi^2}K_3(1)\approx 1.079.
+\end{align*}
 \section{Differences between quantum and classical statistics}
 \label{ap:statistics}
 As mentioned in section \ref{sec:num_results} there are two oppurtunities to chose classical statistics over quantum statistics and vice versa. The first one covered here will be considering equations \eqref{eq:chempot_l} and \eqref{eq:chempot_phi}. In section \ref{ap:Gamma_B-L} quantum statistics were used for that particular matter, so here classical statistics will be used. So by expanding up to first order in chemical potentials one gets 
