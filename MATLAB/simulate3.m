@@ -95,14 +95,7 @@ figure(2)
  hold off
  xlabel('K')
  ylabel('(\kappa-\kappa_{NR})/\kappa')
- 
-%  semilogx((1:0.1:10),(A13-A23)./A13)
-%  hold on
-%  semilogx((1:0.1:10),(A33-A43)./A33) 
-%  semilogx((1:0.1:10),(A53-A63)./A53) 
-%  semilogx((1:0.1:10),(A73-A83)./A73)
-%  semilogx((1:0.1:10),(A93-A103)./A93)
-%  hold off
+
 
 function ndot = density_Rel(z,N,K,cl,cp)        
     nE = 1/pi^2*z^2*besselk(2,z);

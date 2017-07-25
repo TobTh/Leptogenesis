@@ -1,9 +1,9 @@
 \chapter{Outline of leptogenesis}
-As stated in the section before the SM alone is not quite enough to describe the observed baryon abundance, so the SM has to be expanded to that effect that it can describe such phenomena. \newline\indent
-Although efforts are made to explain direct baryogenesis using GUT theories, there is a much more favored alternative, namely the so called barygenesis via leptogenesis. The key idea here is to introduce a heavy, right-handed Majorana neutrino N, whose decays violate lepton number conservation. \newline\indent
-This and the following chapter will cover this concept more detailed
+As stated in the section before, the SM alone is not quite enough to describe the observed baryon abundance, so the SM has to be expanded to the effect that it can describe such phenomena. \newline\indent
+A possible extension of the SM that explains baryogenesis is baryogenesis via leptogenesis. The key idea here is to introduce a heavy, right-handed Majorana neutrino N, whose decays violate lepton number conservation. \newline\indent
+This and the following chapter will cover this concept in some detail.
 \section{Expanding the SM}
-There are experimental reasons why the SM does not tell the whole story about our universe, namely the results of neutrino oscillation experiments. These oscillations are only possible if the neutrionos are not massless. This however contradicts the before then established belief that neutrinos are massless. Making things more complicated is the fact that up until now only left-handed neutrinos have been measured, meaning adding massive neutrinos to the SM cannot be done in the same way as for the other fermions, since they are Dirac fermions that appear as left- as well as right-handed fields. To circumvent this problem, without adding new degrees of freedom to the SM, one could assume that neutrinos are Majorana particles, meaning particle and anti-particle are the same, leading to a mass term of the form\cite[p. 18]{Taanila:2008}
+There are experimental reasons to extend the SM in the neutrino sector , namely the results of neutrino oscillation experiments. These oscillations are only possible if the neutrinos are not massless. Making things complicated is the fact that only left-handed neutrinos have been observed, meaning adding massive neutrinos to the SM cannot be done in the same way as for the other fermions, since they are Dirac fermions that appear as left- as well as right-handed fields. To circumvent this problem, without adding new degrees of freedom to the SM, one could assume that neutrinos are Majorana particles, meaning particle and anti-particle are the same, leading to a mass term of the form \cite{Drewes:2013gca}
 \begin{equation}
 \mathcal{L}_{N,M}=-\frac{1}{2}\overline{N^c}M^MN,
 \label{eq:neutrino_majorana}
@@ -13,21 +13,26 @@ with $N$ the Majorana field describing the neutrino and where the superscript C 
 	N^c\equiv C\bar{N}^T,
 \end{equation*}
 with the charge conjugation marix C, which is dependent on the representation of the gamma matrices. The Majorana mass M$^M$ is an n$_F\times$n$_F$ matrix with n$_F$ the number of neutrino families. \newline\indent
-Also adding Yukawa interactions this leads, for temperatures below the electroweak scale, to a Lagrangian that can be written as \cite[pp. 4f]{Drewes:2013gca}
-\begin{align}
-	\mathcal{L}=\mathcal{L}_{SM}+i\bar{N}_{I}\slashed\partial\nu_{I}&-(m_D)_{\alpha I}\bar{\nu}_{\alpha}N_{I}-(m_D)_{\alpha I}^*\bar{N}_{I}\nu_{\alpha}
-	\label{eq:lagrangian_mass}
-	\\
-	&-\frac{1}{2}\left[(M_M)_{IJ}\overline{N^c}_{I}N_{J}+(M_M)^*_{IJ}\bar{N}_{R,I}N^c_{J}\right]\nonumber.
-\end{align}
-This can be rewritten as\cite[Eq. (12)]{Drewes:2013gca}
+To show that this mass term can be constructed just by using left-handed fields the Dirac representation of the gamma matrices will be used, resulting in a charge conjugaton matrix of the form
 \begin{equation}
-	\mathcal{L}_{M+D}=\left(\overline{\nu},\overline{N}^c\right)	\left(\begin{array}{cc}0&m^D\\m^D&M^M_R\end{array}\right)	\left(\begin{array}{c}\nu^c\\N\end{array}\right)+h.c.\:\:.
-	\label{eq_majorana_dirac_zero}
+	C=i\gamma^2\gamma^0,
 \end{equation}
-The matrix $m^D$ contains the masses of a typical lepton like the electron, while $M^M_L$ and $M^M_R$ describe the Majorana masses. The matrix above as a whole is of the dimension \newline $(n_f+n_M)\times(n_f+n_M)$ with $n_F$ the number of neutrino flavours. \newline \indent
+with
+\begin{equation*}
+\gamma^2=\left(\begin{array}{cc}0&\sigma^2\\-\sigma^2&0\end{array}\right)\qquad	;\qquad \gamma^0=\left(\begin{array}{cc}1&0\\0&-1\end{array}\right)
+\end{equation*}
+and $\sigma^2$ one of the Pauli matrices. Now by using the left-handed component, obtained by using the left-handed projector given in appendix \ref{ap:feynman}, 
+\begin{equation}
+	\psi_L\equiv P_L\psi,
+\end{equation}
+where $\psi$ is an abritrary spinor, one can construct a Majorana field just by using $\psi_L$:
+\begin{align*}
+	\psi_M=&\left(\begin{array}{c}\psi_L\\i\sigma^2\psi_L^*\end{array}\right)\\\\
+	\Rightarrow \psi_M^c=\left(\begin{array}{c}-i\sigma^2(i\sigma^2\psi_L^*)^*\\i\sigma^2\psi_L^*\end{array}\right)&=\left(\begin{array}{c}\psi_L\\i\sigma^2\psi_L^*\end{array}\right)=\psi_M
+\end{align*}
+\newline \indent
 Before concluding this section there are a few interesting things worth mentioning regardng the Majorana mass term. 
-First, such a term would violate lepton number conservation because it violates the global, accidental SM symmetry 
+First, such a term would violate lepton number conservation because it violates the global SM symmetry 
 \begin{equation}
 \Psi\overset{U(1)}{\longrightarrow}e^{i\ell\alpha}\Psi,
 \end{equation}
@@ -38,18 +43,31 @@ which can easily be seen in
 This symmetry however is connected to the lepton number \cite[p. 14]{Bernreuther:2002uj}, so breaking it directly results in non-conservation of lepton number. This seems rather obvious because if Majorana particles are particles and anti-particles at the same time one cannot assing them a distinct lepton number and therefore it is not conserved. \newline \indent
 The second interesting to note thing is how a Majorana mass term like the one given in \eqref{eq:neutrino_majorana} arises in the Lagrangian. Because all mass terms would break the SM gauge symmetry if added directly to the Lagrangian, so there has to be some other way. For Dirac particles such a term arises from the Yukawa coupling term of a fermion field to the scalar Higgs field, similar to the one given in \eqref{eq:Yukterm}. The mass term then enters the Lagrangian via spontaneous symmetry breaking for temperatures below the critical temperature for the electroweak phase transition described above. Similarly the Majorana mass term originates from some coupling of the participating fields and the Higgs field to enter the Lagrangian afer spontaneous symmetry breaking. This coupling however is not the Yukawa coupling but of the form \cite[Eq. (5)]{Drewes:2013gca}
 \begin{equation}
-	\frac{1}{2}\overline{\ell_L}\tilde{\phi}f\tilde{\phi}^T\ell^c_L+h.c.,
+	\frac{1}{\Lambda}\left(\frac{1}{2}\overline{\ell_L}\tilde{\phi}f\tilde{\phi}^T\ell^c_L+h.c.\right),
 \end{equation}
-with some flavor matrix f. This operator is of dimension 5 and not renormalizable, therefore rendering every theory it is added to unphysically. This is a clear hint towards physics beyond the SM, because if neutrinos are in fact Majorana particles, necessitating Majorana mass terms, new concepts have to be thought of in order to incorporate them into any modell describing the universe. 
+with some flavor matrix $f$ and some energy scale $\Lambda$. The operator in parentheses is of dimension 5 which is why the parameter $\Lambda$ has to be introduced. This parameter describes the energy scale of physics beyond the SM.
 \section{The seesaw Mechanism}
+Introducing the mass terms of neutrinos to the Lagrangian after the electroweak symmetry breaking results in \cite[pp. 4f]{Drewes:2013gca}
+\begin{align}
+\mathcal{L}=\mathcal{L}_{SM}+i\bar{N}_{I}\slashed\partial\nu_{I}&-(m^D)_{\alpha I}\bar{\nu}_{\alpha}N_{I}-(m^D)_{\alpha I}^*\bar{N}_{I}\nu_{\alpha}
+\label{eq:lagrangian_mass}
+\\
+&-\frac{1}{2}\left[(M^M)_{IJ}\overline{N^c}_{I}N_{J}+(M^M)^*_{IJ}\bar{N}_{R,I}N^c_{J}\right]\nonumber.
+\end{align}
+This can be rewritten as\cite[Eq. (12)]{Drewes:2013gca}
+\begin{equation}
+\mathcal{L}_{M+D}=\left(\overline{\nu},\overline{N}^c\right)	\left(\begin{array}{cc}0&m^D\\m^D&M^M_R\end{array}\right)	\left(\begin{array}{c}\nu^c\\N\end{array}\right)+h.c.\:\:.
+\label{eq:majorana_dirac_zero}
+\end{equation}
+The matrix $m^D$ contains the masses of a typical lepton like the electron, while $M^M$ describes the Majorana mass. The matrix above as a whole is of the dimension \newline $(n_f+n_M)\times(n_f+n_M)$ with $n_f$ the number of observable neutrino flavours and $n_M$ the number of flavours of their right-handed counterparts. \newline\indent
 Although the addition of neutrino masses can be described using the mass term (\ref{eq_majorana_dirac_zero})
 there is still a problem, namely why the neutrino masses are many orders of magnitude smaller than those of the other SM particles. This however can be described using the so called seesaw mechanism. In this discussion only the so called type I seesaw mechanism will be presented. By doing so the following two assumptions have to be made:
 \begin{enumerate}
-	\item The Dirac masses arise directly from the Higgs mechanism that gives mass to all SM particles, introducing the electroweak mass scale of order $\sim10^2-10^3$ GeV.
+	\item The Dirac masses arise directly from the Higgs mechanism that gives mass to all SM particles and is of order of a typical lepton or quark in the SM.
 	\item The Majorana masses are much bigger than the Dirac masses, m$^D\ll$ M$^M$. This mass scale arises from GUT's and is of order $\sim10^{10}-10^{16}$ GeV.
 \end{enumerate}
 The subscript R will be dropped from now on since there is no non-zero left-handed Majorana mass and therefore no further distinction is needed.\newline\indent
-Now, after diagonalising the mass matrix in (\ref{eq_majorana_dirac_zero}) \cite[pp. 2-3]{Lindner:2001hr}, one gets two mass eigenvalues, in particular
+Now, after diagonalising the mass matrix in \eqref{eq:majorana_dirac_zero} \cite[pp. 2-3]{Lindner:2001hr}, one gets two mass eigenvalues, in particular
 \begin{align*}
 	M_1&\backsimeq-m^D{\left(M^M\right)}^{-1}{\left(m^D\right)}^{T},\\
 	M_2&\backsimeq M^M,
@@ -75,7 +93,7 @@ with their charge conjugated forms
 n_{1}^c=\nu^c\cos\phi-N\sin\phi,
 \label{eq:n1C}
 \\
-n_{2}^c=\nu\sin\phi+N\cos\phi,
+n_{2}^c=\nu\sin\phi+N\cos\phi.
 \label{eq:n2C}
 \end{align}
 Since the mixing angle $\phi$ is of order $m_D$/$M$ and $m_D\ll$ $M$, $\phi\ll1$ and therefore one can expand the sines and cosines in \eqref{eq:n1}-\eqref{eq:n2C} and gets
@@ -91,8 +109,8 @@ Putting all this back into the mass term of the Lagrangian yields at leading ord
 \end{equation}
 Seeing that the first as well as the second term of this Lagrangian only consist of left- and right-handed neutrinos respectively implies that these are Majorana mass terms and therefore by applying the seesaw mechanism to the SM one gets two Majorana neutrinos, n$_1$ and n$_2$. \newline\indent
 Since n$_{1}\approx\nu$ at leading order in $\phi$ this mass eigenstate mostly left-handed and with a mass M$_1$ very light, suggesting that this is the light neutrino observable today.\newline\indent
-On the other hand because n$_{2}\approx N^c$ this mass eigenstate is mostly right-handed and therefore, while very heavy with a mass of M$_2$, sterile, so it cannot be detected other as via gravitational effects. This heavy right-handed neutrino is also the prime candidate for enabling baryogenesis via leptogenesis. \newline\indent
-Interesting to note as well is how these two masses behave under fine tuning. It is quite obvious from equation \eqref{eq:light_neutrino} that by raising the large mass scale and as a consequence thereof raising the mass of the heavy neutrino the mass of the light neutrinos gets even lower and vice versa, hence the name seesaw mechanism. 
+On the other hand because n$_{2}\approx N^c$ this mass eigenstate is mostly right-handed and very heavy with a mass of M$_2$, so it cannot be detected other as via gravitational effects. This heavy right-handed neutrino is also the prime candidate for enabling baryogenesis via leptogenesis. \newline\indent
+Interesting to note is how these two masses behave under changing $M^M$. It is quite obvious from equation \eqref{eq:light_neutrino} that by raising the large mass scale and as a consequence thereof raising the mass of the heavy neutrino the mass of the light neutrinos gets even lower and vice versa, hence the name seesaw mechanism. 
 \section{Leptogenesis and the Sakharov conditions}
 After the necessary expansion of the SM was performed in the previous section, this section will focus on how the right-handed, heavy neutrinos are able to produce a net, non-zero baryon number, that is how the Sakharov conditions can be fulfilled using this extended SM. 
 \newline\indent
@@ -103,7 +121,7 @@ The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, 
  \mathcal{L}_{\text{N,Yuk}}=h_{ij}\overline{N_i}\tilde{\phi}^\dagger l_j +h_{ij}^* \overline{l_i}\tilde{\phi} N_j.
  \label{eq:Yukterm}
  \end{equation}
- The $h_{ij}$ describe the Yukawa couplings, the $\ell_i$ are the left-handed lepton SU(2) doublets of the Standard model and $\tilde{\phi}\equiv i\sigma^2\phi$ is the isospin conjugate of the Higgs doublet. It can be shown that this additional term does not violate the symmetries of the SM Lagrangian. This interaction term will be analyzed in more detail in Appendix A.1. \newline \indent
+ The $h_{ij}$ describe the complex Yukawa couplings, the $\ell_i$ are the left-handed lepton SU(2) doublets of the Standard model and $\tilde{\phi}\equiv i\sigma^2\phi^*$ is the isospin conjugate of the Higgs doublet. It can be shown that this additional term does not violate the symmetries of the SM Lagrangian. This interaction term will be analyzed in more detail in Appendix \ref{ap:yuk}. \newline \indent
  The Feynman diagrams for both decay channels are depicted in figure \ref{fig:N-decay}. The right-handed neutrinos being Majorana particles as a result of the seesaw mechanism do not preserve lepton number and because of this they can decay into leptons as well as anti-leptons, as it can be seen in figure \ref{fig:N-decay}.
 \begin{figure}[H]
 	\begin{equation*}
@@ -123,8 +141,7 @@ The key ingredient for baryogenesis via leptogenesis is the decay of the heavy, 
 \subsubsection{B violation}
 The B violation in the frame of leptogenesis is achieved in the same way as in direct electroweak baryogenesis via the B+L violating sphaleron processes. Because of the net lepton number asymmetry produced by N decays this means that the lepton abundance is converted into a baryon abundance by these processes.
 \subsubsection{C and CP violation}
-As in direct baryogenesis C violation is already maximally violated by the SM electroweak interaction, so this is also the case in this slightly extended model.
-The CP violation for the N$_1$ decay however is a bit more complicated, since for it to be calculated one has to take the one-loop Feynman diagrams additional to the tree level decay into account. The interference between these diagramms gives then rise to the CP violation needed for successfull baryogenesis. These one-loop diagrams are depicted in figure \ref{fig:N_loop}.
+The CP violation for the $N_1$ decay comes from the complex nature of the Yukawa couplings introduced in equation \eqref{eq:Yukterm}. This coupling then violates CP by interfering Feynman diagrams for this decay, tree level decay, however, are not enough to produce any CP violation since the complex phases of $h_{ij}$ cancel each other out by taking the square of any interference because only one neutrino flavour appears in tree level decays. Because of this at leas one loop diagrams with intermediate states of neutrinos of different flavour have to be interfered with the tree level decay, so the phases do not cancel each other out. This then contributes to CP violation since the CP-conjugated decay then is not the same as the unconjugated one. The necessary one-loop diagrams are depicted in figure \ref{fig:N_loop}.
 \begin{figure}[H]
 	\begin{equation*}
 	\feynmandiagram [small, baseline=(d.base), horizontal=a to t1] 
@@ -149,14 +166,18 @@ The CP violation for the N$_1$ decay however is a bit more complicated, since fo
 	\label{fig:N_loop}
 \end{figure}
 \noindent
-The most important part leading to a CP violation however is not the interference of the one-loop diagramms and the tree level alone but rather one certain property of the Yukawa coupling $h_{ij}$, namely that it can be complex. This means that the decay into leptons receives another coupling as the CP-conjugated decay into anti-leptons, resulting in a CP-violating interference similar to the one induced by the complex phase present in the CKM matrix in the quark sector. \newline \indent
-A distinction between N\textsubscript{i} and N\textsubscript{j} has to be made since the virtual neutrinos transmissioned during these processes are not of the same flavour as the neutrino in the initial state. This means that in order for CP to be violated there has to exist at least an extra neutrino next to the lightest one. \newline\indent
+Here it can be seen clearly that a distinction between $N_i$ and $N_j$ has to be made since the virtual neutrinos transmissioned during these processes are not of the same flavour as the neutrino in the initial state. This means that in order for CP to be violated there has to exist at least an extra neutrino next to the lightest one. \newline\indent
 This being said, one can calculate the CP asymmetry\cite[pp. 24ff.]{Davidson:2008bu}, which is in general defined as
 \begin{equation}
 	\epsilon=\frac{\Gamma(N_1\rightarrow\bar{\phi}\bar{\ell})-\Gamma(N_1\rightarrow\phi\ell)}{\Gamma(N_1\rightarrow\bar{\phi}\bar{\ell})+\Gamma(N_1\rightarrow\phi\ell)},
 	\label{eq:CP_violation}
 \end{equation}
-by interfering the tree level decay with the one-loop decays. This results in \cite[p. 26]{Davidson:2008bu}
+by interfering the tree level decay with the one-loop decays. By assuming hierarchical heavy neutrino masses the CP violation can be expressed as \cite¢[Eq. (55)]{Buchmuller:2005eh} 
+\begin{equation}
+	\epsilon\simeq\frac{3}{16\pi}\frac{1}{\left(hh^\dagger\right)^2_{11}}\sum_{i=2,3}\text{Im}\left[\left(hh^\dagger\right)^2_{i1}\right]\frac{M_1}{M_i}
+\end{equation}
+
+For a certain choice of parameters this results in \cite[p. 26]{Davidson:2008bu}
 \begin{equation}
 	\epsilon\gtrsim10^{-6},
 	\label{eq:CP_value}
@@ -164,7 +185,7 @@ by interfering the tree level decay with the one-loop decays. This results in \c
 which shows CP violation by the decay of heavy right-handed Majorana neutrinos. 
 \subsubsection{Deviation from the equilibrium}
 The last condition that has to be met for successfull baryogenesis is that the decay of the heavy neutrinos must occur outside of equilibrium. For high enough temperatures, namely for T $\gtrsim$ M\textsubscript{1}, the decay of the neutrino is in equilibrium with the inverse decay $\phi\ell\rightarrow N$ and no net lepton number can be produced even if the other two conditions hold as shown in sec. 2.1.2. Even if during inflation an abundance of N was produced the lepton asymmetry would be washed out by equilibrium processes as soon as the temperature rises up to at least the mass of the heavy neutrino during the reheating phase of the early universe. \newline\indent
-However, if the temperature drops below M$_1$ the heavy neutrino inverse decay is exponentially suppressed by a Boltzmann factor because with falling temperature it becomes exponentially more unlikely for a lepton and Higgs to have enough energy to form a heavy neutrino, while the neutrinos themselves can still decay into lepton and Higgs. Due to this the equilibrium density of the neutrinos is also heavily Boltzmann suppressed and if the decay rate is small enough the actual neutrino density can be greater than the equilibrium density and stay greater for an considerable amount of time. This means that decays happening before the neutrino density converges to the equilibrium density happen outside of equilibrium and a net lepton number can be produced, that, because of suppression of inverse decays, will not be washed out and as a consequence thereof will be transformed into a baryon abundance through the B+L violating electroweak sphaleron processes.\newline\indent
+However, if the temperature drops below M$_1$ the heavy neutrino inverse decay is exponentially suppressed by a Boltzmann factor because with falling temperature it becomes exponentially more unlikely for a lepton and Higgs to have enough energy to form a heavy neutrino, while the neutrinos themselves can still decay into lepton and Higgs. This means that decays happening before the neutrino density converges to the equilibrium density happen outside of equilibrium and a net lepton number can be produced, that, because of suppression of inverse decays, will not be washed out and as a consequence thereof will be transformed into a baryon abundance through the B+L violating electroweak sphaleron processes.\newline\indent
 The requirement for the neutrino decay to be slow enough to sustain its out-of-equilibrium state is the following \cite[p. 30]{Taanila:2008}.
 \begin{equation}
 	\Gamma_D<H.

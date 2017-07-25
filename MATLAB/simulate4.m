@@ -38,12 +38,6 @@ figure(4)
  xlabel('K')
  ylabel('\kappa/\kappa_{classical}')
  
-%  semilogx((1:0.25:100),abs(A12./A32))
-%  hold on
-%  semilogx((1:0.25:100),abs(A22./A42))
-%  hold off
-%  xlabel('K')
-%  ylabel('\kappa/\kappa_{classical}')
 
 function ndot = density_nonCorr(z,N,K,cl,cp)               
     nE = 1/pi^2*z^2*besselk(2,z);
