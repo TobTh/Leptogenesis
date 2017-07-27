@@ -59,6 +59,7 @@ figure(1)
  
  % This function defines the rate equation with relativistic corrections
  % included
+ %5.4737=2*pi^2/(3*zeta(3))
  
  function ndot = density_Rel(z,N,K,cl,cp)        
     nE = 1/pi^2*z^2*besselk(2,z); % X_N in equilibrium 
