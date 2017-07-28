@@ -1,17 +1,17 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Outline of baryogenesis}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Sakharov Conditions}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}C and CP-violation}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}C and CP violation}{3}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Departure from thermal equilibrium}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Baryogenesis in the Standard Modell}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Baryogenesis in the Standard Model}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}The SU(2)\textsubscript {L}xU(1)\textsubscript {Y} symmetry of the SM}{5}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Electroweak baryogenesis}{5}{subsection.2.2.2}
 \contentsline {subsubsection}{\nonumberline C and CP violation}{5}{section*.2}
 \contentsline {subsubsection}{\nonumberline B violation}{6}{section*.3}
-\contentsline {subsubsection}{\nonumberline Departure from thermal equilibrium and elecroweak phase transistion}{7}{section*.4}
+\contentsline {subsubsection}{\nonumberline Departure from thermal equilibrium and elecroweak phase transition}{7}{section*.4}
 \contentsline {subsection}{\numberline {2.2.3}Failures of the SM}{9}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Outline of leptogenesis}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Expanding the SM}{12}{section.3.1}
+\contentsline {section}{\numberline {3.1}Extending the SM}{12}{section.3.1}
 \contentsline {section}{\numberline {3.2}The seesaw Mechanism}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Leptogenesis and the Sakharov conditions}{15}{section.3.3}
 \contentsline {subsubsection}{\nonumberline B violation}{16}{section*.8}

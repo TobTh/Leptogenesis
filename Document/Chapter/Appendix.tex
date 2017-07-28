@@ -20,7 +20,7 @@ Using equation \eqref{eq:Yukterm} for general fields $\psi$ and $\phi$, the inte
 	H_{int}=g\int d^3x \overline{\psi}\psi\phi,
 \end{equation*}
 with $g$ the coupling constant.\newline\indent
-Interesting to note is that, given $g$ is small, by expanding the time evolution operator above one can use quantum mechanical pertubation theory up to an arbitrary order. \newline\indent
+Interesting to note is that, given $g$ is small, by expanding the time evolution operator above one can use quantum mechanical perturbation theory up to an arbitrary order. \newline\indent
 Now in order to transform the matrix element into a purely algebraic expression, one first has to reorder the fields $\psi_1$ to $\psi_n$ in a way that the time ordering symbol T is not needed any more. This can be done using the so called Wick's theorem
 \begin{equation*}
 	T\left[\psi_1\psi_2\cdots\psi_n\right]=:\psi_1\psi_2\cdots\psi_n+\text{all possible contractions}:.
@@ -66,16 +66,16 @@ In the last step the relations
 	\psi(x)\psi(y)=0,
 	\label{eq:selfcontraction2}
 \end{align}
-were used, having the effect that contracted field are always adjacend to each other in a sense, that to conctraction symbols do not intersect each other. These contractions of just $\psi$ with $\bar{\psi}$ fields can be interpreted as a fermion number flow and therefore the conservation of fermion number. It can be thought of as an incoming particle $\psi$ that becomes an outgoing particle $\bar{\psi}$ after interacting and therefore the fermion number stays the same.\newline\indent
+were used, having the effect that contracted field are always adjacent to each other in a sense, that two contraction symbols do not intersect each other. These contractions of just $\psi$ with $\bar{\psi}$ fields can be interpreted as a fermion number flow and therefore the conservation of fermion number. It can be thought of as an incoming particle $\psi$ that becomes an outgoing particle $\bar{\psi}$ after interacting and therefore the fermion number stays the same.\newline\indent
 So in order to apply Wick's theorem one has to basically connect two fields pairwise until all possible contractions are performed. \newline\indent
 The next important step is to note that only terms with no uncontracted fields contribute to the correlation function above. In the previous example this means that only the last three terms have to be taken into account in order to obtain the corresponding Feynman rules. \newline\indent
-Until now only internal contractions, so contractions of two field operators resulting in the internal propagators, where considered. In order to also take the external, so incoming and outgoing, particles into account one has to take a closer look at the initial and final states $\ket{i}$ and $\bra{f}$. Because in general these states are not just the vacuum, but (multi-)particle states they must consist of creation and anihilation operators acting on the vacuum state, causing contractions of such operators and the fields to arise. Asuming that the particles are not plane waves but rather localized wave packages one can write the states $\ket{i}$ and $\bra{f}$ as\cite{Kopp:2016}
+Until now only internal contractions, so contractions of two field operators resulting in the internal propagators, where considered. In order to also take the external, so incoming and outgoing, particles into account one has to take a closer look at the initial and final states $\ket{i}$ and $\bra{f}$. Because in general these states are not just the vacuum, but (multi-)particle states they must consist of creation and annihilation operators acting on the vacuum state, causing contractions of such operators and the fields to arise. Assuming that the particles are not plane waves but rather localized wave packages one can write the states $\ket{i}$ and $\bra{f}$ as\cite{Kopp:2016}
 \begin{align*}
 \ket{i}=a_1^\dagger a_2^\dagger \cdots b_{n-1}^\dagger b_n^\dagger \ket{0},
 \\
 \bra{f}=\bra{0}a_1 a_2 \cdots b_{n-1}b_n,
 \end{align*}
-with the annihilation operators $a_i,b_i$ and the creation operators $a_i^\dagger,b_i^\dagger$ for particles and antiparticles, respectively. The subsript $i$ is short for $p_i$, the particle momentum. In this notations one distinct creation or annihiliation operator can appear twice if two particle with the same momentum are created or destroyed. \newline\indent
+with the annihilation operators $a_i,b_i$ and the creation operators $a_i^\dagger,b_i^\dagger$ for particles and antiparticles, respectively. The subsript $i$ is short for $p_i$, the particle momentum. In these notations one distinct creation or annihilation operator can appear twice if two particle with the same momentum are created or destroyed. \newline\indent
 Using this and equation \eqref{eq:s-matrix}, for a scattering process with a m-particle initial state and a n-particle final state, this results in the following matrix element \cite[Eq. 2.2]{Denner:1992vza}
 \begin{equation}
 \left<0\left|a_1 a_2 \cdots  b_{n-1} b_n T\left[\left(\bar{\psi}\Gamma\psi\right)\cdots(\bar{\psi}\Gamma\psi\right)]a_{n+1}^\dagger a_{n+2}^\dagger \cdots  b_{m-1}^\dagger b_m^\dagger\right|0\right>.
@@ -107,8 +107,8 @@ and the anti-commutator relations
 were used to obtain the results above.
 In this context $u$, $v$ and their barred versions describe the incoming or outgoing (anti-)particles as seen above, but their exact mathematical expression is of no greater interest here and will therefore not be given. \newline\indent
 Shortly summarizing the previous discussion shows that, for Dirac particles, using the matrix element \eqref{eq:matrix_element} one can not only determine the internal propagators needed in most processes but also the spinors of incoming and outgoing particles. So a full set of the needed Feynman rules for Dirac fields was obtained and can directly be used for calculating the scattering matrix elements for various processes. \newline\indent
-However, because leptogenesis requires Majorana neutrinos at leas the Feynman rules for exactly this neutrino have to be reiterated. The main difference in obtaining the Feynman rules for Majorana particles in comparison to Dirac particles is that the relations \eqref{eq:selfcontraction1} and \eqref{eq:selfcontraction2} do no longer hold and therefore contractions of fields not adjacent to each other are possible. It can be easily seen that the same reasoning of above with incoming and outgoing fermions for Dirac particles can not be applied for Majorana particles because of lepton number non-conserving contractions containing just $\psi$ or $\bar{\psi}$ fields.\newline\indent
-This problem can be solved by introducing the charge-conjugated fileds 
+However, because leptogenesis requires Majorana neutrinos at least the Feynman rules for exactly this neutrino have to be reiterated. The main difference in obtaining the Feynman rules for Majorana particles in comparison to Dirac particles is that the relations \eqref{eq:selfcontraction1} and \eqref{eq:selfcontraction2} do no longer hold and therefore contractions of fields not adjacent to each other are possible. It can be easily seen that the same reasoning of above with incoming and outgoing fermions for Dirac particles can not be applied for Majorana particles because of lepton number non-conserving contractions containing just $\psi$ or $\bar{\psi}$ fields.\newline\indent
+This problem can be solved by introducing the charge-conjugated fields 
 \begin{align*}
 	\psi^c&=C\bar{\psi}^T,\\
 	\overline{\psi^c}&=-\psi^T C^{-1},
@@ -121,7 +121,7 @@ with the reversed fermion interaction
 \begin{equation*}
 	\Gamma'=C\Gamma C^{-1}.
 \end{equation*}
-In additon the relation
+In additon, the relation
 \begin{equation*}
 	C\Gamma_i C^{-1}=\eta_i\Gamma_i,
 \end{equation*}
@@ -150,8 +150,8 @@ Now applying again the contractions, while the same indices as in the original t
 \bar{\psi}_a\psi_b\:\overline{\psi^c}_b\psi^c_a\:\bar{\psi}_a\psi_b.
 \label{eq:untangled}
 \end{equation}
-This can be applied to an arbitrarlily long string of field operators and therefore any combination of general fermion fields can be transformed in a way that is has the same structure as for Dirac fermions, with the only difference being that some fields may be exchanged with their charge conjugated counterparts. As already mentioned, these kind of interaction terms do not conserve fermion number, however, equation \eqref{eq:untangled} having the same structure as for Dirac particles the fermion number flow has to be replaced by something else, namely the so called fermiom flow. This fermion flow plays the role of an orientation of a Feynman diagram. This orientation can be chosen arbitrarily, the resulting matrix element are still the same, regardless of the chosen orientation\cite[p. 474]{Denner:1992vza}\newline\indent 
-The Feynman rules than can be obtained exactly in the same way as for Dirac particles. For Majorana fields all the contranctions 
+This can be applied to an arbitrarily long string of field operators and therefore any combination of general fermion fields can be transformed in a way that is has the same structure as for Dirac fermions, with the only difference being, some fields may be exchanged with their charge conjugated counterparts. As already mentioned, these kinds of interaction terms do not conserve fermion number, however, equation \eqref{eq:untangled} having the same structure as for Dirac particles the fermion number flow has to be replaced by something else, namely the so called fermiom flow. This fermion flow plays the role of an orientation of a Feynman diagram. This orientation can be chosen arbitrarily, the resulting matrix element are still the same, regardless of the chosen orientation\cite[p. 474]{Denner:1992vza}\newline\indent 
+The Feynman rules then can be obtained exactly in the same way as for Dirac particles. For Majorana fields all the contractions 
 $\bcontraction{}{\psi}{}{\psi}\psi \psi^c$, $\bcontraction{}{\psi}{}{\psi}\psi \overline{\psi}^c$, $\bcontraction{}{\psi}{^c}{\psi}\psi^c \overline{\psi}$ and $\bcontraction{}{\psi}{^c}{\psi}\psi^c \overline{\psi}^c$ are equal \cite[p. 473]{Denner:1992vza}.
 Using the definition of the charge conjugated fields results in the algebraic expression for the propagator given as \cite[Eq. (2.15)]{Denner:1992vza}
 \begin{equation*}
@@ -679,9 +679,9 @@ with
 \begin{equation*}
 	I(z):=\frac{1}{4\pi\: M_N^2}\int \frac{d^3p_N}{E_N}\frac{1}{e^{E_N/T}-1}=\int_{1}^{\infty}dx\frac{\sqrt{x^2-1}}{e^{zx}-1}.
 \end{equation*}
-Using this result one can easily see that for high z of for a high neutrino mass M$_N$ at a fixed temperature and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, the result obtained in \ref{ap:Gamma_B-L}.
+Using this result one can easily see that for high $z$ for a high neutrino mass $M_N$ at a fixed temperature and therefore high Higgs and lepton momenta, $\Gamma_{B-L,q}$ changes over to $\Gamma_{B-L}$, the result obtained in \ref{ap:Gamma_B-L},
 \begin{equation*}
-	\Gamma_{B-L,q}\overset{z\rightarrow\infty}{\longrightarrow}\Gamma_{B-L}
+	\Gamma_{B-L,q}\overset{z\rightarrow\infty}{\longrightarrow}\Gamma_{B-L}.
 \end{equation*}
 \newpage
 \section{MATLAB code}

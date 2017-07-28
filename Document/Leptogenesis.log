@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  27 JUL 2017 13:21
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  28 JUL 2017 11:43
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.137 seconds
+luaotfload | main : initialization completed in 0.136 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
@@ -2019,17 +2019,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8EDA6AE9E166E95E1C31142DC5758A46;2220.
+(rerunfilecheck)             Checksum: 7FFE2454B6BF433DBAA6A0B0A5997C5E;2219.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
 )
 
 Here is how much of LuaTeX's memory you used:
  31045 strings out of 494577
- 381537,953878 words of node,token memory allocated
- 34346 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 4291 glue, 1 kern, 967 attribute, 49 glue_spec, 967
+ 381533,953878 words of node,token memory allocated
+ 34364 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 4293 glue, 1 kern, 968 attribute, 49 glue_spec, 968
  attribute_list, 1 write, 6 pdf_action nodes
-   avail lists: 1:13,2:11053,3:2574,4:797,5:9113,6:4993,7:8591,8:5502,9:9859,10:
+   avail lists: 1:17,2:11053,3:2573,4:797,5:9113,6:4997,7:8591,8:5502,9:9859,10:
 35,11:580
  33253 multiletter control sequences out of 65536+600000
  79 fonts using 5002759 bytes
@@ -2057,7 +2057,7 @@ lic/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro
 10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 >
-Output written on Leptogenesis.pdf (62 pages, 1067100 bytes).
+Output written on Leptogenesis.pdf (62 pages, 1067309 bytes).
 
 PDF statistics: 1326 PDF objects out of 1440 (max. 8388607)
  1216 compressed objects within 13 object streams
