@@ -5,32 +5,32 @@
 \contentsline {subsection}{\numberline {2.1.2}Departure from thermal equilibrium}{3}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Baryogenesis in the Standard Model}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}The SU(2)\textsubscript {L}xU(1)\textsubscript {Y} symmetry of the SM}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Electroweak baryogenesis}{5}{subsection.2.2.2}
-\contentsline {subsubsection}{\nonumberline C and CP violation}{5}{section*.2}
+\contentsline {subsection}{\numberline {2.2.2}Electroweak baryogenesis}{6}{subsection.2.2.2}
+\contentsline {subsubsection}{\nonumberline C and CP violation}{6}{section*.2}
 \contentsline {subsubsection}{\nonumberline B violation}{6}{section*.3}
-\contentsline {subsubsection}{\nonumberline Departure from thermal equilibrium and elecroweak phase transition}{7}{section*.4}
-\contentsline {subsection}{\numberline {2.2.3}Failures of the SM}{9}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}Outline of leptogenesis}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Extending the SM}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}The seesaw Mechanism}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Leptogenesis and the Sakharov conditions}{15}{section.3.3}
-\contentsline {subsubsection}{\nonumberline B violation}{16}{section*.8}
-\contentsline {subsubsection}{\nonumberline C and CP violation}{16}{section*.9}
-\contentsline {subsubsection}{\nonumberline Deviation from the equilibrium}{17}{section*.11}
-\contentsline {chapter}{\numberline {4}Analytic approximations and calculations}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Rate equations for leptogenesis}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Relativistic corections}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}Radiative corrections}{22}{section.4.3}
-\contentsline {chapter}{\numberline {5}Numerical results}{24}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{30}{chapter.6}
-\contentsline {chapter}{\numberline {A}The Yukawa interaction term}{32}{appendix.A}
-\contentsline {section}{\numberline {A.1}Feynman rules for the Yukawa interaction}{32}{section.A.1}
-\contentsline {section}{\numberline {A.2}The tree level decay rate for heavy neutrinos}{37}{section.A.2}
-\contentsline {chapter}{\numberline {B}Detailed calculations}{41}{appendix.B}
-\contentsline {section}{\numberline {B.1}Integrating the rate equation over phase space}{41}{section.B.1}
-\contentsline {section}{\numberline {B.2}Detailed calculation of $\Gamma _{B-L}$}{41}{section.B.2}
-\contentsline {section}{\numberline {B.3}Obtaining relativistic corrections to the rate equations}{44}{section.B.3}
-\contentsline {section}{\numberline {B.4}Obtaining radiative corrections to the rate equations}{45}{section.B.4}
-\contentsline {section}{\numberline {B.5}Equlibrium densities}{46}{section.B.5}
-\contentsline {section}{\numberline {B.6}Differences between quantum and classical statistics}{47}{section.B.6}
-\contentsline {section}{\numberline {B.7}MATLAB code}{50}{section.B.7}
+\contentsline {subsubsection}{\nonumberline Departure from thermal equilibrium and elecroweak phase transition}{8}{section*.4}
+\contentsline {subsection}{\numberline {2.2.3}Failures of the SM}{10}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Outline of leptogenesis}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Extending the SM}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}The seesaw Mechanism}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Leptogenesis and the Sakharov conditions}{16}{section.3.3}
+\contentsline {subsubsection}{\nonumberline B violation}{17}{section*.8}
+\contentsline {subsubsection}{\nonumberline C and CP violation}{17}{section*.9}
+\contentsline {subsubsection}{\nonumberline Deviation from the equilibrium}{18}{section*.11}
+\contentsline {chapter}{\numberline {4}Analytic approximations and calculations}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Rate equations for leptogenesis}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Relativistic corections}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Radiative corrections}{23}{section.4.3}
+\contentsline {chapter}{\numberline {5}Numerical results}{25}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}
+\contentsline {chapter}{\numberline {A}The Yukawa interaction term}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}Feynman rules for the Yukawa interaction}{35}{section.A.1}
+\contentsline {section}{\numberline {A.2}The tree level decay rate for heavy neutrinos}{41}{section.A.2}
+\contentsline {chapter}{\numberline {B}Detailed calculations}{45}{appendix.B}
+\contentsline {section}{\numberline {B.1}Integrating the rate equation over phase space}{45}{section.B.1}
+\contentsline {section}{\numberline {B.2}Detailed calculation of $\Gamma _{B-L}$}{45}{section.B.2}
+\contentsline {section}{\numberline {B.3}Obtaining relativistic corrections to the rate equations}{48}{section.B.3}
+\contentsline {section}{\numberline {B.4}Obtaining radiative corrections to the rate equations}{49}{section.B.4}
+\contentsline {section}{\numberline {B.5}Equilibrium densities}{50}{section.B.5}
+\contentsline {section}{\numberline {B.6}Differences between quantum and classical statistics}{51}{section.B.6}
+\contentsline {section}{\numberline {B.7}MATLAB code}{55}{section.B.7}

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  28 JUL 2017 11:43
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.5.15)  17 SEP 2017 16:40
  restricted system commands enabled.
 **Leptogenesis.tex
 (./Leptogenesis.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.136 seconds
+luaotfload | main : initialization completed in 0.148 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2017/01/03 v3.22 KOMA-Script document class (book)
@@ -79,12 +79,6 @@ Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             If you'd like to set the option with \KOMAoptions,
 (scrbook)             you'd have to use `fontsize=11pt' there
 (scrbook)             instead of `11pt', too.
-Class scrbook Info: You've used standard option `oneside'.
-(scrbook)           This is correct!
-(scrbook)           Internally I'm using `twoside=false'.
-(scrbook)           If you'd like to set the option with \KOMAoptions,
-(scrbook)           you'd have to use `twoside=false' there
-(scrbook)           instead of `oneside', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input lin
 e 2270.
 
@@ -110,12 +104,6 @@ Package typearea Info: You've used standard option `a4paper'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=a4' there
 (typearea)             instead of `a4paper', too.
-Package typearea Info: You've used standard option `oneside'.
-(typearea)             This is correct!
-(typearea)             Internally I'm using `twoside=false'.
-(typearea)             If you'd like to set the option with \KOMAoptions,
-(typearea)             you'd have to use `twoside=false' there
-(typearea)             instead of `oneside', too.
 \ta@hblk=\skip43
 \ta@vblk=\skip44
 \ta@temp=\skip45
@@ -126,8 +114,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 418.25555pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 595.80026pt
 (typearea)              \topmargin      = -25.16531pt
@@ -1130,29 +1118,29 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (./Leptogenesis.aux)
 \openout1 = Leptogenesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 94.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1161,21 +1149,21 @@ LaTeX Font Info:    ... okay on input line 93.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=688.5567pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-43.19086pt
+* \textwidth=418.25368pt
+* \textheight=674.33032pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-36.07767pt
 * \headheight=13.6pt
-* \headsep=28.45274pt
+* \headsep=35.56593pt
 * \topskip=11.0pt
-* \footskip=34.1433pt
-* \marginparwidth=59.7508pt
+* \footskip=35.56593pt
+* \marginparwidth=89.62619pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -1183,8 +1171,8 @@ LaTeX Font Info:    ... okay on input line 93.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1225,7 +1213,7 @@ Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 93.
+Package hyperref Info: Link coloring OFF on input line 94.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1235,21 +1223,21 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (./Leptogenesis.out) (./Leptogenesis.out)
 \@outlinefile=\write4
 
 \openout4 = Leptogenesis.out
 \c@lstlisting=\count163
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 97.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 97.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1257,16 +1245,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Images/PH.pdf, id=127, 29.8716pt x 29.8716pt>
 File: Images/PH.pdf Graphic file (type pdf)
  <use Images/PH.pdf>
-Package luatex.def Info: Images/PH.pdf used on input line 96.
+Package luatex.def Info: Images/PH.pdf used on input line 97.
 (luatex.def)             Requested size: 29.8715pt x 29.8715pt.
 
 <Images/tumlogo.pdf, id=129, 53.24893pt x 28.45631pt>
 File: Images/tumlogo.pdf Graphic file (type pdf)
  <use Images/tumlogo.pdf>
-Package luatex.def Info: Images/tumlogo.pdf used on input line 96.
+Package luatex.def Info: Images/tumlogo.pdf used on input line 97.
 (luatex.def)             Requested size: 53.2488pt x 28.45624pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 96.
 
+Overfull \hbox (5.2805pt too wide) in paragraph at lines 97--97
+[]$[]$ $[]$ 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 97.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
@@ -1275,14 +1267,20 @@ Non-PDF special ignored!
 
 
 
+
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./Images/
-PH.pdf><./Images/tumlogo.pdf>] (./Leptogenesis.toc)
+PH.pdf><./Images/tumlogo.pdf>] [2] (./Leptogenesis.toc)
 \tf@toc=\write5
 
 \openout5 = Leptogenesis.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 [1
+
+
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.ii'
+[2
 
 
 ] (./Chapter/Introduction.tex
@@ -1302,11 +1300,10 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-) (./Chapter/Outline_of_baryogenesis.tex [1
+[1
 
 
-
-] [2]
+]) (./Chapter/Outline_of_baryogenesis.tex [2]
 chapter 2.
 [3
 
@@ -1336,25 +1333,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 66.
 
-[5] [6] [7] [8] [9] <Images/Higgs1.png, id=324, 1770.615pt x 690.58pt>
+[5] [6] [7] [8] [9] <Images/Higgs1.png, id=331, 1770.615pt x 690.58pt>
 File: Images/Higgs1.png Graphic file (type png)
 
 <use Images/Higgs1.png>
 Package luatex.def Info: Images/Higgs1.png used on input line 217.
-(luatex.def)             Requested size: 318.66948pt x 124.2885pt.
- <Images/Higgs2.png, id=325, 1770.615pt x 708.6475pt>
+(luatex.def)             Requested size: 292.77629pt x 114.18314pt.
+ <Images/Higgs2.png, id=332, 1770.615pt x 708.6475pt>
 File: Images/Higgs2.png Graphic file (type png)
 
 <use Images/Higgs2.png>
 Package luatex.def Info: Images/Higgs2.png used on input line 222.
-(luatex.def)             Requested size: 318.66948pt x 127.54024pt.
- [10<./Images/Higgs1.png><./Images/Higgs2.png>])
-(./Chapter/Outline_of_leptogenesis.tex [11]
+(luatex.def)             Requested size: 292.77629pt x 117.17049pt.
+ [10] [11<./Images/Higgs1.png><./Images/Higgs2.png>])
+(./Chapter/Outline_of_leptogenesis.tex [12]
 chapter 3.
-[12
+[13
 
 
-] [13] [14]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t
+] [14] [15]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t
 /tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table f
 illed incorrectly
 stack traceback:
@@ -1388,7 +1385,7 @@ l.135 		d  --[thick,edge label=N] b  }
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[15]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
+[16]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
 neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
 ncorrectly
 stack traceback:
@@ -1422,78 +1419,67 @@ l.162 	}
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[16]) (./Chapter/Analytic_approximations_and_calculations.tex [17]
+[17]) (./Chapter/Analytic_approximations_and_calculations.tex [18]
 chapter 4.
-[18
+[19
 
 
-] [19] [20] <Images/rates.png, id=506, 1770.615pt x 746.79pt>
+] [20] [21] <Images/rates.png, id=517, 1770.615pt x 746.79pt>
 File: Images/rates.png Graphic file (type png)
 
 <use Images/rates.png>
 Package luatex.def Info: Images/rates.png used on input line 125.
-(luatex.def)             Requested size: 364.19667pt x 153.60571pt.
- [21<./Images/rates.png>] [22])
-(./Chapter/Numerical_results.tex [23]
+(luatex.def)             Requested size: 334.60422pt x 141.1167pt.
+ [22<./Images/rates.png>] [23])
+(./Chapter/Numerical_results.tex [24]
 chapter 5.
-[24
+[25
 
 
-] <Images/efficiency.png, id=589, 1770.615pt x 1170.3725pt>
+] <Images/efficiency.png, id=601, 1770.615pt x 1170.3725pt>
 File: Images/efficiency.png Graphic file (type png)
 
 <use Images/efficiency.png>
 Package luatex.def Info: Images/efficiency.png used on input line 81.
-(luatex.def)             Requested size: 455.24411pt x 300.91443pt.
- [25]
-<Images/corrections.png, id=610, 1770.615pt x 1170.3725pt>
+(luatex.def)             Requested size: 418.25368pt x 276.46625pt.
+ [26]
+<Images/corrections.png, id=622, 1770.615pt x 1170.3725pt>
 File: Images/corrections.png Graphic file (type png)
 
 <use Images/corrections.png>
 Package luatex.def Info: Images/corrections.png used on input line 89.
-(luatex.def)             Requested size: 455.24411pt x 300.91443pt.
- [26<./Images/efficiency.png>]
-<Images/quantum.png, id=620, 1770.615pt x 1170.3725pt>
+(luatex.def)             Requested size: 418.25368pt x 276.46625pt.
+ [27<./Images/efficiency.png>]
+<Images/quantum.png, id=633, 1770.615pt x 1170.3725pt>
 File: Images/quantum.png Graphic file (type png)
 
 <use Images/quantum.png>
 Package luatex.def Info: Images/quantum.png used on input line 103.
-(luatex.def)             Requested size: 455.24411pt x 300.91443pt.
- [27<./Images/corrections.png>]
-<Images/quantum1.png, id=629, 1770.615pt x 1170.3725pt>
+(luatex.def)             Requested size: 418.25368pt x 276.46625pt.
+ [28<./Images/corrections.png>]
+<Images/quantum1.png, id=643, 1770.615pt x 1170.3725pt>
 File: Images/quantum1.png Graphic file (type png)
 
 <use Images/quantum1.png>
 Package luatex.def Info: Images/quantum1.png used on input line 117.
-(luatex.def)             Requested size: 455.24411pt x 300.91443pt.
- [28<./Images/quantum.png>] [29<./Images/quantum1.png>]) (./Chapter/Summary.tex
+(luatex.def)             Requested size: 418.25368pt x 276.46625pt.
+ [29<./Images/quantum.png>] [30<./Images/quantum1.png>]) (./Chapter/Summary.tex
 
 chapter 6.
-[30
+[31
 
 
-]) (./Chapter/Appendix.tex [31
+] [32
+
+
+]) (./Chapter/Appendix.tex [33] [34
 
 
 ]
 chapter A.
-[32
-
-
-] [33]
-Overfull \hbox (7.768pt too wide) detected at line 119
-[]\OT1/cmr/m/n/10.95  \OML/cmm/m/it/10.95   \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/
-10.95 g[][]\OT1/cmr/m/n/10.95  []\OML/cmm/m/it/10.95  [][] \OT1/cmr/m/n/10.95 
-= (\OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 1)\OML/cmm/m/it/10.95 g[] []\OT1/cmr
-/m/n/10.95  [][]\OML/cmm/m/it/10.95 [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.9
-5 g[][][]C\OT1/cmr/m/n/10.95  []\OML/cmm/m/it/10.95 C[] [][] \OT1/cmr/m/n/10.9
-5 = \OML/cmm/m/it/10.95 g[][][][]\OT1/cmr/m/n/10.95  []\OML/cmm/m/it/10.95  []
-[] \OT1/cmr/m/n/10.95 =: [] []\OML/cmm/m/it/10.95  [];
- []
-
-[34] [35]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/t
-ex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table fil
-led incorrectly
+[35] [36] [37] [38]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:2
+13: ...t/tex/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization
+ table filled incorrectly
 stack traceback:
 	[C]: in function 'assert'
 	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
@@ -1521,6 +1507,23 @@ unGraphDrawingAlgorithm'
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
 l.184 			d   -- [scalar,thick] b}
+                               ; \quad \sim i\Gamma'
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.193 			d   -- [scalar,thick] b}
                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1537,8 +1540,8 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.189 			d   -- [scalar,thick] b}
-                               ; \quad \sim i\Gamma
+l.198 			d   -- [scalar,thick] b}
+                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
@@ -1554,8 +1557,8 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.194 			d   -- [scalar,thick] b}
-                               ; \quad \sim i\Gamma
+l.207 				d   -- [scalar,thick] b}
+                                ; \quad \sim i\Gamma
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
@@ -1571,275 +1574,46 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.202 		d   -- [scalar,thick] b}
+l.212 				d   -- [scalar,thick] b}
+                                ; \quad \sim i\Gamma'
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.221 		d   -- [scalar,thick] b}
+                              ; \quad \sim i\Gamma
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.226 		d   -- [scalar,thick] b}
                               ; \quad \sim i\Gamma'
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.207 		d   -- [scalar,thick] b}
-                              ; \quad \sim i\Gamma'
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.212 		d   -- [scalar,thick] b}
-                              ; \quad \sim i\Gamma'
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.217 		d   -- [scalar,thick] b}
-                              ; \quad \sim i\Gamma'
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-
-Overfull \hbox (6.61542pt too wide) detected at line 218
-[]  \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/
-cmsy/m/n/10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/cmsy/m/n/
-10.95  \OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  [] []  \OMS/cmsy/m/n/10.95  \
-OML/cmm/m/it/10.95 i\OT1/cmr/m/n/10.95  []
- []
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.241 			a[dot]-- [fermion,thick,momentum'] b}
-                                            ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.244 			a[dot]-- [anti fermion,thick,momentum'] b}
-                                                 ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.247 			a[dot] -- [edge,thick,momentum'] b}
-                                          ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.255 			a[dot]-- [fermion,thick,rmomentum'] b}
-                                             ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.258 			a[dot]-- [anti fermion,thick,rmomentum'] b}
-                                                  ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.261 			a[dot] -- [edge,thick,rmomentum'] b}
-                                           ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.269 			a-- [fermion,thick,momentum'] b[dot]}
-                                            ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.272 			a-- [anti fermion,thick,momentum'] b[dot]}
-                                                 ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.275 			a -- [edge,thick,momentum'] b[dot]}
-                                          ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.283 			a-- [fermion,thick,rmomentum'] b[dot]}
-                                             ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.286 			a-- [anti fermion,thick,rmomentum'] b[dot]}
-                                                  ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
-stack traceback:
-	[C]: in function 'assert'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
-esumeGraphDrawingCoroutine'
-	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
-unGraphDrawingAlgorithm'
-	[\directlua]:1: in main chunk.
-\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
-                                                  \pgfutil@loop \ifpgfgdresu...
-l.289 			a -- [edge,thick,rmomentum'] b[dot]}
-                                           ;
-The lua interpreter ran into a problem, so the
-remainder of this lua chunk will be ignored.
-
-[36]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
+[39]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
 neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
 ncorrectly
 stack traceback:
@@ -1851,7 +1625,211 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.303 		d   -- [thick, edge label=N] b}
+l.250 			a[dot]-- [fermion,thick,momentum'] b}
+                                            ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.253 			a[dot]-- [anti fermion,thick,momentum'] b}
+                                                 ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.256 			a[dot] -- [edge,thick,momentum'] b}
+                                          ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.264 			a[dot]-- [fermion,thick,rmomentum'] b}
+                                             ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.267 			a[dot]-- [anti fermion,thick,rmomentum'] b}
+                                                  ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.270 			a[dot] -- [edge,thick,rmomentum'] b}
+                                           ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.278 			a-- [fermion,thick,momentum'] b[dot]}
+                                            ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.281 			a-- [anti fermion,thick,momentum'] b[dot]}
+                                                 ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.284 			a -- [edge,thick,momentum'] b[dot]}
+                                          ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.292 			a-- [fermion,thick,rmomentum'] b[dot]}
+                                             ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.295 			a-- [anti fermion,thick,rmomentum'] b[dot]}
+                                                  ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.298 			a -- [edge,thick,rmomentum'] b[dot]}
+                                           ;
+The lua interpreter ran into a problem, so the
+remainder of this lua chunk will be ignored.
+
+...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
+c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
+rectly
+stack traceback:
+	[C]: in function 'assert'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
+esumeGraphDrawingCoroutine'
+	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:182: in function 'r
+unGraphDrawingAlgorithm'
+	[\directlua]:1: in main chunk.
+\pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
+                                                  \pgfutil@loop \ifpgfgdresu...
+l.312 		d   -- [thick, edge label=N] b}
                                      ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1868,14 +1846,14 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.308 		d  --[thick,edge label=N] b  }
+l.317 		d  --[thick,edge label=N] b  }
                                     ;  \quad \sim -i\sigma^2_{nm}P_L
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/generi
-c/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled incor
-rectly
+[40]...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: ...t/tex/ge
+neric/pgf/graphdrawing/lua/pgf/gd/model/Path.lua:711: memoization table filled i
+ncorrectly
 stack traceback:
 	[C]: in function 'assert'
 	...graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua:213: in function 'r
@@ -1885,7 +1863,7 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.324 		d   -- [thick, edge label=N,momentum'] b}
+l.333 		d   -- [thick, edge label=N,momentum'] b}
                                                ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
@@ -1902,136 +1880,94 @@ unGraphDrawingAlgorithm'
 	[\directlua]:1: in main chunk.
 \pgfgdendscope ...lay.runGraphDrawingAlgorithm() }
                                                   \pgfutil@loop \ifpgfgdresu...
-l.329 		d  --[thick,edge label=N,momentum'] b  }
+l.338 		d  --[thick,edge label=N,momentum'] b  }
                                               ;
 The lua interpreter ran into a problem, so the
 remainder of this lua chunk will be ignored.
 
-[37] [38] [39] [40]
+[41] [42] [43] [44]
 chapter B.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 435.
+(hyperref)                removing `math shift' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 435.
+(hyperref)                removing `\Gamma' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 435.
+(hyperref)                removing `subscript' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 435.
+(hyperref)                removing `math shift' on input line 444.
 
-[41
+[45
 
 
-]
-Overfull \hbox (0.31302pt too wide) in paragraph at lines 459--459
+] [46] [47]
+Overfull \hbox (6.38881pt too wide) in paragraph at lines 528--532
+\T1/lmr/m/n/10.95 ply equa-tion [] with p$[][]$ and in-te-grate over p. At lead
+-ing or-der $[]$
+ []
+
+[48] [49] [50] [51] [52]
+Overfull \hbox (14.54514pt too wide) in paragraph at lines 672--672
 [] 
  []
 
-[42] [43]
-Overfull \hbox (2.12874pt too wide) detected at line 518
-\OML/cmm/m/it/10.95 g[] [] [] [] \OT1/cmr/m/n/10.95 =\T1/lmr/m/n/10.95 - \OML/c
-mm/m/it/10.95 Gamma[] [] \OT1/cmr/m/n/10.95 +  [] []
- []
-
-
-Overfull \hbox (27.98976pt too wide) detected at line 544
-\OML/cmm/m/it/10.95 g[] [] [] [] \OT1/cmr/m/n/10.95 =  [] [] \OMS/cmsy/m/n/10.9
-5   \OT1/cmr/m/n/10.95  [] [] \OML/cmm/m/it/10.95 :
- []
-
-[44] [45] [46] [47]
-Overfull \hbox (22.33191pt too wide) in paragraph at lines 654--654
-[] 
- []
-
-[48] [49]
+[53] [54]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 690.
+put line 701.
  (./MATLAB/simulate1.m
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [50]) [51]
-(./MATLAB/simulate3.m [52] [53]) [54] (./MATLAB/simulate2.m [55]) [56]
-(./MATLAB/simulate4.m [57])) (./Chapter/References.tex [58]
-Underfull \hbox (badness 2181) in paragraph at lines 68--72
-[]\T1/lmr/m/n/10.95 S. David-son, E. Nardi and Y. Nir, \T1/lmr/m/it/10.95 Lep-t
-o-ge-n-e-sis\T1/lmr/m/n/10.95 ; Phys. Rept. \T1/lmr/bx/n/10.95 466 \T1/lmr/m/n/
-10.95 (2008) 105
- []
-
-[59
+) [55] [56])
+(./MATLAB/simulate3.m [57] [58]) [59] (./MATLAB/simulate2.m [60]) [61]
+(./MATLAB/simulate4.m [62])) (./Chapter/References.tex [63] [64
 
 
 ]
-Underfull \hbox (badness 6910) in paragraph at lines 107--110
-[]\T1/lmr/m/n/10.95 Tong, D.,(2016). Uni-ver-sity of Cam-bridge De-part-ment of
- Ap-plied Math-e-mat-
+Underfull \hbox (badness 3088) in paragraph at lines 80--81
+[]\T1/lmr/m/n/10.95 Taanila, O., Helsinki Uni-ver-sity De-part-ment of Phys-i-c
+al Sci-ences. (2008,
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 107--110
-\T1/lmr/m/n/10.95 ics and The-o-ret-i-cal Physics,\T1/lmr/m/it/10.95 Quan-tum F
-ield The-ory\T1/lmr/m/n/10.95 . Re-trieved 18.05.2017 from
+Underfull \hbox (badness 4779) in paragraph at lines 80--81
+\T1/lmr/m/n/10.95 Jan-uary). \T1/lmr/m/it/10.95 Neu-tri-nos and ther-mal lep-to
+-ge-n-e-sis\T1/lmr/m/n/10.95 , Re-trieved 15.04.2017 from
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-[]\T1/lmr/m/n/10.95 http://www.damtp.cam.ac.uk/user/-tong/qft.html[] archived a
-t []http://www.we-bc-i-ta-
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 122--126
-[]\T1/lmr/m/n/10.95 Pere-pelitsa, D. V., Columbia Uni-ver-sity De-part-ment of 
-Physics. (2008, Novem-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+[65]
+Underfull \hbox (badness 2443) in paragraph at lines 122--126
 \T1/lmr/m/n/10.95 ber 25). \T1/lmr/m/it/10.95 Sakharov Con-di-tions for Baryo-g
 e-n-e-sis\T1/lmr/m/n/10.95 . Re-trieved 10.02.2017 from
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
-[]\T1/lmr/m/n/10.95 http://-phys.columbia.edu/ dvp/dvp-sakharov.pdf[] archived 
-at []http://www.we-bc-i-ta-
- []
-
-
-Underfull \hbox (badness 4454) in paragraph at lines 128--131
-[]\T1/lmr/m/n/10.95 P. Di Bari, \T1/lmr/m/it/10.95 Be-yond the Stan-dard Model 
-with lep-to-ge-n-e-sis and neu-trino data\T1/lmr/m/n/10.95 ,
- []
-
-) [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+) [66]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
  (./Leptogenesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `Leptogenesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7FFE2454B6BF433DBAA6A0B0A5997C5E;2219.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+(rerunfilecheck)             Checksum: C06C9BA33EA7E6EA4CF6C416CAE5E643;2220.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31045 strings out of 494577
- 381533,953878 words of node,token memory allocated
- 34364 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 4293 glue, 1 kern, 968 attribute, 49 glue_spec, 968
+ 31051 strings out of 494577
+ 381525,953878 words of node,token memory allocated
+ 34855 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 4354 glue, 1 kern, 984 attribute, 49 glue_spec, 984
  attribute_list, 1 write, 6 pdf_action nodes
-   avail lists: 1:17,2:11053,3:2573,4:797,5:9113,6:4997,7:8591,8:5502,9:9859,10:
-35,11:580
- 33253 multiletter control sequences out of 65536+600000
+   avail lists: 1:17,2:12029,3:2833,4:781,5:8677,6:4792,7:8324,8:5238,9:9391,10:
+35,11:552
+ 33252 multiletter control sequences out of 65536+600000
  79 fonts using 5002759 bytes
  64i,20n,98p,8846b,1941s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/tex
@@ -2057,10 +1993,10 @@ lic/lm/lmri10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro
 10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 >
-Output written on Leptogenesis.pdf (62 pages, 1067309 bytes).
+Output written on Leptogenesis.pdf (70 pages, 1065216 bytes).
 
-PDF statistics: 1326 PDF objects out of 1440 (max. 8388607)
- 1216 compressed objects within 13 object streams
- 566 named destinations out of 1000 (max. 131072)
+PDF statistics: 1361 PDF objects out of 1440 (max. 8388607)
+ 1243 compressed objects within 13 object streams
+ 573 named destinations out of 1000 (max. 131072)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

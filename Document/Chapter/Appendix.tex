@@ -115,7 +115,7 @@ This problem can be solved by introducing the charge-conjugated fields
 \end{align*}
 where C is the charge conjugation operator. The interaction term above then becomes the reversed one
 \begin{equation*}
-		\bar{\psi}\Gamma\psi=g^i_{abc}\bar{\psi}_a\Gamma_i\psi_b\phi_c=(-1)g^i_{abc}\psi_b^T\Gamma_i^T\bar{\psi}_a^T\phi_c=g^i_{abc}\overline{\psi^c}_aC\Gamma_i^TC^{-1}\psi^c_b\phi_c=g^i_{abc}\overline{\psi^c}_a\eta_i\Gamma_i\psi^c_b\phi_c=:\overline{\psi^c}\Gamma'\psi^c,
+		\bar{\psi}\Gamma\psi=g^i_{abc}\bar{\psi}_a\Gamma_i\psi_b\phi_c=(-1)g^i_{abc}\psi_b^T\Gamma_i^T\bar{\psi}_a^T\phi_c=g^i_{abc}\overline{\psi^c}_aC\Gamma_i^TC^{-1}\psi^c_b\phi_c=:\overline{\psi^c}\Gamma'\psi^c,
 \end{equation*}
 with the reversed fermion interaction
 \begin{equation*}
@@ -179,38 +179,47 @@ Summarizing all these results gives a full set of Feynman rules for Majorana as 
 			d   -- [scalar,thick] b}; \quad \sim i\Gamma
 		\qquad		
 		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+			b -- [edge,thick,rmomentum'] a,
+			b-- [edge,thick,momentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+		\end{equation*}
+	\end{subfigure}
+	
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
 			b -- [edge,thick,momentum'] a,
 			b-- [anti fermion,thick,rmomentum] c,
 			d   -- [scalar,thick] b}; \quad \sim i\Gamma
 		\qquad
 		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
-			b -- [fermion,thick,momentum'] a,
-			b-- [edge,thick,rmomentum] c,
-			d   -- [scalar,thick] b}; \quad \sim i\Gamma
-		\qquad
-		\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
-			b -- [fermion,thick,momentum'] a,
-			b-- [anti fermion,thick,rmomentum] c,
-			d   -- [scalar,thick] b}; \quad \sim i\Gamma
+			b -- [edge,thick,rmomentum'] a,
+			b-- [anti fermion,thick,momentum] c,
+			d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+		\end{equation*}	
+	
+\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\begin{equation*}
+			\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+				b -- [fermion,thick,momentum'] a,
+				b-- [edge,thick,rmomentum] c,
+				d   -- [scalar,thick] b}; \quad \sim i\Gamma
+			\qquad
+			\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
+				b -- [fermion,thick,rmomentum'] a,
+				b-- [edge,thick,momentum] c,
+				d   -- [scalar,thick] b}; \quad \sim i\Gamma'
 		\end{equation*}
 	\end{subfigure}
+
 \begin{subfigure}{\linewidth}
 	\begin{equation*}
 	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
-		b -- [edge,thick,rmomentum'] a,
-		b-- [edge,thick,momentum] c,
-		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
+		b -- [fermion,thick,momentum'] a,
+		b-- [anti fermion,thick,rmomentum] c,
+		d   -- [scalar,thick] b}; \quad \sim i\Gamma
 	\qquad		
-	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
-		b -- [edge,thick,rmomentum'] a,
-		b-- [anti fermion,thick,momentum] c,
-		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
-	\qquad
-	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
-		b -- [fermion,thick,rmomentum'] a,
-		b-- [edge,thick,momentum] c,
-		d   -- [scalar,thick] b}; \quad \sim i\Gamma'
-	\qquad
 	\feynmandiagram [small, baseline=(d.base), horizontal=d to b] {
 		b -- [fermion,thick,rmomentum'] a,
 		b-- [anti fermion,thick,momentum] c,
@@ -312,11 +321,11 @@ Now looking at the Lagrangian given in \eqref{eq:Yukterm} one gets the following
 	\begin{equation*}
 	P_R=\frac{1+\gamma^5}{2}, \qquad P_L=\frac{1-\gamma^5}{2}
 	\end{equation*}
-	the chirality operators, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, where $\gamma^i$ denotes the gamma matrices and $n,m$ are isospin indices. This chirality operators here enters the matrix element because the heavy neutrino N, per defnition, has a fixed chirality. The whole matrix element will be given in the following section.
+	the chirality operators, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, where $\gamma^i$ denotes the gamma matrices and $n,m$ are isospin indices. This chirality operators here enters the matrix element because the heavy neutrino N, per definition, has a fixed chirality. The whole matrix element will be given in the following section.
 \end{figure}
 \section{The tree level decay rate for heavy neutrinos}
 \label{ap:tree_level_decay}
-In this section the heavy neutrion decay rate given in equation \eqref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}, which, for the sake of clarity, will be given here once more, but also with arrows showing the arbitrarily chosen orientation
+In this section the heavy neutrino decay rate given in equation \eqref{eq:Gamma_N} will be calculated using the tree level diagramms in figure \ref{fig:N-decay}, which, for the sake of clarity, will be given here once more, but also with arrows showing the arbitrarily chosen orientation
 	\begin{equation*}
 	\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
 		b -- [scalar,thick, edge label=\(\phi\)] a,
@@ -351,7 +360,7 @@ However, this matrix element only describes the decay of a neutrino with a certa
 \begin{equation*}
 |\mathcal{M}|^2=2\cdot\frac{1}{2}\sum_{s_N,s_{\ell_a}}\bar{u}_{\ell_a}(p_{\ell_a},s_{\ell_a})h_{a1}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{a1}u_{\ell_a}(p_{\ell_a},s_{\ell_a}).
 \end{equation*}
-The factor of 2 arises from the fact that general leptons are part of a weak isospin doublet, so there are two possible values for the isospin, or more precise, its third component, namely $T_3=-1/2$ for the charged leptons e, $\mu$, $\tau$ and $T_3=1/2$ for the corresponding light neutrinos $\nu_{e,\mu,\tau}$. If we just looked at the decay into for example the light neutrinos this factor of 2 has to be omitted, since there is only one isospin component $T_3$ possible. Additionally, the heavy neutrino doesn't contribute to this factor because it is a weak isospin singlet and therefore only $T_3=0$ is possible. \newline\indent
+The factor of 2 arises from the fact that general leptons are part of a weak isospin doublet, so there are two possible values for the isospin, or more precise, its third component, namely $T_3=-1/2$ for the charged leptons e, $\mu$, $\tau$ and $T_3=1/2$ for the corresponding light neutrinos $\nu_{e,\mu,\tau}$. If we just looked at the decay into for example the light neutrinos this factor of 2 has to be omitted, since there is only one isospin component $T_3$ possible. Additionally, the heavy neutrino does not contribute to this factor because it is a weak isospin singlet and therefore only $T_3=0$ is possible. \newline\indent
 In the following we only consider the decay into one lepton flavor $a=1$, taking more flavors into account simply means summing the following result with different coupling constants $h_{a1}$ for each lepton flavor. This results in
 \begin{align*}
 |\mathcal{M}|^2&=\sum_{s_N,s_{\ell}}\bar{u}_{\ell}(p_{\ell},s_{\ell})h_{11}P_Ru_N(p_N,s_N)\:\bar{u}_{N}(p_{N},s_{N})P_Lih^*_{11}u_{\ell}(p_{\ell},s_{\ell})=\\
@@ -381,7 +390,7 @@ All of the terms, aside from the first and second to last one, vanished because 
 \begin{equation*}
 	\text{Tr}\left[\gamma^\mu\right]=0; \qquad \text{Tr}\left[\gamma^\mu\gamma^\nu\gamma^5\right]=0;\qquad \text{Tr}\left[\text{odd number of $\gamma$'s}\right]=0
 \end{equation*}
-The final relation necessary to finally evaluate the trace is
+The last necessary relation to finally evaluate the trace is
 \begin{equation*}
 	\text{Tr}[\gamma^\mu\gamma^\nu]=4\eta^{\mu\nu},
 \end{equation*}
@@ -393,7 +402,7 @@ In order to rewrite the product of the 4-momentum vectors the decay will be trea
 \begin{equation*}
 |\mathcal{M}|^2=2|h_{11}|^2p_Np_\ell=2|h_{11}|^2M_N|\vec{p}_\ell|.
 \end{equation*}
-But due to the neutrino not only decaying into leptons but also into anti-leptons this is not the whole contribution to the tree level decay rate. However, looking at figure \ref{fig:external_lines}, the corresponding squared matrix element looks exactly the same and therefore would contribute the same term to the decay rate. This result is not surprising, remembering that CP violation only arises through interference of tree level and one-loop diagrams, thus $\Gamma(N\rightarrow\phi\ell)=\Gamma(N\rightarrow\bar{\phi}\bar{\ell})$. Plugging both these contribution back into the relation for the total decay rate results in 
+But due to the neutrino not only decaying into leptons but also into anti-leptons this is not the whole contribution to the tree level decay rate. However, looking at figure \ref{fig:external_lines}, the corresponding squared matrix element looks exactly the same and therefore would contribute the same term to the decay rate. This result is not surprising, remembering that CP violation only arises through interference of tree level and one-loop diagrams, thus $\Gamma(N\rightarrow\phi\ell)=\Gamma(N\rightarrow\bar{\phi}\bar{\ell})$. Plugging both these contributions back into the relation for the total decay rate results in 
 \begin{align*}
 	\Gamma&=\frac{1}{2M_N}\int\frac{d^3p_\ell}{(2\pi)^32E_\ell}\frac{d^3p_\phi}{(2\pi)^32E_\phi}(2\pi)^44|h_{11}|^2M_N|\vec{p}_\ell|\delta^4\left(p_\ell+p_\phi-p_N\right)=\\
 	&=\frac{1}{8\pi^2}\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}|h_{11}|^2M_N|\vec{p}_\ell|\delta\left(|\vec{p}_\ell|+|\vec{p}_\phi|-M_N\right)\delta^3\left(\vec{p}_\ell+\vec{p}_\phi\right)=\\
@@ -448,11 +457,12 @@ Finally putting this togehter for leptons and Higgs particles and using the rela
 f_lf_\phi-f_{\bar{l}}f_{\bar{\phi}}\simeq e^{-\frac{E_N}{T}}\left(1+\frac{\mu_l+\mu_\phi}{T}-1-\frac{\mu_{\bar{l}}+\mu_{\bar{\phi}}}{T}\right)=2e^{-\frac{E_N}{T}}\frac{\mu_l+\mu_\phi}{T}.
 \end{equation*}
 \newline\indent
-Now, as already explained, in order to relate the chemicial potentials to the density $n_{B-L}$ one has to expand the left-hand side of \eqref{eq:l-lbar} and \eqref{eq:phi-phibar} up to first order in the chemical potentials while using Fermi-Dirac and Bose-Einstein distributions instead of Boltzmann statistics, yielding
+Now, as already explained, in order to relate the chemical potentials to the density $n_{B-L}$ one has to expand the left-hand side of \eqref{eq:l-lbar} and \eqref{eq:phi-phibar} up to first order in the chemical potentials while using Fermi-Dirac and Bose-Einstein distributions instead of Boltzmann statistics, yielding
 \begin{align*}
 	n_\ell-n_{\bar{\ell}}&=g_\ell\int\frac{d^3p}{\left(2\pi\right)^3}f_\ell-f_{\bar{\ell}}=\\
 	&=g_\ell\frac{1}{\left(2\pi\right)^3}\int dp\:dcos\theta \:d\phi\left(f_\ell-f_{\bar{\ell}}\right)p^2=\\
-	&=g_\ell\frac{1}{2\pi^2}\int_0^\infty dp \: \left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2=\\
+	&=g_\ell\frac{1}{2\pi^2}\int_0^\infty dp \: \left(f_\ell\left(\mu_\ell=0\right)+\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell-f_{\bar{\ell}}\left(\mu_{\bar{l}}=0\right)-\right.\\
+	&-\left.\frac{e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_{\bar{\ell}}\right)p^2=\\
 	&=g_\ell\frac{1}{2\pi^2}\int_0^\infty dp\: \frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2T}\mu_\ell p^2=\\
 	&=g_\ell\frac{\mu_\ell}{\pi^2T}\int_{0}^{\infty}dE\:\frac{2e^{E/T}}{\left(e^{E/T}+1\right)^2}\:E^2=\\
 	&=\frac{\mu_\ell T^2}{3}.
@@ -513,9 +523,9 @@ Expanding the factor 1/E$_N$ on the right-hand side of \eqref{eq:L_rate_expandin
 		\left(\frac{\partial}{\partial t}-Hp\frac{\partial}{\partial p}\right)f_N=\Gamma_0\left(f_N^{eq}-f_N\right)-\frac{\Gamma_0}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N^{eq}-f_N\right).
 \end{align*}
 Now integrating over p and using the definition of u given in \eqref{eq:energy_density} the right-hand side simplifies to
-\begin{equation*}
-	g_N\int \frac{d^3p}{(2\pi)^3}\left(\Gamma_0\left(f_N^{eq}-f_N\right)-\frac{\Gamma_0}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N^{eq}-f_N\right)\right)=\-Gamma_N\left(n_N-n_N^{eq}\right)+\Gamma_{N,u}\left(u-u^{eq}\right)
-\end{equation*}
+\begin{align*}
+	&g_N\int \frac{d^3p}{(2\pi)^3}\left(-\Gamma_0\left(f_N^{eq}-f_N\right)-\frac{\Gamma_0}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N^{eq}-f_N\right)\right)=\\&=-\Gamma_N\left(n_N-n_N^{eq}\right)+\Gamma_{N,u}\left(u-u^{eq}\right)
+\end{align*}
 and it can easily be seen that $\Gamma_{N,u}=\Gamma_{0}$ \newline\indent
 The left-hand side, however, can be evaluated by performing the steps done in \ref{ap:phase_space}, but in reverse order. \newline\indent
 The next thing to do is acquiring the rate equation for $u$ and therefore one has to multiply equation \eqref{eq:L_rate_expanding_interaction_rel} with p$^2$ and integrate over p. At leading order $\left(E_N=M_N\left[1+\mathcal{O}(p^2)\right]\right)$ in p this yields
@@ -533,15 +543,15 @@ and again the definition of u one easily gets
 	\left(\frac{d}{dt}+5H\right)u=-\Gamma_u\left(u-u^{eq}\right).
 \end{equation*}
 with $\Gamma_u=\Gamma_0$ at leading order in p. \newline\indent
-By performing the same steps as shown in \ref{ap:phase_space} but applied on equation \eqref{eq:B-L_rate_expanding_interaction} one gets an equation equivalent to \eqref{eq:boltzmann}. The last part will be neglected in the following since it doesn't matter considering relativistic corrections.
+By performing the same steps as shown in \ref{ap:phase_space} but applied on equation \eqref{eq:B-L_rate_expanding_interaction} one gets an equation equivalent to \eqref{eq:boltzmann}. The last part will be neglected in the following since it does not matter considering relativistic corrections.
 \begin{equation*}
 \left(\frac{\partial}{\partial t}-Hp\frac{\partial}{\partial p}\right)f_{B-L}=\frac{M_N\Gamma_{B-L}}{E_N}\left(f_N-e^{-E_N/T}\right)
 \end{equation*}
 Here the Lorentz invariant phase space was already taken into account.\newline\indent
 Analogous to the procedure above one has to only consider the right-hand side of this equation and expanding the factor 1/E$_N$ results in
-\begin{equation*}
-g_N\int \frac{d^3p}{(2\pi)^3}\left(\Gamma_{B-L}\left(f_N-f_N^{eq}\right)-\frac{\Gamma_{B-L}}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N-f_N^{eq}\right)\right)=\Gamma_{B-L}\left(n_N-n_N^{eq}\right)-\Gamma_{B-L,u}\left(u-u^{eq}\right).
-\end{equation*}
+\begin{align*}
+&g_N\int \frac{d^3p}{(2\pi)^3}\left(-\Gamma_{B-L}\left(f_N-f_N^{eq}\right)-\frac{\Gamma_{B-L}}{2}\left(\frac{p_N}{M_N}\right)^2\left(f_N-f_N^{eq}\right)\right)=\\&=-\Gamma_{B-L}\left(n_N-n_N^{eq}\right)-\Gamma_{B-L,u}\left(u-u^{eq}\right).
+\end{align*}
 Also easy to see is the following relation:
 \begin{equation*}
 	\Gamma_{B-L,u}=\epsilon\Gamma_0
@@ -575,7 +585,7 @@ Using the same procedure on equation \eqref{eq:rate_u} results in
 &\overset{E_N=M_N+\mathcal{O}(p^2)}{\Longrightarrow}\Gamma_u=a\Gamma_0.
 \end{align*}
 Because equation \eqref{eq:rate_u} is only of order p, one can drop all terms of order p$^2$ or higher to obtain this result.
-\section{Equlibrium densities}
+\section{Equilibrium densities}
 \label{ap:equlibrium}
 In order to be able to solve the rate equations for leptogenesis one has to determine the equlibrium densities $X_N^{eq}$ and $X_u^{eq}$. Since one consideres $M_N\gg T$, Boltzmann distributions can be used to do so and one gets
 \begin{align*}
@@ -599,15 +609,15 @@ X_u^{eq}&=\frac{g}{T^3(2\pi)^3}\int d^3p \:e^{-\sqrt{p^2+M_N^2}/T}p^3=\\
 &=\frac{M_N^6}{3\pi^2T^6}\frac{8}{z^3}\frac{\Gamma(7/2)}{\sqrt{\pi}}K_3(z)=\\
 &=\frac{3}{2\pi^2}z^3K_2(z).
 \end{align*}
-These two relations can now be used to easily obtain the thermal inital conditions for $X_N^{eq}$ and $X_u^{eq}$, namely
+These two relations can now be used to easily obtain the thermal initial conditions for $X_N^{eq}$ and $X_u^{eq}$, namely
 \begin{align*}
 	X_N(1)=X_N^{eq}(1)=\frac{1}{\pi^2}K_2(1)\approx 0.165,\\
 	X_u(1)=X_u^{eq}(1)=\frac{3}{2\pi^2}K_3(1)\approx 1.079.
 \end{align*}
-At this point it should be mentioned that using these initial is problematic because in order to obtain them Boltzmann statistics, or the assumption of $M_N\gg T$ was used. On the other hand, $z=1$ implies $M_N=T$, thus classical Boltzmann statistics cannot be used here. We will use these initial conditions nevertheless and treat $z=1$ as the boundary of the range $M_N\gg T$.
+At this point it should be mentioned that using these initial conditions is problematic because in order to obtain them Boltzmann statistics, or the assumption of $M_N\gg T$ was used. On the other hand, $z=1$ implies $M_N=T$, thus classical Boltzmann statistics cannot be used here. We will use these initial conditions nevertheless and treat $z=1$ as the boundary of the range $M_N\gg T$.
 \section{Differences between quantum and classical statistics}
 \label{ap:statistics}
-As mentioned in section \ref{sec:num_results} there are two occurrencens where one can chose classical statistics instead of quantum statistics. The first one covered here will be considering equations \eqref{eq:chempot_l} and \eqref{eq:chempot_phi}. In section \ref{ap:Gamma_B-L} quantum statistics were used for that particular matter, so here classical statistics will be used. So by expanding up to first order in chemical potentials one gets 
+As mentioned in section \ref{sec:num_results} there are two occurrences where one can choose classical statistics instead of quantum statistics. The first one covered here will be considering equations \eqref{eq:chempot_l} and \eqref{eq:chempot_phi}. In section \ref{ap:Gamma_B-L} quantum statistics were used for that particular matter, so here classical statistics will be used. So by expanding up to first order in chemical potentials one gets 
 \begin{align*}
 n_\ell-n_{\bar{\ell}}&=g_\ell\int\frac{d^3p}{\left(2\pi\right)^3}\left(f_\ell-f_{\bar{\ell}}\right)=\\
 &=g_\ell\frac{1}{\left(2\pi\right)^3}\int dp\:dcos\theta \:d\phi\left(f_\ell-f_{\bar{\ell}}\right)p^2=\\
@@ -628,7 +638,7 @@ Plugging this back into \eqref{eq:Gamma_B-L} and following the same calculation 
 &=\frac{1}{4}\:\left(c_\ell+\frac{c_\phi}{2}\right)z^2K_1(z)\Gamma_0.
 \end{align*}
 On the other hand classical Boltzmann statistics were used to obtain the factor $f_\ell f_\phi-f_{\bar{\ell}}f_{\bar{\phi}}$. How this factor will be corrected using the respective quantum statistics will be shown now. \newline\indent
-The product of these two distribution simply yields
+The product of these two distributions simply yields
 \begin{equation*}
 	f_\ell f_\phi=\frac{1}{\left(e^{\left(E_\ell-\mu_\ell\right)/T}+1\right)\left(e^{\left(E_\phi-\mu_\phi\right)/T}-1\right)}.
 \end{equation*}
@@ -650,7 +660,8 @@ It is also easy to see that by neglecting the $\pm$1 terms in the denominators f
 Putting this back into \eqref{eq:Gamma_B-L} results in
 \begin{align*}
 	\Gamma_{B-L,q}&=\frac{3}{8\pi^4}\:\frac{M_N}{T^3}\Gamma_0\int \frac{d^3p_N}{E_N}\times\\
-	&\times\left(\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)\delta^4\left(p_\ell+p_\phi-p_N\right)\right).
+	&\times\left(\int\frac{d^3p_\ell}{E_\ell}\frac{d^3p_\phi}{E_\phi}\frac{1}{\left(e^{E_\ell/T}+1\right)\left(e^{E_\phi/T}-1\right)}\left(\frac{e^{E_\phi/T}}{e^{E_\phi/T}-1}\:\frac{c_\phi}{2}+\frac{e^{E_\ell/T}}{e^{E_\ell/T}-1}c_\ell\right)\right.\times\\
+	&\times\left.\delta^4\left(p_\ell+p_\phi-p_N\right)\right).
 \end{align*} 
 The addition q to the subscript simply means that this is the quantum corrected rate $\Gamma_{B-L}$
 First the integral in parentheses will be calculated using the 4-momentum delta function.
@@ -688,7 +699,7 @@ Using this result one can easily see that for high $z$ for a high neutrino mass 
 \label{ap:matlab}
 In order to obtain figure \ref{fig:efficiency} the following MATLAB code was used:
 \lstinputlisting[frame=single]{MATLAB/simulate1.m} Parts of this code which appear analogously in the next codes are not explicitly commented.
-\newpage\noindent
+\noindent
 Figure \ref{fig:corrections} was created by
 \lstinputlisting[frame=single]{MATLAB/simulate3.m}\newpage\noindent
 Figure \ref{fig:quantum} was obtained by using

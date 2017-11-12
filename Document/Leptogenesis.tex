@@ -1,7 +1,7 @@
-\documentclass[11pt,a4paper,oneside]{scrbook}
+\documentclass[11pt,a4paper,twoside]{scrbook}
 \usepackage[T1]{fontenc}
 \usepackage[headheight=13.6pt]{geometry}
-\geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=30mm, headsep=10mm, footskip=12mm}
+\geometry{a4paper, top=30mm, bottom=30mm, headsep=12.5mm, footskip=12.5mm}
 \usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -83,17 +83,19 @@
 \title{Leptogenesis: A Non-Relativistic Study}
 \subtitle{Leptogenese: Eine nicht-relativistische Betrachtung}
 \author{Tobias Theil}
-\date{\today}
+\date{1st August 2017}
 \publishers{\begin{flushleft}
 Erstgutachter (Themensteller): Dr. Antonio Vairo\\
 Zweitgutachter: Prof. Dr. Sherry Suyu
 	\end{flushleft} }
 	
+\raggedbottom
 
 \begin{document}
 	\frontmatter
 	\maketitle
-	\newpage 
+	\newpage\thispagestyle{empty}~ %
+	\newpage
 	\thispagestyle{empty}
 	\newpage
 	\setcounter{page}{1}
